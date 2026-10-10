@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verschönerei Weinheim — Entwurf C · Organic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.css">
+<style>
+:root{
+  --bg:#EAE0D2; --card:#F8F2E9; --ink:#2A241E; --coffee:#6F4E37;
+  --rose:#B07575; --rose-deep:#9A5F5F;
+  --line:rgba(42,36,30,.14);
+  --sans:'Quicksand',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;font-weight:500}
+img,svg{display:block}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(234,224,210,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;gap:28px;padding:14px 24px;max-width:1140px;margin:0 auto}
+.brand{text-decoration:none;color:var(--ink);display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-weight:700;font-size:1.4rem}
+.brand-sub{font-size:.62rem;letter-spacing:.38em;text-transform:uppercase;color:var(--coffee)}
+.main-nav{margin-left:auto;display:flex;align-items:center;gap:24px}
+.main-nav a{color:var(--ink);text-decoration:none;font-size:.92rem;font-weight:600}
+.main-nav a:hover{color:var(--rose-deep)}
+.nav-cta{padding:10px 20px;font-size:.85rem}
+.draft-badge{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);border:1px solid rgba(176,117,117,.55);padding:5px 10px;border-radius:999px;white-space:nowrap}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:12px;width:42px;height:42px;font-size:1.3rem;color:var(--ink);cursor:pointer;place-items:center}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:999px;font-weight:700;font-size:.92rem;text-decoration:none;transition:.25s;border:2px solid transparent;cursor:pointer;font-family:var(--sans)}
+.btn-primary{background:var(--coffee);color:#F8F2E9}
+.btn-primary:hover{background:var(--ink)}
+.btn-ghost{border-color:rgba(111,78,55,.45);color:var(--coffee)}
+.btn-ghost:hover{border-color:var(--coffee);background:rgba(111,78,55,.08)}
+.text-link{color:var(--rose-deep);font-weight:700;text-decoration:none}
+.text-link:hover{text-decoration:underline}
+
+/* ---------- Typo ---------- */
+.eyebrow{font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--coffee);font-weight:700;margin-bottom:14px}
+h1{font-weight:700;font-size:clamp(2.3rem,4.8vw,3.5rem);line-height:1.12}
+h1 em{font-style:normal;color:var(--rose-deep);position:relative;white-space:nowrap}
+h1 em::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:8px;background:rgba(176,117,117,.35);border-radius:99px;z-index:-1}
+h2{font-weight:700;line-height:1.2}
+.lead{font-size:1.05rem;color:rgba(42,36,30,.75);margin:20px 0 28px;max-width:48ch}
+
+/* ---------- Hero ---------- */
+.hero{padding:80px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.video-note{font-size:.74rem;color:rgba(42,36,30,.55);margin-top:10px}
+
+/* ---------- Video-Platzhalter ---------- */
+.video-ph{aspect-ratio:4/3;border-radius:28px;display:grid;place-items:center;position:relative;overflow:hidden;
+  background:linear-gradient(120deg,#6F4E37,#B07575,#D9C3B0,#2A241E,#6F4E37);background-size:300% 300%;
+  animation:videoShift 9s ease-in-out infinite;box-shadow:0 24px 48px -24px rgba(42,36,30,.4)}
+.video-ph .ph-play-circle{font-size:64px;color:#F8F2E9;opacity:.92}
+.video-caption{position:absolute;bottom:14px;left:16px;color:#F8F2E9;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:rgba(42,36,30,.55);padding:6px 14px;border-radius:999px;backdrop-filter:blur(4px)}
+@keyframes videoShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+/* ---------- Silhouette ---------- */
+.figur-wrap{position:relative;max-width:320px;margin:0 auto;width:100%}
+.figur{width:100%;height:auto;
+  --o-hair:.18;--o-face:.18;--o-body:.45;--o-hands:.18;--o-nails:.12;
+  --c-hair:#4A3423;--c-skin:#E4C39E;--c-line:#2A241E;--c-nails:#B07575}
+.focus-haut{--o-face:1;--o-hands:1;--o-nails:.15;--o-hair:.15}
+.focus-haare{--o-hair:1;--o-face:.25;--o-hands:.2;--o-nails:.12}
+.focus-naegel{--o-nails:1;--o-hands:1;--o-face:.2;--o-hair:.15}
+.focus-all{--o-hair:.9;--o-face:.9;--o-body:.5;--o-hands:.9;--o-nails:.9}
+.hotspot{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--rose);transform:translate(-50%,-50%);box-shadow:0 0 0 3px var(--bg)}
+.hotspot::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px solid var(--rose);animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.5);opacity:1}100%{transform:scale(1.5);opacity:0}}
+.chip{position:absolute;transform:translate(-50%,-50%);background:var(--card);border:1px solid var(--line);color:var(--ink);font-size:.74rem;font-weight:700;padding:6px 13px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 16px -8px rgba(42,36,30,.3)}
+a.chip{text-decoration:none;color:var(--rose-deep);border-color:rgba(176,117,117,.5);transition:.2s}
+a.chip:hover{background:var(--rose);color:#F8F2E9;border-color:var(--rose)}
+
+/* ---------- Intro ---------- */
+.intro{padding:24px 0 88px}
+.intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.intro h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:16px}
+.intro p{color:rgba(42,36,30,.75);max-width:46ch}
+
+/* ---------- Karten (3 Spalten) ---------- */
+.bereiche{padding:88px 0}
+.bereiche-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.bereiche-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:14px}
+.bereiche-head p{color:rgba(42,36,30,.75)}
+.karten-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.karte{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:32px 28px;display:flex;flex-direction:column;transition:.25s}
+.karte:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(42,36,30,.35)}
+.karte .figur-wrap{max-width:150px;margin:0 auto 20px}
+.karte-num{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--rose-deep)}
+.karte h3{font-size:1.5rem;font-weight:700;margin:6px 0 10px}
+.karte > p{font-size:.9rem;color:rgba(42,36,30,.72);margin-bottom:20px}
+.karte ul{list-style:none;display:grid;gap:10px;margin-bottom:24px}
+.karte li{display:flex;gap:10px;align-items:flex-start;font-size:.88rem}
+.karte li i{color:var(--rose-deep);font-size:1.15rem;margin-top:3px}
+.karte li b{color:var(--rose-deep);font-weight:700;white-space:nowrap}
+.karte .btn{margin-top:auto;justify-content:center}
+
+/* ---------- Team ---------- */
+.team{padding:88px 0;background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.team-head{text-align:center;max-width:560px;margin:0 auto 44px}
+.team-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:12px}
+.team-head p{color:rgba(42,36,30,.75)}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:20px}
+.team-card{text-align:center;background:var(--bg);border:1px solid var(--line);border-radius:24px;padding:24px 12px}
+.avatar{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font-weight:700;font-size:1.3rem;color:#F8F2E9;background:var(--coffee)}
+.team-card:nth-child(even) .avatar{background:var(--rose)}
+.team-card strong{display:block;font-size:.92rem}
+.team-card span{font-size:.74rem;color:rgba(42,36,30,.62)}
+
+/* ---------- Mehr ---------- */
+.mehr{padding:72px 0}
+.mehr h2{font-size:1.5rem;margin-bottom:24px}
+.mehr-grid{display:flex;flex-wrap:wrap;gap:14px}
+.mehr-item{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border:1px solid rgba(111,78,55,.35);border-radius:999px;text-decoration:none;color:var(--ink);font-weight:700;font-size:.88rem;transition:.25s;background:var(--card)}
+.mehr-item:hover{border-color:var(--coffee);background:var(--coffee);color:#F8F2E9}
+.mehr-item i{color:var(--rose-deep)}
+.mehr-item:hover i{color:#F8F2E9}
+.mehr-item span{font-size:.74rem;color:var(--rose-deep);font-weight:700}
+.mehr-item:hover span{color:#F8F2E9}
+
+/* ---------- Standort ---------- */
+.standort{padding:88px 0}
+.standort-card{background:var(--card);border:1px solid var(--line);border-radius:32px;padding:48px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.standort h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:8px}
+.contact-list{list-style:none;display:grid;gap:14px;margin:24px 0 28px}
+.contact-list li{display:flex;gap:12px;align-items:center;font-size:.95rem}
+.contact-list i{color:var(--rose-deep);font-size:1.2rem}
+.map-ph{border:2px dashed rgba(111,78,55,.45);border-radius:24px;min-height:300px;display:grid;place-content:center;justify-items:center;gap:8px;text-align:center;background:var(--bg);padding:24px}
+.map-ph i{font-size:2.4rem;color:var(--coffee)}
+.map-ph p{font-weight:700}
+.map-ph span{font-size:.74rem;color:rgba(42,36,30,.55);max-width:32ch}
+
+/* ---------- Footer ---------- */
+.site-footer{border-top:1px solid var(--line);padding:48px 0 28px;background:var(--card)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start}
+.footer-inner p{font-size:.85rem;color:rgba(42,36,30,.6);margin-top:6px}
+.footer-nav{display:flex;gap:22px}
+.footer-nav a{color:var(--ink);text-decoration:none;font-size:.85rem;font-weight:600}
+.footer-nav a:hover{color:var(--rose-deep)}
+.socials{display:flex;gap:12px}
+.socials a{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--coffee);font-size:1.25rem;text-decoration:none;transition:.2s}
+.socials a:hover{background:var(--coffee);color:#F8F2E9;border-color:var(--coffee)}
+.footer-note{text-align:center;font-size:.72rem;color:rgba(42,36,30,.5);margin-top:36px}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:960px){
+  .karten-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}
+  .standort-card{grid-template-columns:1fr;padding:32px 24px}
+}
+@media(max-width:900px){
+  .hero-grid,.intro-grid{grid-template-columns:1fr;gap:44px}
+  .figur-wrap{max-width:260px}
+  .main-nav{position:fixed;top:71px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:flex-start;padding:24px;border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.3s;z-index:40}
+  .main-nav.open{transform:none}
+  .menu-btn{display:grid}
+  .draft-badge{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Silhouetten-Symbol -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="figur" viewBox="0 0 220 310">
+    <g style="opacity:var(--o-hair,.2)">
+      <path fill="var(--c-hair,#4A3423)" d="M110,26 C86,26 77,46 78,68 C79,88 74,112 84,134 C89,145 99,150 105,147 L106,132 C97,116 96,94 97,74 C98,58 103,48 110,48 C117,48 122,58 123,74 C124,94 123,116 114,132 L115,147 C121,150 131,145 136,134 C146,112 141,88 142,68 C143,46 134,26 110,26 Z"/>
+    </g>
+    <g style="opacity:var(--o-face,.2)">
+      <ellipse cx="110" cy="64" rx="26" ry="32" fill="var(--c-skin,#E4C39E)"/>
+    </g>
+    <g style="opacity:var(--o-body,.45)" fill="none" stroke="var(--c-line,#2A241E)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M101,94 L101,110 M119,94 L119,110"/>
+      <path d="M101,110 C90,113 76,119 68,129 C60,139 57,153 59,169 C61,191 65,215 63,241 C62,259 59,273 61,287 L159,287 C161,273 158,259 157,241 C155,215 159,191 161,169 C163,153 160,139 152,129 C144,119 130,113 119,110"/>
+      <path d="M68,129 C58,148 53,176 54,204 C55,224 58,242 63,256"/>
+      <path d="M152,129 C162,148 167,176 166,204 C165,224 162,242 157,256"/>
+    </g>
+    <g style="opacity:var(--o-hands,.2)">
+      <g fill="var(--c-skin,#E4C39E)" stroke="var(--c-line,#2A241E)" stroke-width="2">
+        <ellipse cx="63" cy="263" rx="9" ry="12"/>
+        <ellipse cx="157" cy="263" rx="9" ry="12"/>
+      </g>
+      <g fill="none" stroke="var(--c-line,#2A241E)" stroke-width="2" stroke-linecap="round">
+        <path d="M57,269 L56,285 M61,271 L61,288 M65,271 L66,287 M69,269 L70,284"/>
+        <path d="M151,269 L150,285 M155,271 L155,288 M159,271 L160,287 M163,269 L164,284"/>
+      </g>
+    </g>
+    <g style="opacity:var(--o-nails,.15)" fill="var(--c-nails,#B07575)">
+      <circle cx="56" cy="287" r="2.4"/><circle cx="61" cy="290" r="2.4"/><circle cx="66" cy="289" r="2.4"/><circle cx="70" cy="286" r="2.4"/>
+      <circle cx="150" cy="287" r="2.4"/><circle cx="155" cy="290" r="2.4"/><circle cx="160" cy="289" r="2.4"/><circle cx="164" cy="286" r="2.4"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-name">Verschönerei</span>
+      <span class="brand-sub">Weinheim</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#haut">Haut</a>
+      <a href="#haare">Haare</a>
+      <a href="#naegel">Nägel</a>
+      <a href="#team">Team</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="btn btn-primary nav-cta">Termin buchen</a>
+    </nav>
+    <span class="draft-badge">Design-Entwurf</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Beauty-Studio in Weinheim</p>
+        <h1>Gönn dir <em>Zeit für dich.</em></h1>
+        <p class="lead">Dein Moment der Entspannung — von Kopf bis Fuß. Haut, Haare und Nägel in einem Studio, mit Produkten von La Biosthetique, Olaplex &amp; Co.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">Termin buchen <i class="ph ph-arrow-right"></i></a>
+          <a href="#haut" class="btn btn-ghost">Unsere Leistungen</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="video-ph">
+          <i class="ph ph-play-circle"></i>
+          <span class="video-caption">Video folgt — Dein Besuch bei uns</span>
+        </div>
+        <p class="video-note">Platzhalter: Hier laufen künftig kurze Videos aus dem Salon (4:3, WebM + MP4, &lt; 5 MB)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro mit Silhouette -->
+  <section class="intro">
+    <div class="container intro-grid">
+      <div class="figur-wrap focus-all reveal">
+        <svg class="figur" viewBox="0 0 220 310" role="img" aria-label="Silhouette einer Person mit den Bereichen Haare, Haut und Nägel"><use href="#figur"/></svg>
+        <span class="hotspot" style="left:50%;top:9.7%"></span>
+        <span class="hotspot" style="left:57.7%;top:25.8%"></span>
+        <span class="hotspot" style="left:27.7%;top:93.2%"></span>
+        <span class="hotspot" style="left:72.3%;top:93.2%"></span>
+        <a class="chip" style="left:50%;top:0;transform:translateX(-50%)" href="#haare">Haare</a>
+        <a class="chip" style="left:68%;top:22%" href="#haut">Haut</a>
+        <a class="chip" style="left:50%;top:100%;transform:translate(-50%,-50%)" href="#naegel">Nägel</a>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Haut · Haare · Nägel</p>
+        <h2>Alles unter einem Dach</h2>
+        <p>Die Verschönerei verbindet alle Beauty-Dienstleistungen in einem Profi-Studio. Wähle deinen Bereich — wir kümmern uns um den Rest.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Drei Karten -->
+  <section class="bereiche">
+    <div class="container">
+      <div class="bereiche-head reveal">
+        <p class="eyebrow">Unsere Leistungen</p>
+        <h2>Was wir für dich tun können</h2>
+        <p>Eine Mischung aus dem, was du dir wünschst — und dem, was wir mit Leidenschaft anbieten.</p>
+      </div>
+      <div class="karten-grid">
+
+        <article class="karte reveal" id="haut">
+          <div class="figur-wrap focus-haut">
+            <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
+            <span class="hotspot" style="left:57.7%;top:25.8%"></span>
+            <span class="hotspot" style="left:28.6%;top:84.8%"></span>
+          </div>
+          <span class="karte-num">Bereich 01</span>
+          <h3>Haut</h3>
+          <p>Strahlende Haut beginnt mit der richtigen Pflege — wir finden das Programm, das zu dir passt.</p>
+          <ul>
+            <li><i class="ph ph-hand-soap"></i>Gesichtsbehandlungen &amp; Pflege</li>
+            <li><i class="ph ph-sparkle"></i>Microblading / Nanoblading&nbsp;<b>ab 199 €</b></li>
+            <li><i class="ph ph-flower-lotus"></i>Individuelle Pflegeberatung — kostenlos</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary">Beratung anfragen</a>
+        </article>
+
+        <article class="karte reveal" id="haare">
+          <div class="figur-wrap focus-haare">
+            <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
+            <span class="hotspot" style="left:50%;top:9.7%"></span>
+          </div>
+          <span class="karte-num">Bereich 02</span>
+          <h3>Haare</h3>
+          <p>Typgerechte Beratung für Schnitt, Farbe und Styling — damit deine Persönlichkeit perfekt in Szene gesetzt wird.</p>
+          <ul>
+            <li><i class="ph ph-scissors"></i>Damen- &amp; Herrenschnitt</li>
+            <li><i class="ph ph-drop"></i>Balayage, Ombré &amp; Paintings</li>
+            <li><i class="ph ph-hand-heart"></i>Haarverlängerung&nbsp;<b>ab 380 €</b> (100 Extensions)</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary">Termin buchen</a>
+        </article>
+
+        <article class="karte reveal" id="naegel">
+          <div class="figur-wrap focus-naegel">
+            <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
+            <span class="hotspot" style="left:27.7%;top:93.2%"></span>
+            <span class="hotspot" style="left:72.3%;top:93.2%"></span>
+          </div>
+          <span class="karte-num">Bereich 03</span>
+          <h3>Nägel</h3>
+          <p>Gepflegte Hände, die Eindruck machen — von klassisch bis extravagant, bei Männern und Frauen.</p>
+          <ul>
+            <li><i class="ph ph-hand"></i>Maniküre</li>
+            <li><i class="ph ph-gem"></i>Nagel-Design: French, Babyboomer, Strass</li>
+            <li><i class="ph ph-footprints"></i>Alle Preise im Buchungsportal</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary">Termin buchen</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="team-head reveal">
+        <p class="eyebrow">Unser Team</p>
+        <h2>Die Menschen hinter der Verschönerei</h2>
+        <p>Alle arbeiten auf höchstem Level für deine Schönheit — komm vorbei und lerne uns kennen.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal"><div class="avatar">P</div><strong>Peggy</strong><span>Inhaberin</span></div>
+        <div class="team-card reveal"><div class="avatar">A</div><strong>Angelika</strong><span>Friseur-Meisterin</span></div>
+        <div class="team-card reveal"><div class="avatar">V</div><strong>Violetta</strong><span>Friseurin</span></div>
+        <div class="team-card reveal"><div class="avatar">AK</div><strong>Ann-Kathrin</strong><span>Wimpern-Designerin</span></div>
+        <div class="team-card reveal"><div class="avatar">S</div><strong>Sibel</strong><span>Kosmetik · Microblading · Fußpflege</span></div>
+        <div class="team-card reveal"><div class="avatar">M</div><strong>Mela</strong><span>Friseurin</span></div>
+        <div class="team-card reveal"><div class="avatar">J</div><strong>Jessica</strong><span>Auszubildende Friseurin</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mehr entdecken -->
+  <section class="mehr" id="mehr">
+    <div class="container">
+      <h2>Und außerdem</h2>
+      <div class="mehr-grid">
+        <a href="#" class="mehr-item"><i class="ph ph-eye"></i>Wimpern-Design <span>ab 54 €</span></a>
+        <a href="#" class="mehr-item"><i class="ph ph-footprints"></i>Fußpflege</a>
+        <a href="#" class="mehr-item"><i class="ph ph-sparkle"></i>Permanent Make-Up</a>
+        <a href="#" class="mehr-item"><i class="ph ph-tote"></i>Mode-Boutique</a>
+        <a href="#" class="mehr-item"><i class="ph ph-shopping-bag"></i>Beauty-Shop</a>
+        <a href="#" class="mehr-item"><i class="ph ph-gift"></i>Gutscheine</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standort & Kontakt -->
+  <section class="standort" id="kontakt">
+    <div class="container">
+      <div class="standort-card reveal">
+        <div>
+          <p class="eyebrow">Kontakt &amp; Anfahrt</p>
+          <h2>Wir freuen uns auf dich</h2>
+          <ul class="contact-list">
+            <li><i class="ph ph-map-pin"></i>Bergstraße 22 · 69469 Weinheim</li>
+            <li><i class="ph ph-clock"></i>Di–Fr 9:00–18:00 Uhr · Sa 9:00–13:00 Uhr</li>
+            <li><i class="ph ph-phone"></i>+49 (0) 6201 704 84 80</li>
+            <li><i class="ph ph-envelope"></i>willkommen@verschoenerei.de</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary">Termin buchen</a>
+            <a href="#" class="btn btn-ghost"><i class="ph ph-whatsapp-logo"></i> WhatsApp</a>
+          </div>
+        </div>
+        <div class="map-ph">
+          <i class="ph ph-map-pin"></i>
+          <p>Karte folgt</p>
+          <span>OpenStreetMap — DSGVO-freundlich, ohne Google-API-Key</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="brand-name">Verschönerei</span>
+      <p>Dein Beauty-Studio in Weinheim — Haut. Haare. Nägel.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+    </nav>
+    <div class="socials">
+      <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+      <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+    </div>
+  </div>
+  <p class="footer-note">Design-Entwurf C · Platzhalter-Buttons &amp; -Videos · noch nicht final</p>
+</footer>
+
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

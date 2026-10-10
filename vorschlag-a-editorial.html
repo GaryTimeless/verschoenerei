@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verschönerei Weinheim — Entwurf A · Editorial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.css">
+<style>
+:root{
+  --bg:#F6F0E6; --card:#FDFBF7; --ink:#221D18; --coffee:#6F4E37;
+  --accent:#B4643C; --accent-deep:#96502E;
+  --line:rgba(34,29,24,.14);
+  --serif:'Playfair Display',serif; --sans:'DM Sans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;font-weight:300}
+img,svg{display:block}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(246,240,230,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;gap:28px;padding:14px 24px;max-width:1140px;margin:0 auto}
+.brand{text-decoration:none;color:var(--ink);display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-family:var(--serif);font-size:1.45rem;font-weight:700}
+.brand-sub{font-size:.62rem;letter-spacing:.38em;text-transform:uppercase;color:var(--coffee)}
+.main-nav{margin-left:auto;display:flex;align-items:center;gap:26px}
+.main-nav a{color:var(--ink);text-decoration:none;font-size:.92rem}
+.main-nav a:hover{color:var(--accent-deep)}
+.nav-cta{padding:9px 18px;font-size:.85rem}
+.draft-badge{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-deep);border:1px solid rgba(180,100,60,.45);padding:5px 10px;border-radius:999px;white-space:nowrap}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;width:42px;height:42px;font-size:1.3rem;color:var(--ink);cursor:pointer;place-items:center}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:500;font-size:.95rem;text-decoration:none;transition:.25s;border:1.5px solid transparent;cursor:pointer;font-family:var(--sans)}
+.btn-primary{background:var(--coffee);color:#F6F0E6}
+.btn-primary:hover{background:var(--ink)}
+.btn-ghost{border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--coffee);color:var(--coffee)}
+.text-link{color:var(--accent-deep);font-weight:500;text-decoration:none;border-bottom:1.5px solid rgba(150,80,46,.4);padding-bottom:2px}
+.text-link:hover{border-color:var(--accent-deep)}
+
+/* ---------- Typo ---------- */
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--coffee);font-weight:500;margin-bottom:16px}
+h1{font-family:var(--serif);font-size:clamp(2.4rem,4.6vw,3.6rem);line-height:1.12;font-weight:600}
+h1 em{font-style:italic;color:var(--accent-deep)}
+h2{font-family:var(--serif);font-weight:600;line-height:1.18}
+.lead{font-size:1.06rem;color:rgba(34,29,24,.75);margin:22px 0 30px;max-width:46ch}
+
+/* ---------- Hero ---------- */
+.hero{padding:88px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.video-note{font-size:.74rem;color:rgba(34,29,24,.55);margin-top:10px}
+
+/* ---------- Video-Platzhalter ---------- */
+.video-ph{aspect-ratio:16/9;border-radius:18px;display:grid;place-items:center;position:relative;overflow:hidden;
+  background:linear-gradient(120deg,#6F4E37,#B4643C,#8A5A3B,#221D18,#6F4E37);background-size:300% 300%;
+  animation:videoShift 9s ease-in-out infinite;box-shadow:0 24px 48px -24px rgba(34,29,24,.45)}
+.video-ph .ph-play-circle{font-size:64px;color:#F6F0E6;opacity:.92}
+.video-caption{position:absolute;bottom:14px;left:16px;color:#F6F0E6;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;background:rgba(34,29,24,.55);padding:6px 12px;border-radius:999px;backdrop-filter:blur(4px)}
+@keyframes videoShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+/* ---------- Silhouette ---------- */
+.figur-wrap{position:relative;max-width:340px;margin:0 auto;width:100%}
+.figur{width:100%;height:auto;
+  --o-hair:.18;--o-face:.18;--o-body:.45;--o-hands:.18;--o-nails:.12;
+  --c-hair:#4A3423;--c-skin:#E4C39E;--c-line:#2A241E;--c-nails:#B4643C}
+.focus-haut{--o-face:1;--o-hands:1;--o-nails:.15;--o-hair:.15}
+.focus-haare{--o-hair:1;--o-face:.25;--o-hands:.2;--o-nails:.12}
+.focus-naegel{--o-nails:1;--o-hands:1;--o-face:.2;--o-hair:.15}
+.focus-all{--o-hair:.9;--o-face:.9;--o-body:.5;--o-hands:.9;--o-nails:.9}
+.hotspot{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--accent);transform:translate(-50%,-50%);box-shadow:0 0 0 3px var(--bg)}
+.hotspot::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px solid var(--accent);animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.5);opacity:1}100%{transform:scale(1.5);opacity:0}}
+.chip{position:absolute;transform:translate(-50%,-50%);background:var(--card);border:1px solid var(--line);color:var(--ink);font-size:.72rem;font-weight:500;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 16px -8px rgba(34,29,24,.35)}
+a.chip{text-decoration:none;color:var(--accent-deep);border-color:rgba(180,100,60,.4);transition:.2s}
+a.chip:hover{background:var(--accent);color:#F6F0E6;border-color:var(--accent)}
+
+/* ---------- Intro ---------- */
+.intro-figur{padding:32px 0 96px}
+.intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.intro-copy h2{font-size:clamp(2rem,3.6vw,2.8rem);margin-bottom:18px}
+.intro-copy p{color:rgba(34,29,24,.75);max-width:44ch}
+
+/* ---------- Bereiche ---------- */
+.bereich{padding:88px 0}
+.bereich + .bereich{border-top:1px solid var(--line)}
+.bereich-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+.bereich.flip .figur-wrap{order:2}
+.bereich-num{font-family:var(--serif);font-size:4.6rem;line-height:1;color:var(--accent);opacity:.28;font-weight:700;display:block;margin-bottom:6px}
+.bereich-copy h2{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:16px}
+.bereich-copy > p{color:rgba(34,29,24,.75);max-width:52ch}
+.service-list{list-style:none;margin:28px 0;display:grid;gap:14px}
+.service-list li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.service-list i{font-size:1.5rem;color:var(--accent-deep);margin-top:2px}
+.service-list strong{display:block;font-weight:500;font-size:.98rem}
+.service-list span{font-size:.84rem;color:rgba(34,29,24,.62)}
+
+/* ---------- Mehr ---------- */
+.mehr{padding:72px 0;background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mehr-title{font-size:1.6rem;margin-bottom:26px}
+.mehr-grid{display:flex;flex-wrap:wrap;gap:14px}
+.mehr-item{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);font-weight:500;font-size:.9rem;transition:.25s;background:var(--bg)}
+.mehr-item:hover{border-color:var(--coffee);color:var(--coffee);transform:translateY(-2px)}
+.mehr-item i{color:var(--accent-deep)}
+.mehr-item span{font-size:.74rem;color:var(--accent-deep)}
+
+/* ---------- Standort ---------- */
+.standort{padding:96px 0}
+.standort-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.standort h2{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:8px}
+.contact-list{list-style:none;display:grid;gap:14px;margin:26px 0 30px}
+.contact-list li{display:flex;gap:12px;align-items:center}
+.contact-list i{color:var(--accent-deep);font-size:1.2rem}
+.map-ph{border:1.5px dashed rgba(111,78,55,.5);border-radius:18px;min-height:320px;display:grid;place-content:center;justify-items:center;gap:8px;text-align:center;background:var(--card);padding:24px}
+.map-ph i{font-size:2.4rem;color:var(--coffee)}
+.map-ph p{font-weight:500}
+.map-ph span{font-size:.74rem;color:rgba(34,29,24,.55);max-width:32ch}
+
+/* ---------- Footer ---------- */
+.site-footer{border-top:1px solid var(--line);padding:48px 0 28px;background:var(--card)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start}
+.footer-inner p{font-size:.85rem;color:rgba(34,29,24,.6);margin-top:6px}
+.footer-nav{display:flex;gap:22px}
+.footer-nav a{color:var(--ink);text-decoration:none;font-size:.85rem}
+.footer-nav a:hover{color:var(--accent-deep)}
+.socials{display:flex;gap:12px}
+.socials a{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--coffee);font-size:1.2rem;text-decoration:none;transition:.2s}
+.socials a:hover{background:var(--coffee);color:#F6F0E6;border-color:var(--coffee)}
+.footer-note{text-align:center;font-size:.72rem;color:rgba(34,29,24,.5);margin-top:36px}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:900px){
+  .hero-grid,.intro-grid,.bereich-grid,.standort-grid{grid-template-columns:1fr;gap:44px}
+  .bereich.flip .figur-wrap{order:0}
+  .figur-wrap{max-width:280px}
+  .main-nav{position:fixed;top:71px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:flex-start;padding:24px;border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.3s;z-index:40}
+  .main-nav.open{transform:none}
+  .menu-btn{display:grid}
+  .draft-badge{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Silhouetten-Symbol (wiederverwendet via <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="figur" viewBox="0 0 220 310">
+    <g style="opacity:var(--o-hair,.2)">
+      <path fill="var(--c-hair,#4A3423)" d="M110,26 C86,26 77,46 78,68 C79,88 74,112 84,134 C89,145 99,150 105,147 L106,132 C97,116 96,94 97,74 C98,58 103,48 110,48 C117,48 122,58 123,74 C124,94 123,116 114,132 L115,147 C121,150 131,145 136,134 C146,112 141,88 142,68 C143,46 134,26 110,26 Z"/>
+    </g>
+    <g style="opacity:var(--o-face,.2)">
+      <ellipse cx="110" cy="64" rx="26" ry="32" fill="var(--c-skin,#E4C39E)"/>
+    </g>
+    <g style="opacity:var(--o-body,.45)" fill="none" stroke="var(--c-line,#2A241E)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M101,94 L101,110 M119,94 L119,110"/>
+      <path d="M101,110 C90,113 76,119 68,129 C60,139 57,153 59,169 C61,191 65,215 63,241 C62,259 59,273 61,287 L159,287 C161,273 158,259 157,241 C155,215 159,191 161,169 C163,153 160,139 152,129 C144,119 130,113 119,110"/>
+      <path d="M68,129 C58,148 53,176 54,204 C55,224 58,242 63,256"/>
+      <path d="M152,129 C162,148 167,176 166,204 C165,224 162,242 157,256"/>
+    </g>
+    <g style="opacity:var(--o-hands,.2)">
+      <g fill="var(--c-skin,#E4C39E)" stroke="var(--c-line,#2A241E)" stroke-width="2">
+        <ellipse cx="63" cy="263" rx="9" ry="12"/>
+        <ellipse cx="157" cy="263" rx="9" ry="12"/>
+      </g>
+      <g fill="none" stroke="var(--c-line,#2A241E)" stroke-width="2" stroke-linecap="round">
+        <path d="M57,269 L56,285 M61,271 L61,288 M65,271 L66,287 M69,269 L70,284"/>
+        <path d="M151,269 L150,285 M155,271 L155,288 M159,271 L160,287 M163,269 L164,284"/>
+      </g>
+    </g>
+    <g style="opacity:var(--o-nails,.15)" fill="var(--c-nails,#B4643C)">
+      <circle cx="56" cy="287" r="2.4"/><circle cx="61" cy="290" r="2.4"/><circle cx="66" cy="289" r="2.4"/><circle cx="70" cy="286" r="2.4"/>
+      <circle cx="150" cy="287" r="2.4"/><circle cx="155" cy="290" r="2.4"/><circle cx="160" cy="289" r="2.4"/><circle cx="164" cy="286" r="2.4"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-name">Verschönerei</span>
+      <span class="brand-sub">Weinheim</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#haut">Haut</a>
+      <a href="#haare">Haare</a>
+      <a href="#naegel">Nägel</a>
+      <a href="#mehr">Mehr</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="btn btn-primary nav-cta">Termin buchen</a>
+    </nav>
+    <span class="draft-badge">Design-Entwurf</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Beauty-Studio · Bergstraße 22 · Weinheim</p>
+        <h1>Wo Haut, Haare und Nägel <em>ihre schönste Form</em> finden.</h1>
+        <p class="lead">Typgerechte Beratung, exklusive Produkte und Behandlungen, die sich nach dir richten — von La Biosthetique bis Olaplex.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">Termin buchen <i class="ph ph-arrow-right"></i></a>
+          <a href="#haut" class="btn btn-ghost">Leistungen entdecken</a>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <div class="video-ph">
+          <i class="ph ph-play-circle"></i>
+          <span class="video-caption">Video folgt — Einblicke in den Salon</span>
+        </div>
+        <p class="video-note">Platzhalter: Hier laufen künftig kurze Salon-Videos (16:9, WebM + MP4, &lt; 5 MB)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro mit Silhouette -->
+  <section class="intro-figur">
+    <div class="container intro-grid">
+      <div class="figur-wrap focus-all reveal">
+        <svg class="figur" viewBox="0 0 220 310" role="img" aria-label="Silhouette einer Person mit den Bereichen Haare, Haut und Nägel"><use href="#figur"/></svg>
+        <span class="hotspot" style="left:50%;top:9.7%"></span>
+        <span class="hotspot" style="left:57.7%;top:25.8%"></span>
+        <span class="hotspot" style="left:27.7%;top:93.2%"></span>
+        <span class="hotspot" style="left:72.3%;top:93.2%"></span>
+        <a class="chip" style="left:50%;top:0;transform:translateX(-50%)" href="#haare">Haare</a>
+        <a class="chip" style="left:68%;top:22%" href="#haut">Haut</a>
+        <a class="chip" style="left:50%;top:100%;transform:translate(-50%,-50%)" href="#naegel">Nägel</a>
+      </div>
+      <div class="intro-copy reveal">
+        <p class="eyebrow">Unser Konzept</p>
+        <h2>Drei Bereiche.<br>Ein Studio.</h2>
+        <p>Ob Pflege, Styling oder Nail-Art — die Verschönerei verbindet alle Beauty-Dienstleistungen unter einem Dach. Wähle einen Bereich:</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 Haut -->
+  <section class="bereich" id="haut">
+    <div class="container bereich-grid">
+      <div class="figur-wrap focus-haut reveal">
+        <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
+        <span class="hotspot" style="left:57.7%;top:25.8%"></span>
+        <span class="hotspot" style="left:28.6%;top:84.8%"></span>
+        <span class="chip" style="left:66%;top:19%">Gesichtsbehandlungen</span>
+        <span class="chip" style="left:34%;top:73%">Microblading · ab 199 €</span>
+      </div>
+      <div class="bereich-copy reveal">
+        <span class="bereich-num">01</span>
+        <p class="eyebrow">Haut</p>
+        <h2>Strahlende Haut beginnt mit der richtigen Pflege</h2>
+        <p>Ganz egal, welches Anliegen du mitbringst: Wir finden das Pflegeprogramm, das zu deiner Haut passt — kompetent, mit Engagement und Zeit für dich.</p>
+        <ul class="service-list">
+          <li><i class="ph ph-hand-soap"></i><div><strong>Gesichtsbehandlungen &amp; Pflege</strong><span>Reinigung, Wirkstoffpflege, Entspannung</span></div></li>
+          <li><i class="ph ph-sparkle"></i><div><strong>Microblading / Nanoblading</strong><span>Auffrischung ab 199 €</span></div></li>
+          <li><i class="ph ph-flower-lotus"></i><div><strong>Individuelle Pflegeberatung</strong><span>Kostenlos &amp; typgerecht</span></div></li>
+        </ul>
+        <a href="#kontakt" class="text-link">Beratung anfragen <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Haare -->
+  <section class="bereich flip" id="haare">
+    <div class="container bereich-grid">
+      <div class="figur-wrap focus-haare reveal">
+        <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
+        <span class="hotspot" style="left:50%;top:9.7%"></span>
+        <span class="chip" style="left:62%;top:5%">Schnitt &amp; Farbe</span>
+        <span class="chip" style="left:9%;top:32%">Verlängerung · ab 380 €</span>
+      </div>
+      <div class="bereich-copy reveal">
+        <span class="bereich-num">02</span>
+        <p class="eyebrow">Haare</p>
+        <h2>Schnitt, Farbe, Styling — typgerecht beraten</h2>
+        <p>Egal ob Balayage, Ombré, Paintings oder klassische Foliensträhnen: Wir beraten dich typgerecht und setzen deine Persönlichkeit perfekt in Szene. Wir arbeiten ausschließlich mit exklusiven Produkten wie La Biosthetique und Olaplex.</p>
+        <ul class="service-list">
+          <li><i class="ph ph-scissors"></i><div><strong>Damen- &amp; Herrenschnitt</strong><span>Beratung, Schnitt, Styling</span></div></li>
+          <li><i class="ph ph-drop"></i><div><strong>Balayage, Ombré &amp; Farbe</strong><span>Natürlich oder ausdrucksstark</span></div></li>
+          <li><i class="ph ph-hand-heart"></i><div><strong>Haarverlängerung &amp; Verdichtung</strong><span>Ab 380 € (100 Extensions)</span></div></li>
+        </ul>
+        <a href="#kontakt" class="text-link">Termin buchen <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Nägel -->
+  <section class="bereich" id="naegel">
+    <div class="container bereich-grid">
+      <div class="figur-wrap focus-naegel reveal">
+        <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
+        <span class="hotspot" style="left:27.7%;top:93.2%"></span>
+        <span class="hotspot" style="left:72.3%;top:93.2%"></span>
+        <span class="chip" style="left:6%;top:84%">Nagel-Design</span>
+        <span class="chip" style="left:76%;top:86%">Maniküre</span>
+      </div>
+      <div class="bereich-copy reveal">
+        <span class="bereich-num">03</span>
+        <p class="eyebrow">Nägel</p>
+        <h2>Gepflegte Hände — ein Statement für sich</h2>
+        <p>Schöne, gepflegte Hände verstärken die Ausstrahlungskraft — bei Männern und bei Frauen. Unsere Nageldesignerinnen zaubern Top-Qualität in Sachen French Nails, Babyboomer, Glittergele und Strass.</p>
+        <ul class="service-list">
+          <li><i class="ph ph-hand"></i><div><strong>Maniküre</strong><span>Pflege für Hände &amp; Nägel</span></div></li>
+          <li><i class="ph ph-gem"></i><div><strong>Nagel-Design</strong><span>French, Babyboomer, Glitter, Strass, Acryl</span></div></li>
+          <li><i class="ph ph-footprints"></i><div><strong>Preise</strong><span>Alle Preise im Online-Buchungsportal</span></div></li>
+        </ul>
+        <a href="#kontakt" class="text-link">Termin buchen <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mehr entdecken -->
+  <section class="mehr" id="mehr">
+    <div class="container">
+      <h2 class="mehr-title">Mehr entdecken</h2>
+      <div class="mehr-grid">
+        <a href="#" class="mehr-item"><i class="ph ph-eye"></i>Wimpern-Design <span>ab 54 €</span></a>
+        <a href="#" class="mehr-item"><i class="ph ph-footprints"></i>Fußpflege</a>
+        <a href="#" class="mehr-item"><i class="ph ph-sparkle"></i>Permanent Make-Up</a>
+        <a href="#" class="mehr-item"><i class="ph ph-tote"></i>Mode-Boutique</a>
+        <a href="#" class="mehr-item"><i class="ph ph-shopping-bag"></i>Beauty-Shop</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standort & Kontakt -->
+  <section class="standort" id="kontakt">
+    <div class="container standort-grid">
+      <div class="reveal">
+        <p class="eyebrow">Kontakt &amp; Anfahrt</p>
+        <h2>Wir freuen uns auf dich</h2>
+        <ul class="contact-list">
+          <li><i class="ph ph-map-pin"></i>Bergstraße 22 · 69469 Weinheim</li>
+          <li><i class="ph ph-clock"></i>Di–Fr 9:00–18:00 Uhr · Sa 9:00–13:00 Uhr</li>
+          <li><i class="ph ph-phone"></i>+49 (0) 6201 704 84 80</li>
+          <li><i class="ph ph-envelope"></i>willkommen@verschoenerei.de</li>
+        </ul>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">Termin buchen</a>
+          <a href="#" class="btn btn-ghost"><i class="ph ph-whatsapp-logo"></i> WhatsApp</a>
+        </div>
+      </div>
+      <div class="map-ph reveal">
+        <i class="ph ph-map-pin"></i>
+        <p>Karte folgt</p>
+        <span>OpenStreetMap — DSGVO-freundlich, ohne Google-API-Key</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="brand-name">Verschönerei</span>
+      <p>Dein Beauty-Studio in Weinheim — Haut. Haare. Nägel.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+    </nav>
+    <div class="socials">
+      <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+      <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+    </div>
+  </div>
+  <p class="footer-note">Design-Entwurf A · Platzhalter-Buttons &amp; -Videos · noch nicht final</p>
+</footer>
+
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

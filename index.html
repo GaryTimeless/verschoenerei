@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verschönerei Weinheim — Design-Entwürfe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F0E6;--card:#FDFBF7;--ink:#221D18;--coffee:#6F4E37;--line:rgba(34,29,24,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-weight:300}
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 40px;text-align:center}
+.brand{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700}
+.sub{color:var(--coffee);letter-spacing:.3em;text-transform:uppercase;font-size:.7rem;margin-top:6px}
+header p.lead{margin:22px auto 0;max-width:56ch;color:rgba(34,29,24,.75)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-bottom:80px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;text-decoration:none;color:var(--ink);transition:.25s;display:block}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(34,29,24,.35)}
+.card h2{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:8px}
+.card p{font-size:.88rem;color:rgba(34,29,24,.7);margin-bottom:18px}
+.swatches{display:flex;gap:6px;margin-bottom:16px}
+.sw{width:26px;height:26px;border-radius:8px;border:1px solid rgba(34,29,24,.12)}
+.open{display:inline-block;font-weight:500;color:var(--coffee);font-size:.85rem}
+footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;font-size:.75rem;color:rgba(34,29,24,.5)}
+@media(max-width:820px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="container">
+  <div class="brand">Verschönerei Weinheim</div>
+  <div class="sub">Design-Entwürfe für den Relaunch</div>
+  <p class="lead">Drei stark unterschiedliche Stilrichtungen für die neue Website — von editorial bis dunkel bis freundlich-organisch. Alle mit Platzhaltern für Videos und Buttons. Bitte im Browser öffnen und vergleichen.</p>
+</header>
+<main class="container grid">
+  <a class="card" href="vorschlag-a-editorial.html">
+    <div class="swatches">
+      <span class="sw" style="background:#F6F0E6"></span>
+      <span class="sw" style="background:#6F4E37"></span>
+      <span class="sw" style="background:#221D18"></span>
+      <span class="sw" style="background:#B4643C"></span>
+    </div>
+    <h2>A · Editorial</h2>
+    <p>Hell, viel Weißraum, große Serif-Schrift, abwechselnde Bild-Text-Reihen. Mittlere Informationsdichte, klassisch-elegant.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+  <a class="card" href="vorschlag-b-dark.html">
+    <div class="swatches">
+      <span class="sw" style="background:#1B1713"></span>
+      <span class="sw" style="background:#4A3423"></span>
+      <span class="sw" style="background:#F1E8DA"></span>
+      <span class="sw" style="background:#D2A65A"></span>
+    </div>
+    <h2>B · Dark</h2>
+    <p>Dunkle Bühne, riesige Typografie, Gold-Akzente, kinoreife Video-Fläche. Wenig Text, große Wirkung, modern-dramatisch.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+  <a class="card" href="vorschlag-c-organic.html">
+    <div class="swatches">
+      <span class="sw" style="background:#EAE0D2"></span>
+      <span class="sw" style="background:#6F4E37"></span>
+      <span class="sw" style="background:#2A241E"></span>
+      <span class="sw" style="background:#B07575"></span>
+    </div>
+    <h2>C · Organic</h2>
+    <p>Warmes Beige, abgerundete Karten, Altrosa-Akzente, Team-Streifen. Viel Information, freundlich und einladend.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+</main>
+<footer>Design-Entwürfe · Platzhalter für Videos, Buttons & Karte · noch nicht final</footer>
+</body>
+</html>

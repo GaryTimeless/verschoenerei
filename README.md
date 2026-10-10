@@ -1,0 +1,69 @@
+# Verschönerei Weinheim — Design-Entwürfe (Relaunch)
+
+Drei stark unterschiedliche Entwürfe für die neue Website der Verschönerei
+(Peggy Fändrich, Bergstraße 22, 69469 Weinheim). Reine Design-Studie:
+**Platzhalter** für Videos, Buttons, Karte und Teamfotos. Keine echte Funktionalität.
+
+## Ansehen
+
+```bash
+cd verschoenerei
+python3 -m http.server 8000
+```
+
+Dann öffnen: **http://localhost:8000** (Übersicht) oder direkt eine Datei doppelklicken.
+
+| Datei | Stil | Stimmung |
+|---|---|---|
+| `vorschlag-a-editorial.html` | Hell, Serif (Playfair Display), viel Luft | Klassisch-elegant, editorial |
+| `vorschlag-b-dark.html` | Dunkel (Near-black), Archivo 900, Gold | Modern, dramatisch, „Bühne" |
+| `vorschlag-c-organic.html` | Warmes Beige, Quicksand, abgerundet | Freundlich, einladend, viel Info |
+
+## Farbpaletten (alle WCAG-geprüft)
+
+Basis für alle drei: **Kaffeebraun `#6F4E37`** (Ladenfarbe) + **Warmes Near-black**.
+
+| Entwurf | Hintergrund | Text | Akzent (3. Farbe) | Akzent-Verwendung |
+|---|---|---|---|---|
+| A | Creme `#F6F0E6` | `#221D18` | **Terracotta `#B4643C`** (gebrannter Ton) | Große Überschriften, Hotspots |
+| B | Near-black `#1B1713` | Creme `#F1E8DA` | **Gold-Caramel `#D2A65A`** (warmes Karamell-Gold) | Akzent-Wörter, Buttons, Hotspots |
+| C | Beige `#EAE0D2` (2. Braunton) | `#2A241E` | **Altrosa `#B07575`** (gedämpftes, pudriges Rosa) | Hotspots, Icons, Markierungen |
+
+Kontrast (WCAG): Text/Hintergrund überall AA oder AAA (z. B. A: 14,7:1, B: 14,7:1, C: 11,8:1).
+Akzentfarben sind nur für große Schrift/Deko gedacht (A Terracotta 3,8:1, C Altrosa 2,9:1 —
+daher dunklere Varianten `#96502E` bzw. `#9A5F5F` für kleinere Akzent-Texte).
+
+## Die Silhouette
+
+Wiederverwendbares SVG-Symbol (`#figur`): grobe Umrisse einer Person —
+Haare, Gesicht, Hände, Fingerspitzen. Pro Bereich wird der passende Teil
+hervorgehoben (Haut → Gesicht + Hände, Haare → Haare, Nägel → Fingerspitzen-Punkte),
+die übrigen Teile treten zurück. Pulsierende Hotspots + Chips mit Leistungen/Preisen
+im Stil von Technik-Produktvideos. Im Intro sind die drei Hotspots verlinkt.
+
+## Platzhalter (noch zu ersetzen)
+
+- **Videos:** animierte Farbflächen mit Play-Icon. Echte Videos: 16:9 (A), 21:9 (B), 4:3 (C),
+  WebM + MP4, < 5 MB, komprimiert (z. B. HandBrake/ffmpeg). Peggy hat noch kein Material.
+- **Buttons:** „Termin buchen" etc. sind Platzhalter (`#` bzw. `#kontakt`).
+  Später: Link zum #mitdenkt-Buchungsportal (ufuk.mitdenkt.io).
+- **Karte:** statt Google Maps (auf der alten Seite defekt) → OpenStreetMap-Embed, DSGVO-freundlich.
+- **Teamfotos:** Platzhalter-Kreise mit Initialen (C). Echte Fotos + Freigaben nötig.
+- **Impressum/Datenschutz/AGB:** Platzhalter-Links. Datenschutz muss neu geschrieben werden
+  (WhatsApp, #mitdenkt, neues Hosting — siehe Analyse).
+
+## Offene Fragen an Peggy
+
+1. Hat sie Video-Material (Handyaufnahmen) oder starten wir mit Platzhaltern?
+2. Teamfotos: aktuelle Fotos vorhanden? Freigaben für die Website?
+3. Preise: nur die 3 „ab"-Preise oder eine vollständige Preisliste auf der Seite?
+4. Öffnungszeiten klären: Website (Sa 9–13) vs. Fresha (Sa 8–13, Mi 9–15) — was stimmt?
+5. Karriere-Seite: ist die Friseur-Stelle noch aktuell?
+6. Domain: bleibt es bei verschoenerei.com oder soll .de Hauptdomain werden?
+
+## Nächste Schritte
+
+1. Greg zeigt Peggy die drei Entwürfe → Stilrichtung wählen
+2. Ausgewählten Entwurf ausbauen (echte Inhalte, Videos, Karte, rechtliche Seiten)
+3. Staging auf GitHub Pages, Review mit Peggy
+4. Live-Schaltung mit Redirects von den alten URLs
