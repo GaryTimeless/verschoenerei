@@ -13,6 +13,10 @@ python3 -m http.server 8000
 
 Dann öffnen: **http://localhost:8000** (Übersicht) oder direkt eine Datei doppelklicken.
 
+Alle Seiten haben **unten links einen Design-Switcher** (runder Palette-Button):
+Darüber lässt sich jederzeit zwischen den Entwürfen A, B und C wechseln —
+praktisch zum Vergleichen und für das Gespräch mit Peggy.
+
 | Datei | Stil | Stimmung |
 |---|---|---|
 | `vorschlag-a-editorial.html` | Hell, Serif (Playfair Display), viel Luft | Klassisch-elegant, editorial |
