@@ -1,6 +1,6 @@
 # Verschönerei Weinheim — Design-Entwürfe (Relaunch)
 
-Drei stark unterschiedliche Entwürfe für die neue Website der Verschönerei
+Fünf stark unterschiedliche Entwürfe für die neue Website der Verschönerei
 (Peggy Fändrich, Bergstraße 22, 69469 Weinheim). Reine Design-Studie:
 **Platzhalter** für Videos, Buttons, Karte und Teamfotos. Keine echte Funktionalität.
 
@@ -14,7 +14,7 @@ python3 -m http.server 8000
 Dann öffnen: **http://localhost:8000** (Übersicht) oder direkt eine Datei doppelklicken.
 
 Alle Seiten haben **unten links einen Design-Switcher** (runder Palette-Button):
-Darüber lässt sich jederzeit zwischen den Entwürfen A, B und C wechseln —
+Darüber lässt sich jederzeit zwischen den Entwürfen A bis E wechseln —
 praktisch zum Vergleichen und für das Gespräch mit Peggy.
 
 | Datei | Stil | Stimmung |
@@ -22,6 +22,8 @@ praktisch zum Vergleichen und für das Gespräch mit Peggy.
 | `vorschlag-a-editorial.html` | Hell, Serif (Playfair Display), viel Luft | Klassisch-elegant, editorial |
 | `vorschlag-b-dark.html` | Dunkel (Near-black), Archivo 900, Gold | Modern, dramatisch, „Bühne" |
 | `vorschlag-c-organic.html` | Warmes Beige, Quicksand, abgerundet | Freundlich, einladend, viel Info |
+| `vorschlag-d-modern.html` | Dunkel, durchgehend, schwebende Karten, Space Grotesk | Zeitgemäß, räumlich, modern |
+| `vorschlag-e-timate.html` | Weiß, Open Sans Uppercase, Vollbild-Bänder (Stil: timatehair.com) | Klassisch, bildlastig, vertraut |
 
 ## Farbpaletten (alle WCAG-geprüft)
 
@@ -32,6 +34,8 @@ Basis für alle drei: **Kaffeebraun `#6F4E37`** (Ladenfarbe) + **Warmes Near-bla
 | A | Creme `#F6F0E6` | `#221D18` | **Terracotta `#B4643C`** (gebrannter Ton) | Große Überschriften, Hotspots |
 | B | Near-black `#1B1713` | Creme `#F1E8DA` | **Gold-Caramel `#D2A65A`** (warmes Karamell-Gold) | Akzent-Wörter, Buttons, Hotspots |
 | C | Beige `#EAE0D2` (2. Braunton) | `#2A241E` | **Altrosa `#B07575`** (gedämpftes, pudriges Rosa) | Hotspots, Icons, Markierungen |
+| D | Near-black `#191410` (durchgehend) | Creme `#F1E8DA` | **Salbei `#A3B18A`** (frisches, gedämpftes Grün) | Akzent-Wörter, Buttons, Hotspots |
+| E | Weiß `#FFFFFF` | `#1A1A1A` | **Kaffeebraun `#6F4E37`** (bestehende Ladenfarbe) | Links, Buttons, Sterne |
 
 Kontrast (WCAG): Text/Hintergrund überall AA oder AAA (z. B. A: 14,7:1, B: 14,7:1, C: 11,8:1).
 Akzentfarben sind nur für große Schrift/Deko gedacht (A Terracotta 3,8:1, C Altrosa 2,9:1 —
