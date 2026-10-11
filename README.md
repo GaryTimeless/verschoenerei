@@ -40,13 +40,14 @@ Akzentfarben sind nur für große Schrift/Deko gedacht (A Terracotta 3,8:1, C Al
 D Holz-Taupe 3,2:1 — daher dunklere Varianten `#96502E`, `#9A5F5F` bzw. `#605844`
 für kleinere Akzent-Texte).
 
-## Die Silhouette
+## Die Illustration
 
-Wiederverwendbares SVG-Symbol (`#figur`): grobe Umrisse einer Person —
-Haare, Gesicht, Hände, Fingerspitzen. Pro Bereich wird der passende Teil
-hervorgehoben (Haut → Gesicht + Hände, Haare → Haare, Nägel → Fingerspitzen-Punkte),
-die übrigen Teile treten zurück. Pulsierende Hotspots + Chips mit Leistungen/Preisen
-im Stil von Technik-Produktvideos. Im Intro sind die drei Hotspots verlinkt.
+Wiederverwendbares SVG-Symbol (`#figur`): Line-Art-Illustration einer Frau
+(Drei-Viertel-Profil, fließende Haare, eine erhobene Hand mit Nagel-Design).
+Pro Bereich wird der passende Teil hervorgehoben (Haut → Gesicht + Hand,
+Haare → Haare, Nägel → Nägel), die übrigen Teile treten zurück. Pulsierende
+Hotspots + Chips mit Leistungen/Preisen im Stil von Technik-Produktvideos.
+Im Intro sind die drei Hotspots verlinkt.
 
 ## Platzhalter (noch zu ersetzen)
 

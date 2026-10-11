@@ -187,34 +187,62 @@ a.chip:hover{background:var(--accent-deep);color:#FBF7EE}
 </head>
 <body>
 
-<!-- Silhouetten-Symbol (wiederverwendet via <use>) -->
+<!-- Line-Art-Symbol (wiederverwendet via <use>) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="figur" viewBox="0 0 220 310">
-    <g style="opacity:var(--o-hair,.2)">
-      <path fill="var(--c-hair,#4A3423)" d="M110,26 C86,26 77,46 78,68 C79,88 74,112 84,134 C89,145 99,150 105,147 L106,132 C97,116 96,94 97,74 C98,58 103,48 110,48 C117,48 122,58 123,74 C124,94 123,116 114,132 L115,147 C121,150 131,145 136,134 C146,112 141,88 142,68 C143,46 134,26 110,26 Z"/>
-    </g>
-    <g style="opacity:var(--o-face,.2)">
-      <ellipse cx="110" cy="64" rx="26" ry="32" fill="var(--c-skin,#E4C39E)"/>
-    </g>
+    <!-- Hals & Schultern -->
     <g style="opacity:var(--o-body,.45)" fill="none" stroke="var(--c-line,#2A241E)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M101,94 L101,110 M119,94 L119,110"/>
-      <path d="M101,110 C90,113 76,119 68,129 C60,139 57,153 59,169 C61,191 65,215 63,241 C62,259 59,273 61,287 L159,287 C161,273 158,259 157,241 C155,215 159,191 161,169 C163,153 160,139 152,129 C144,119 130,113 119,110"/>
-      <path d="M68,129 C58,148 53,176 54,204 C55,224 58,242 63,256"/>
-      <path d="M152,129 C162,148 167,176 166,204 C165,224 162,242 157,256"/>
+      <path d="M93,106 C93,116 92,124 90,132"/>
+      <path d="M105,102 C106,112 107,122 108,130"/>
+      <path d="M90,132 C79,140 63,152 51,170 C44,182 39,196 36,212"/>
+      <path d="M108,130 C118,139 129,150 138,162 C148,174 160,184 176,192"/>
+      <path d="M94,138 C85,146 74,152 63,156"/>
     </g>
-    <g style="opacity:var(--o-hands,.2)">
-      <g fill="var(--c-skin,#E4C39E)" stroke="var(--c-line,#2A241E)" stroke-width="2">
-        <ellipse cx="63" cy="263" rx="9" ry="12"/>
-        <ellipse cx="157" cy="263" rx="9" ry="12"/>
-      </g>
-      <g fill="none" stroke="var(--c-line,#2A241E)" stroke-width="2" stroke-linecap="round">
-        <path d="M57,269 L56,285 M61,271 L61,288 M65,271 L66,287 M69,269 L70,284"/>
-        <path d="M151,269 L150,285 M155,271 L155,288 M159,271 L160,287 M163,269 L164,284"/>
+    <!-- Haare: Deckhaar & fließende Strähnen -->
+    <g style="opacity:var(--o-hair,.2)" stroke="var(--c-line,#2A241E)" stroke-width="1.5" stroke-linejoin="round">
+      <path fill="var(--c-hair,#4A3423)" fill-opacity=".55" stroke-width="1.2" d="M82,38 C88,24 102,17 116,20 C130,23 140,33 143,46 C137,35 125,30 112,32 C99,34 88,36 82,38 Z"/>
+      <path fill="var(--c-hair,#4A3423)" fill-opacity=".2" d="M92,30 C124,14 164,28 186,62 C194,78 198,98 200,118 C188,96 174,72 152,52 C130,34 108,28 92,30 Z"/>
+      <path fill="var(--c-hair,#4A3423)" fill-opacity=".3" d="M102,24 C140,16 178,42 198,84 C206,108 210,144 212,182 C202,142 190,106 168,76 C144,46 120,30 102,24 Z"/>
+      <path fill="var(--c-hair,#4A3423)" fill-opacity=".4" d="M114,22 C150,18 184,48 202,94 C210,124 213,172 214,242 C206,180 196,128 176,92 C154,56 134,32 114,22 Z"/>
+      <path fill="var(--c-hair,#4A3423)" fill-opacity=".5" d="M126,26 C158,28 188,60 202,108 C209,142 206,204 200,286 C196,222 190,162 174,118 C158,74 142,40 126,26 Z"/>
+      <path fill="var(--c-hair,#4A3423)" fill-opacity=".6" d="M136,34 C162,42 186,74 196,122 C202,158 198,222 172,304 C180,238 178,178 166,130 C154,84 146,52 136,34 Z"/>
+      <path fill="var(--c-hair,#4A3423)" fill-opacity=".45" d="M74,44 C66,70 60,100 56,130 C53,152 51,172 52,190 C57,170 61,146 65,120 C69,94 73,66 78,48 Z"/>
+      <g fill="none" stroke-width="1.2" opacity=".5" stroke-linecap="round">
+        <path d="M118,36 C148,56 168,92 178,138"/>
+        <path d="M132,42 C158,66 176,106 184,154"/>
       </g>
     </g>
-    <g style="opacity:var(--o-nails,.15)" fill="var(--c-nails,#B4643C)">
-      <circle cx="56" cy="287" r="2.4"/><circle cx="61" cy="290" r="2.4"/><circle cx="66" cy="289" r="2.4"/><circle cx="70" cy="286" r="2.4"/>
-      <circle cx="150" cy="287" r="2.4"/><circle cx="155" cy="290" r="2.4"/><circle cx="160" cy="289" r="2.4"/><circle cx="164" cy="286" r="2.4"/>
+    <!-- Gesicht -->
+    <g style="opacity:var(--o-face,.2)">
+      <path fill="var(--c-skin,#E4C39E)" stroke="var(--c-line,#2A241E)" stroke-width="2" stroke-linejoin="round" d="M82,36 C74,43 70,53 71,62 C70,68 69,73 68,78 C67,82 68,85 71,87 C72,89 72,92 73,94 C74,97 77,102 82,105 C88,108 96,108 102,104 C107,100 111,94 113,86 C115,74 113,58 108,46 C103,37 92,31 82,36 Z"/>
+      <g fill="none" stroke="var(--c-line,#2A241E)" stroke-linecap="round">
+        <path stroke-width="2" d="M76,58 C80,55 86,55 89,57"/>
+        <path stroke-width="2" d="M93,57 C97,54 103,54 107,57"/>
+        <path stroke-width="2" d="M77,68 C80,71 85,71 88,68"/>
+        <path stroke-width="2" d="M94,68 C97,71 102,71 105,68"/>
+        <path stroke-width="1.5" d="M79,70 L76,74 M84,71 L82,75"/>
+        <path stroke-width="1.5" d="M96,70 L94,74 M100,71 L99,75 M103,70 L102,74"/>
+        <path stroke-width="1.8" d="M83,71 C80,77 78,83 80,87 C82,89 85,88 86,86"/>
+        <path stroke-width="1.8" d="M109,72 C113,73 115,78 113,83 C112,87 109,88 107,86"/>
+      </g>
+      <path fill="var(--c-nails,#8F7A5B)" opacity=".85" d="M73,93 C76,91 83,91 87,93 C88,95 87,98 84,99 C80,100 75,98 73,95 Z"/>
+      <path fill="none" stroke="var(--c-line,#2A241E)" stroke-width="1.2" stroke-linecap="round" d="M73,95 C77,96 83,96 87,94"/>
+    </g>
+    <!-- Hand -->
+    <g style="opacity:var(--o-hands,.2)" fill="var(--c-skin,#E4C39E)" stroke="var(--c-line,#2A241E)" stroke-width="2" stroke-linejoin="round">
+      <path d="M66,310 C65,292 66,274 70,258 C73,248 78,242 84,242 C90,242 94,248 96,258 C99,274 100,292 100,310 Z"/>
+      <path d="M69,248 C68,240 68,231 70,225 C71,221 75,221 76,225 C77,231 77,240 77,248 Z"/>
+      <path d="M77,248 C76,238 76,227 78,220 C79,216 83,216 84,220 C85,227 85,238 85,248 Z"/>
+      <path d="M85,248 C84,239 84,229 86,223 C87,219 91,219 92,223 C93,229 93,239 93,248 Z"/>
+      <path d="M93,248 C92,241 92,233 94,228 C95,224 98,225 99,229 C100,234 100,241 100,248 Z"/>
+      <path d="M70,266 C63,262 58,255 57,248 C56,242 61,239 65,243 C68,246 71,253 72,260 C72,263 71,265 70,266 Z"/>
+    </g>
+    <!-- Nägel -->
+    <g style="opacity:var(--o-nails,.15)" fill="var(--c-nails,#8F7A5B)">
+      <ellipse cx="73" cy="227" rx="2.3" ry="3.2"/>
+      <ellipse cx="81" cy="222" rx="2.3" ry="3.2"/>
+      <ellipse cx="89" cy="225" rx="2.3" ry="3.2"/>
+      <ellipse cx="96" cy="231" rx="2.1" ry="2.9"/>
     </g>
   </symbol>
 </svg>
@@ -267,13 +295,12 @@ a.chip:hover{background:var(--accent-deep);color:#FBF7EE}
     <div class="container">
       <div class="float-card intro-card">
         <div class="figur-wrap focus-all reveal">
-          <svg class="figur" viewBox="0 0 220 310" role="img" aria-label="Silhouette einer Person mit den Bereichen Haare, Haut und Nägel"><use href="#figur"/></svg>
-          <span class="hotspot" style="left:50%;top:9.7%"></span>
-          <span class="hotspot" style="left:57.7%;top:25.8%"></span>
-          <span class="hotspot" style="left:27.7%;top:93.2%"></span>
-          <span class="hotspot" style="left:72.3%;top:93.2%"></span>
-          <a class="chip" style="left:50%;top:0;transform:translateX(-50%)" href="#haare">Haare</a>
-          <a class="chip" style="left:68%;top:22%" href="#haut">Haut</a>
+          <svg class="figur" viewBox="0 0 220 310" role="img" aria-label="Line-Art-Illustration einer Frau mit den Bereichen Haare, Haut und Nägel"><use href="#figur"/></svg>
+          <span class="hotspot" style="left:66%;top:16%"></span>
+          <span class="hotspot" style="left:33%;top:26%"></span>
+          <span class="hotspot" style="left:36%;top:71%"></span>
+          <a class="chip" style="left:62%;top:3%;transform:translateX(-50%)" href="#haare">Haare</a>
+          <a class="chip" style="left:24%;top:25%" href="#haut">Haut</a>
           <a class="chip" style="left:50%;top:100%;transform:translate(-50%,-50%)" href="#naegel">Nägel</a>
         </div>
         <div class="intro-copy reveal">
