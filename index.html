@@ -16,7 +16,7 @@ header{padding:72px 0 40px;text-align:center}
 .brand{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700}
 .sub{color:var(--coffee);letter-spacing:.3em;text-transform:uppercase;font-size:.7rem;margin-top:6px}
 header p.lead{margin:22px auto 0;max-width:56ch;color:rgba(34,29,24,.75)}
-.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;padding-bottom:80px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-bottom:80px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;text-decoration:none;color:var(--ink);transition:.25s;display:block}
 .card:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(34,29,24,.35)}
 .card h2{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:8px}
@@ -25,7 +25,7 @@ header p.lead{margin:22px auto 0;max-width:56ch;color:rgba(34,29,24,.75)}
 .sw{width:26px;height:26px;border-radius:8px;border:1px solid rgba(34,29,24,.12)}
 .open{display:inline-block;font-weight:500;color:var(--coffee);font-size:.85rem}
 footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;font-size:.75rem;color:rgba(34,29,24,.5)}
-@media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:720px){.grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -33,7 +33,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;font-si
 <header class="container">
   <div class="brand">Verschönerei Weinheim</div>
   <div class="sub">Design-Entwürfe für den Relaunch</div>
-  <p class="lead">Fünf stark unterschiedliche Stilrichtungen für die neue Website — von editorial über dunkel und organisch bis modern und klassisch. Alle mit Platzhaltern für Videos und Buttons. Bitte im Browser öffnen und vergleichen.</p>
+  <p class="lead">Vier stark unterschiedliche Stilrichtungen für die neue Website — von editorial über organisch bis modern und klassisch. Alle mit Platzhaltern für Videos und Buttons. Bitte im Browser öffnen und vergleichen.</p>
 </header>
 <main class="container grid">
   <a class="card" href="vorschlag-a-editorial.html">
@@ -45,17 +45,6 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;font-si
     </div>
     <h2>A · Editorial</h2>
     <p>Hell, viel Weißraum, große Serif-Schrift, abwechselnde Bild-Text-Reihen. Mittlere Informationsdichte, klassisch-elegant.</p>
-    <span class="open">Entwurf öffnen →</span>
-  </a>
-  <a class="card" href="vorschlag-b-dark.html">
-    <div class="swatches">
-      <span class="sw" style="background:#1B1713"></span>
-      <span class="sw" style="background:#4A3423"></span>
-      <span class="sw" style="background:#F1E8DA"></span>
-      <span class="sw" style="background:#D2A65A"></span>
-    </div>
-    <h2>B · Dark</h2>
-    <p>Dunkle Bühne, riesige Typografie, Gold-Akzente, kinoreife Video-Fläche. Wenig Text, große Wirkung, modern-dramatisch.</p>
     <span class="open">Entwurf öffnen →</span>
   </a>
   <a class="card" href="vorschlag-c-organic.html">
@@ -71,13 +60,13 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;font-si
   </a>
   <a class="card" href="vorschlag-d-modern.html">
     <div class="swatches">
-      <span class="sw" style="background:#191410"></span>
-      <span class="sw" style="background:#241D16"></span>
-      <span class="sw" style="background:#F1E8DA"></span>
-      <span class="sw" style="background:#A3B18A"></span>
+      <span class="sw" style="background:#EAE2D2"></span>
+      <span class="sw" style="background:#FBF7EE"></span>
+      <span class="sw" style="background:#3E3527"></span>
+      <span class="sw" style="background:#8F7A5B"></span>
     </div>
     <h2>D · Modern</h2>
-    <p>Dunkler, durchgehender Hintergrund, schwebende Karten mit Schatten und Versatz, Salbei-Akzent, Space Grotesk. Zeitgemäß und räumlich.</p>
+    <p>Helles Greige, durchgehender Hintergrund, schwebende Karten mit Schatten und Versatz, Holz-Taupe-Akzent (#8F7A5B), Space Grotesk. Zeitgemäß, luftig, warm.</p>
     <span class="open">Entwurf öffnen →</span>
   </a>
   <a class="card" href="vorschlag-e-timate.html">
@@ -123,9 +112,6 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;font-si
     <p class="design-switch__title">Entwurf wählen</p>
     <a class="design-switch__item" href="vorschlag-a-editorial.html">
       <span class="design-switch__dot" style="background:#B4643C"></span><span>A · Editorial</span>
-    </a>
-    <a class="design-switch__item" href="vorschlag-b-dark.html">
-      <span class="design-switch__dot" style="background:#D2A65A"></span><span>B · Dark</span>
     </a>
     <a class="design-switch__item" href="vorschlag-c-organic.html">
       <span class="design-switch__dot" style="background:#B07575"></span><span>C · Organic</span>

@@ -1,6 +1,6 @@
 # Verschönerei Weinheim — Design-Entwürfe (Relaunch)
 
-Fünf stark unterschiedliche Entwürfe für die neue Website der Verschönerei
+Vier stark unterschiedliche Entwürfe für die neue Website der Verschönerei
 (Peggy Fändrich, Bergstraße 22, 69469 Weinheim). Reine Design-Studie:
 **Platzhalter** für Videos, Buttons, Karte und Teamfotos. Keine echte Funktionalität.
 
@@ -14,32 +14,31 @@ python3 -m http.server 8000
 Dann öffnen: **http://localhost:8000** (Übersicht) oder direkt eine Datei doppelklicken.
 
 Alle Seiten haben **unten links einen Design-Switcher** (runder Palette-Button):
-Darüber lässt sich jederzeit zwischen den Entwürfen A bis E wechseln —
+Darüber lässt sich jederzeit zwischen den Entwürfen A, C, D und E wechseln —
 praktisch zum Vergleichen und für das Gespräch mit Peggy.
 
 | Datei | Stil | Stimmung |
 |---|---|---|
 | `vorschlag-a-editorial.html` | Hell, Serif (Playfair Display), viel Luft | Klassisch-elegant, editorial |
-| `vorschlag-b-dark.html` | Dunkel (Near-black), Archivo 900, Gold | Modern, dramatisch, „Bühne" |
 | `vorschlag-c-organic.html` | Warmes Beige, Quicksand, abgerundet | Freundlich, einladend, viel Info |
-| `vorschlag-d-modern.html` | Dunkel, durchgehend, schwebende Karten, Space Grotesk | Zeitgemäß, räumlich, modern |
+| `vorschlag-d-modern.html` | Helles Greige, schwebende Karten, Space Grotesk, Holz-/Pastelltöne | Zeitgemäß, luftig, warm |
 | `vorschlag-e-timate.html` | Weiß, Open Sans Uppercase, Vollbild-Bänder (Stil: timatehair.com) | Klassisch, bildlastig, vertraut |
 
 ## Farbpaletten (alle WCAG-geprüft)
 
-Basis für alle drei: **Kaffeebraun `#6F4E37`** (Ladenfarbe) + **Warmes Near-black**.
+Basis: **Kaffeebraun `#6F4E37`** (Ladenfarbe) — jeder Entwurf setzt eigene Akzente.
 
 | Entwurf | Hintergrund | Text | Akzent (3. Farbe) | Akzent-Verwendung |
 |---|---|---|---|---|
 | A | Creme `#F6F0E6` | `#221D18` | **Terracotta `#B4643C`** (gebrannter Ton) | Große Überschriften, Hotspots |
-| B | Near-black `#1B1713` | Creme `#F1E8DA` | **Gold-Caramel `#D2A65A`** (warmes Karamell-Gold) | Akzent-Wörter, Buttons, Hotspots |
 | C | Beige `#EAE0D2` (2. Braunton) | `#2A241E` | **Altrosa `#B07575`** (gedämpftes, pudriges Rosa) | Hotspots, Icons, Markierungen |
-| D | Near-black `#191410` (durchgehend) | Creme `#F1E8DA` | **Salbei `#A3B18A`** (frisches, gedämpftes Grün) | Akzent-Wörter, Buttons, Hotspots |
+| D | Greige `#EAE2D2` (hell, durchgehend) | `#3E3527` | **Holz-Taupe `#8F7A5B`** + Deep `#605844` (warme Holz-/Pastelltöne) | Akzent-Wörter, Buttons, Hotspots |
 | E | Weiß `#FFFFFF` | `#1A1A1A` | **Kaffeebraun `#6F4E37`** (bestehende Ladenfarbe) | Links, Buttons, Sterne |
 
-Kontrast (WCAG): Text/Hintergrund überall AA oder AAA (z. B. A: 14,7:1, B: 14,7:1, C: 11,8:1).
-Akzentfarben sind nur für große Schrift/Deko gedacht (A Terracotta 3,8:1, C Altrosa 2,9:1 —
-daher dunklere Varianten `#96502E` bzw. `#9A5F5F` für kleinere Akzent-Texte).
+Kontrast (WCAG): Text/Hintergrund überall AA oder AAA (z. B. A: 14,7:1, C: 11,8:1, D: 9,4:1, E: 17,3:1).
+Akzentfarben sind nur für große Schrift/Deko gedacht (A Terracotta 3,8:1, C Altrosa 2,9:1,
+D Holz-Taupe 3,2:1 — daher dunklere Varianten `#96502E`, `#9A5F5F` bzw. `#605844`
+für kleinere Akzent-Texte).
 
 ## Die Silhouette
 
@@ -51,7 +50,7 @@ im Stil von Technik-Produktvideos. Im Intro sind die drei Hotspots verlinkt.
 
 ## Platzhalter (noch zu ersetzen)
 
-- **Videos:** animierte Farbflächen mit Play-Icon. Echte Videos: 16:9 (A), 21:9 (B), 4:3 (C),
+- **Videos:** animierte Farbflächen mit Play-Icon. Echte Videos: 16:9 (A, D), Vollbild-Bänder (E),
   WebM + MP4, < 5 MB, komprimiert (z. B. HandBrake/ffmpeg). Peggy hat noch kein Material.
 - **Buttons:** „Termin buchen" etc. sind Platzhalter (`#` bzw. `#kontakt`).
   Später: Link zum #mitdenkt-Buchungsportal (ufuk.mitdenkt.io).
