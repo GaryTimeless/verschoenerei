@@ -87,18 +87,24 @@ a.chip:hover{background:var(--accent);color:#F6F0E6;border-color:var(--accent)}
 .intro-copy p{color:rgba(34,29,24,.75);max-width:44ch}
 
 /* ---------- Bereiche ---------- */
-.bereich{padding:88px 0}
-.bereich + .bereich{border-top:1px solid var(--line)}
-.bereich-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
-.bereich.flip .figur-wrap{order:2}
-.bereich-num{font-family:var(--serif);font-size:4.6rem;line-height:1;color:var(--accent);opacity:.28;font-weight:700;display:block;margin-bottom:6px}
-.bereich-copy h2{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:16px}
-.bereich-copy > p{color:rgba(34,29,24,.75);max-width:52ch}
-.service-list{list-style:none;margin:28px 0;display:grid;gap:14px}
-.service-list li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
-.service-list i{font-size:1.5rem;color:var(--accent-deep);margin-top:2px}
-.service-list strong{display:block;font-weight:500;font-size:.98rem}
-.service-list span{font-size:.84rem;color:rgba(34,29,24,.62)}
+.bereiche{padding:88px 0}
+.bereiche-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.bereiche-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:14px}
+.bereiche-head p{color:rgba(34,29,24,.75)}
+.bereich-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.bereich-card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px 28px;display:flex;flex-direction:column;transition:.25s;scroll-margin-top:96px}
+.bereich-card:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(34,29,24,.35)}
+.bereich-card .figur-wrap{max-width:150px;margin:0 auto 20px}
+.bereich-num{font-family:var(--serif);font-size:3.2rem;line-height:1;color:var(--accent);opacity:.28;font-weight:700;display:block;margin-bottom:4px}
+.bereich-card .eyebrow{margin-bottom:8px}
+.bereich-card h3{font-family:var(--serif);font-weight:600;font-size:clamp(1.35rem,1.8vw,1.6rem);line-height:1.25;margin-bottom:12px}
+.bereich-card > p:not(.eyebrow){font-size:.92rem;color:rgba(34,29,24,.75);margin-bottom:22px}
+.service-list{list-style:none;margin:0 0 24px;display:grid;gap:12px}
+.service-list li{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.service-list i{font-size:1.3rem;color:var(--accent-deep);margin-top:2px}
+.service-list strong{display:block;font-weight:500;font-size:.94rem}
+.service-list span{font-size:.82rem;color:rgba(34,29,24,.62)}
+.bereich-card .text-link{margin-top:auto;align-self:flex-start}
 
 /* ---------- Mehr ---------- */
 .mehr{padding:72px 0;background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -139,8 +145,8 @@ a.chip:hover{background:var(--accent);color:#F6F0E6;border-color:var(--accent)}
 
 /* ---------- Responsive ---------- */
 @media(max-width:900px){
-  .hero-grid,.intro-grid,.bereich-grid,.standort-grid{grid-template-columns:1fr;gap:44px}
-  .bereich.flip .figur-wrap{order:0}
+  .hero-grid,.intro-grid,.standort-grid{grid-template-columns:1fr;gap:44px}
+  .bereich-grid{grid-template-columns:1fr;gap:24px;max-width:460px;margin:0 auto}
   .figur-wrap{max-width:280px}
   .main-nav{position:fixed;top:71px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:flex-start;padding:24px;border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.3s;z-index:40}
   .main-nav.open{transform:none}
@@ -274,76 +280,69 @@ a.chip:hover{background:var(--accent);color:#F6F0E6;border-color:var(--accent)}
     </div>
   </section>
 
-  <!-- 01 Haut -->
-  <section class="bereich" id="haut">
-    <div class="container bereich-grid">
-      <div class="figur-wrap focus-haut reveal">
-        <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
-        <span class="hotspot" style="left:33%;top:26%"></span>
-        <span class="hotspot" style="left:36%;top:82%"></span>
-        <span class="chip" style="left:24%;top:20%">Gesichtsbehandlungen</span>
-        <span class="chip" style="left:31%;top:83%">Microblading · ab 199 €</span>
+  <!-- Drei Bereiche als Karten -->
+  <section class="bereiche">
+    <div class="container">
+      <div class="bereiche-head reveal">
+        <p class="eyebrow">Unsere Leistungen</p>
+        <h2>Drei Bereiche, ein Anspruch</h2>
+        <p>Ob Haut, Haare oder Nägel — jede Behandlung beginnt mit einer typgerechten Beratung und endet mit einem Ergebnis, das zu dir passt.</p>
       </div>
-      <div class="bereich-copy reveal">
-        <span class="bereich-num">01</span>
-        <p class="eyebrow">Haut</p>
-        <h2>Strahlende Haut beginnt mit der richtigen Pflege</h2>
-        <p>Ganz egal, welches Anliegen du mitbringst: Wir finden das Pflegeprogramm, das zu deiner Haut passt — kompetent, mit Engagement und Zeit für dich.</p>
-        <ul class="service-list">
-          <li><i class="ph ph-hand-soap"></i><div><strong>Gesichtsbehandlungen &amp; Pflege</strong><span>Reinigung, Wirkstoffpflege, Entspannung</span></div></li>
-          <li><i class="ph ph-sparkle"></i><div><strong>Microblading / Nanoblading</strong><span>Auffrischung ab 199 €</span></div></li>
-          <li><i class="ph ph-flower-lotus"></i><div><strong>Individuelle Pflegeberatung</strong><span>Kostenlos &amp; typgerecht</span></div></li>
-        </ul>
-        <a href="#kontakt" class="text-link">Beratung anfragen <i class="ph ph-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
+      <div class="bereich-grid">
 
-  <!-- 02 Haare -->
-  <section class="bereich flip" id="haare">
-    <div class="container bereich-grid">
-      <div class="figur-wrap focus-haare reveal">
-        <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
-        <span class="hotspot" style="left:66%;top:16%"></span>
-        <span class="chip" style="left:62%;top:5%">Schnitt &amp; Farbe</span>
-        <span class="chip" style="left:9%;top:32%">Verlängerung · ab 380 €</span>
-      </div>
-      <div class="bereich-copy reveal">
-        <span class="bereich-num">02</span>
-        <p class="eyebrow">Haare</p>
-        <h2>Schnitt, Farbe, Styling — typgerecht beraten</h2>
-        <p>Egal ob Balayage, Ombré, Paintings oder klassische Foliensträhnen: Wir beraten dich typgerecht und setzen deine Persönlichkeit perfekt in Szene. Wir arbeiten ausschließlich mit exklusiven Produkten wie La Biosthetique und Olaplex.</p>
-        <ul class="service-list">
-          <li><i class="ph ph-scissors"></i><div><strong>Damen- &amp; Herrenschnitt</strong><span>Beratung, Schnitt, Styling</span></div></li>
-          <li><i class="ph ph-drop"></i><div><strong>Balayage, Ombré &amp; Farbe</strong><span>Natürlich oder ausdrucksstark</span></div></li>
-          <li><i class="ph ph-hand-heart"></i><div><strong>Haarverlängerung &amp; Verdichtung</strong><span>Ab 380 € (100 Extensions)</span></div></li>
-        </ul>
-        <a href="#kontakt" class="text-link">Termin buchen <i class="ph ph-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
+        <article class="bereich-card reveal" id="haut">
+          <div class="figur-wrap focus-haut">
+            <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
+            <span class="hotspot" style="left:33%;top:26%"></span>
+            <span class="hotspot" style="left:36%;top:82%"></span>
+          </div>
+          <span class="bereich-num">01</span>
+          <p class="eyebrow">Haut</p>
+          <h3>Strahlende Haut beginnt mit der richtigen Pflege</h3>
+          <p>Ganz egal, welches Anliegen du mitbringst: Wir finden das Pflegeprogramm, das zu deiner Haut passt — kompetent, mit Engagement und Zeit für dich.</p>
+          <ul class="service-list">
+            <li><i class="ph ph-hand-soap"></i><div><strong>Gesichtsbehandlungen &amp; Pflege</strong><span>Reinigung, Wirkstoffpflege, Entspannung</span></div></li>
+            <li><i class="ph ph-sparkle"></i><div><strong>Microblading / Nanoblading</strong><span>Auffrischung ab 199 €</span></div></li>
+            <li><i class="ph ph-flower-lotus"></i><div><strong>Individuelle Pflegeberatung</strong><span>Kostenlos &amp; typgerecht</span></div></li>
+          </ul>
+          <a href="#kontakt" class="text-link">Beratung anfragen <i class="ph ph-arrow-right"></i></a>
+        </article>
 
-  <!-- 03 Nägel -->
-  <section class="bereich" id="naegel">
-    <div class="container bereich-grid">
-      <div class="figur-wrap focus-naegel reveal">
-        <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
-        <span class="hotspot" style="left:36%;top:71%"></span>
-        <span class="hotspot" style="left:40%;top:84%"></span>
-        <span class="chip" style="left:6%;top:84%">Nagel-Design</span>
-        <span class="chip" style="left:58%;top:88%">Maniküre</span>
-      </div>
-      <div class="bereich-copy reveal">
-        <span class="bereich-num">03</span>
-        <p class="eyebrow">Nägel</p>
-        <h2>Gepflegte Hände — ein Statement für sich</h2>
-        <p>Schöne, gepflegte Hände verstärken die Ausstrahlungskraft — bei Männern und bei Frauen. Unsere Nageldesignerinnen zaubern Top-Qualität in Sachen French Nails, Babyboomer, Glittergele und Strass.</p>
-        <ul class="service-list">
-          <li><i class="ph ph-hand"></i><div><strong>Maniküre</strong><span>Pflege für Hände &amp; Nägel</span></div></li>
-          <li><i class="ph ph-gem"></i><div><strong>Nagel-Design</strong><span>French, Babyboomer, Glitter, Strass, Acryl</span></div></li>
-          <li><i class="ph ph-footprints"></i><div><strong>Preise</strong><span>Alle Preise im Online-Buchungsportal</span></div></li>
-        </ul>
-        <a href="#kontakt" class="text-link">Termin buchen <i class="ph ph-arrow-right"></i></a>
+        <article class="bereich-card reveal" id="haare">
+          <div class="figur-wrap focus-haare">
+            <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
+            <span class="hotspot" style="left:66%;top:16%"></span>
+          </div>
+          <span class="bereich-num">02</span>
+          <p class="eyebrow">Haare</p>
+          <h3>Schnitt, Farbe, Styling — typgerecht beraten</h3>
+          <p>Egal ob Balayage, Ombré, Paintings oder klassische Foliensträhnen: Wir beraten dich typgerecht und setzen deine Persönlichkeit perfekt in Szene. Wir arbeiten ausschließlich mit exklusiven Produkten wie La Biosthetique und Olaplex.</p>
+          <ul class="service-list">
+            <li><i class="ph ph-scissors"></i><div><strong>Damen- &amp; Herrenschnitt</strong><span>Beratung, Schnitt, Styling</span></div></li>
+            <li><i class="ph ph-drop"></i><div><strong>Balayage, Ombré &amp; Farbe</strong><span>Natürlich oder ausdrucksstark</span></div></li>
+            <li><i class="ph ph-hand-heart"></i><div><strong>Haarverlängerung &amp; Verdichtung</strong><span>Ab 380 € (100 Extensions)</span></div></li>
+          </ul>
+          <a href="#kontakt" class="text-link">Termin buchen <i class="ph ph-arrow-right"></i></a>
+        </article>
+
+        <article class="bereich-card reveal" id="naegel">
+          <div class="figur-wrap focus-naegel">
+            <svg class="figur" viewBox="0 0 220 310" aria-hidden="true"><use href="#figur"/></svg>
+            <span class="hotspot" style="left:36%;top:71%"></span>
+            <span class="hotspot" style="left:40%;top:84%"></span>
+          </div>
+          <span class="bereich-num">03</span>
+          <p class="eyebrow">Nägel</p>
+          <h3>Gepflegte Hände — ein Statement für sich</h3>
+          <p>Schöne, gepflegte Hände verstärken die Ausstrahlungskraft — bei Männern und bei Frauen. Unsere Nageldesignerinnen zaubern Top-Qualität in Sachen French Nails, Babyboomer, Glittergele und Strass.</p>
+          <ul class="service-list">
+            <li><i class="ph ph-hand"></i><div><strong>Maniküre</strong><span>Pflege für Hände &amp; Nägel</span></div></li>
+            <li><i class="ph ph-gem"></i><div><strong>Nagel-Design</strong><span>French, Babyboomer, Glitter, Strass, Acryl</span></div></li>
+            <li><i class="ph ph-footprints"></i><div><strong>Preise</strong><span>Alle Preise im Online-Buchungsportal</span></div></li>
+          </ul>
+          <a href="#kontakt" class="text-link">Termin buchen <i class="ph ph-arrow-right"></i></a>
+        </article>
+
       </div>
     </div>
   </section>
