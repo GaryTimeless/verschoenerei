@@ -1,6 +1,6 @@
 # Verschönerei Weinheim — Design-Entwürfe (Relaunch)
 
-Neun stark unterschiedliche Entwürfe für die neue Website der Verschönerei
+Neun Entwürfe für die neue Website der Verschönerei
 (Peggy Fändrich, Bergstraße 22, 69469 Weinheim). Reine Design-Studie:
 **Platzhalter** für Videos, Buttons, Karte und Teamfotos. Keine echte Funktionalität.
 
@@ -25,19 +25,20 @@ Dann öffnen: **http://localhost:8000** (Übersicht) oder direkt eine Datei dopp
 
 Alle Seiten haben **unten links einen Design-Switcher** (runder Palette-Button):
 Darüber lässt sich jederzeit zwischen den Entwürfen A, C, D, E, F, G, H, I und J wechseln —
-praktisch zum Vergleichen und für das Gespräch mit Peggy.
+praktisch zum Vergleichen und für das Gespräch mit Peggy. Die sichtbaren
+Bezeichnungen sind einheitlich „Entwurf A“, „Entwurf C“ usw.
 
-| Datei | Stil | Stimmung |
-|---|---|---|
-| `vorschlag-a-editorial.html` | Hell, Serif (Playfair Display), viel Luft | Klassisch-elegant, editorial |
-| `vorschlag-c-organic.html` | Warmes Beige, Quicksand, abgerundet | Freundlich, einladend, viel Info |
-| `vorschlag-d-modern.html` | Helles Greige, schwebende Karten, Space Grotesk, Holz-/Pastelltöne | Zeitgemäß, luftig, warm |
-| `vorschlag-e-timate.html` | Weiß, Open Sans Uppercase, Vollbild-Bänder (Stil: timatehair.com) | Klassisch, bildlastig, vertraut |
-| `vorschlag-f-triptychon.html` | Drei große Holz-Panels als Aufmacher (Beige/Holz/Walnuss), Archivo, vertikale Titel, Hover vergrößert Panel | Architektonisch, modern, Haut·Haare·Nägel = der Hero |
-| `vorschlag-g-werkstatt.html` | Fraunces, gedrehte „Holzbretter" mit Preislisten (Punktlinien), Holzmaserung, dunkles Walnuss-Band | Rustikal-modern, Handwerk, warm |
-| `vorschlag-h-mokka.html` | Dunkles Mokka-Braun, Champagner-Akzente, Syne, Laufband, drei Aspekt-Karten | Luxuriös, mutig, der dunkle Gegenentwurf |
-| `vorschlag-i-dreiklang.html` | Drei Holzflächen, Fraunces + Figtree, aufklappbare Bereiche | Warm, klar, interaktiv |
-| `vorschlag-j-karte.html` | Dunkles Nussbraun, Instrument Serif, Leistungskarte mit Preiszeilen | Hochwertig, café-artig |
+| Entwurf | Datei | Stil | Stimmung |
+|---|---|---|---|
+| A | `vorschlag-a-editorial.html` | Hell, Serif (Playfair Display), viel Luft | Klassisch-elegant, editorial |
+| C | `vorschlag-c-organic.html` | Warmes Beige, Quicksand, abgerundet | Freundlich, einladend, viel Info |
+| D | `vorschlag-d-modern.html` | Helles Greige, schwebende Karten, Space Grotesk, Holz-/Pastelltöne | Zeitgemäß, luftig, warm |
+| E | `vorschlag-e-timate.html` | Weiß, Open Sans Uppercase, Vollbild-Bänder (Stil: timatehair.com) | Klassisch, bildlastig, vertraut |
+| F | `vorschlag-f-triptychon.html` | Drei große Holz-Panels als Aufmacher (Beige/Holz/Walnuss), Archivo, vertikale Titel, Hover vergrößert Panel | Architektonisch, modern, Haut·Haare·Nägel = der Hero |
+| G | `vorschlag-g-werkstatt.html` | Fraunces, gedrehte „Holzbretter" mit Preislisten (Punktlinien), Holzmaserung, dunkles Walnuss-Band | Rustikal-modern, Handwerk, warm |
+| H | `vorschlag-h-mokka.html` | Dunkles Mokka-Braun, Champagner-Akzente, Syne, Laufband, drei Aspekt-Karten | Luxuriös, mutig, der dunkle Gegenentwurf |
+| I | `vorschlag-i-dreiklang.html` | Drei Holzflächen, Fraunces + Figtree, aufklappbare Bereiche | Warm, klar, interaktiv |
+| J | `vorschlag-j-karte.html` | Dunkles Nussbraun, Instrument Serif, Leistungskarte mit Preiszeilen | Hochwertig, café-artig |
 
 ## Import aus Downloads/claude
 
