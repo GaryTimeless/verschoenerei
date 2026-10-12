@@ -24,14 +24,14 @@ python3 -m http.server 8000
 Dann öffnen: **http://localhost:8000** (Übersicht) oder direkt eine Datei doppelklicken.
 
 Alle Seiten haben **unten links einen Design-Switcher** (runder Palette-Button):
-Darüber lässt sich jederzeit zwischen den Entwürfen C, D, E, F, G, H, I und J wechseln —
+Darüber lässt sich jederzeit zwischen den Entwürfen A 1, A 2, E, F, G, H, I und J wechseln —
 praktisch zum Vergleichen und für das Gespräch mit Peggy. Die sichtbaren
-Bezeichnungen sind einheitlich „Entwurf C“, „Entwurf D“ usw.
+Bezeichnungen sind einheitlich „Entwurf A 1“, „Entwurf A 2“ usw.
 
 | Entwurf | Datei | Stil | Stimmung |
 |---|---|---|---|
-| C | `vorschlag-c-organic.html` | Warmes Beige, Quicksand, abgerundet | Freundlich, einladend, viel Info |
-| D | `vorschlag-d-modern.html` | Helles Greige, schwebende Karten, Space Grotesk, Holz-/Pastelltöne | Zeitgemäß, luftig, warm |
+| A 1 | `vorschlag-c-organic.html` | Warmes Beige, Quicksand, abgerundet | Freundlich, einladend, viel Info |
+| A 2 | `vorschlag-d-modern.html` | Helles Greige, schwebende Karten, Space Grotesk, Holz-/Pastelltöne | Zeitgemäß, luftig, warm |
 | E | `vorschlag-e-timate.html` | Weiß, Open Sans Uppercase, Vollbild-Bänder (Stil: timatehair.com) | Klassisch, bildlastig, vertraut |
 | F | `vorschlag-f-triptychon.html` | Drei große Holz-Panels als Aufmacher (Beige/Holz/Walnuss), Archivo, vertikale Titel, Hover vergrößert Panel | Architektonisch, modern, Haut·Haare·Nägel = der Hero |
 | G | `vorschlag-g-werkstatt.html` | Fraunces, gedrehte „Holzbretter" mit Preislisten (Punktlinien), Holzmaserung, dunkles Walnuss-Band | Rustikal-modern, Handwerk, warm |
@@ -55,8 +55,8 @@ Die neuen Entwürfe arbeiten durchgehend mit hellem Beige- und Holzfarben
 
 | Entwurf | Hintergrund | Text | Akzent (3. Farbe) | Akzent-Verwendung |
 |---|---|---|---|---|
-| C | Beige `#EAE0D2` (2. Braunton) | `#2A241E` | **Altrosa `#B07575`** (gedämpftes, pudriges Rosa) | Hotspots, Icons, Markierungen |
-| D | Greige `#EAE2D2` (hell, durchgehend) | `#3E3527` | **Holz-Taupe `#8F7A5B`** + Deep `#605844` (warme Holz-/Pastelltöne) | Akzent-Wörter, Buttons, Hotspots |
+| A 1 | Beige `#EAE0D2` (2. Braunton) | `#2A241E` | **Altrosa `#B07575`** (gedämpftes, pudriges Rosa) | Hotspots, Icons, Markierungen |
+| A 2 | Greige `#EAE2D2` (hell, durchgehend) | `#3E3527` | **Holz-Taupe `#8F7A5B`** + Deep `#605844` (warme Holz-/Pastelltöne) | Akzent-Wörter, Buttons, Hotspots |
 | E | Weiß `#FFFFFF` | `#1A1A1A` | **Kaffeebraun `#6F4E37`** (bestehende Ladenfarbe) | Links, Buttons, Sterne |
 | F | Creme `#F4EDE0` | `#33271A` | **Panels in 3 Holztönen** `#E6D4B0` / `#C49A61` / `#4C331C`, Akzent `#8A5A2E` | Die drei Bereiche selbst sind die Farbe |
 | G | Kraftpapier-Beige `#F2E9D8` | `#46351F` | **Walnuss `#5C4327`** + Rost `#B5794A`, Bretter `#DCC6A0` | Bänder, Preislisten, Bretter |
@@ -64,9 +64,9 @@ Die neuen Entwürfe arbeiten durchgehend mit hellem Beige- und Holzfarben
 | I | Sand `#F1E8D8` | `#2B1F16` | **Honig-Eiche `#C9A27A`**, **Walnuss `#6F4E37`** | Drei Bereichs-Panels |
 | J | Nussbraun `#2B1F17` | `#F0E4D0` | **Honig `#D9AE75`** | Preise, Buttons, Hover |
 
-Kontrast (WCAG): Text/Hintergrund überall AA oder AAA (z. B. C: 11,8:1, D: 9,4:1, E: 17,3:1).
-Akzentfarben sind nur für große Schrift/Deko gedacht (C Altrosa 2,9:1,
-D Holz-Taupe 3,2:1 — daher dunklere Varianten `#9A5F5F` bzw. `#605844`
+Kontrast (WCAG): Text/Hintergrund überall AA oder AAA (z. B. A 1: 11,8:1, A 2: 9,4:1, E: 17,3:1).
+Akzentfarben sind nur für große Schrift/Deko gedacht (A 1 Altrosa 2,9:1,
+A 2 Holz-Taupe 3,2:1 — daher dunklere Varianten `#9A5F5F` bzw. `#605844`
 für kleinere Akzent-Texte). F/G/H: Text auf den Walnuss-/Mokka-Flächen ist immer Creme/Beige
 (Kontrast ≥ 8:1); Champagner/Akzente nur auf großen Flächen.
 
@@ -75,7 +75,7 @@ für kleinere Akzent-Texte). F/G/H: Text auf den Walnuss-/Mokka-Flächen ist imm
 Wiederverwendbares SVG-Symbol (`#figur`): Line-Art-Illustration einer Frau
 (großes Drei-Viertel-Profil, geschlossene Augen mit markantem Lidstrich,
 roséfarbene Lippen, breite geschwungene Haarbänder und eine erhobene Hand
-mit Nagel-Design). Die Illustration ist in C, D, F, G und H identisch aufgebaut;
+mit Nagel-Design). Die Illustration ist in A 1, A 2, F, G und H identisch aufgebaut;
 Konturen und Haare übernehmen die jeweilige Farbpalette.
 `test-figur.html` zeigt alle vier Hervorhebungen im direkten Vergleich.
 Pro Bereich wird der passende Teil hervorgehoben (Haut → Gesicht + Hand,
@@ -86,7 +86,7 @@ sitzen auf Haaren, Wange und Nägeln der neuen Illustration.
 
 ## Platzhalter (noch zu ersetzen)
 
-- **Videos:** animierte Farbflächen mit Play-Icon. Echte Videos: 16:9 (D), Vollbild-Bänder (E),
+- **Videos:** animierte Farbflächen mit Play-Icon. Echte Videos: 16:9 (A 2), Vollbild-Bänder (E),
   WebM + MP4, < 5 MB, komprimiert (z. B. HandBrake/ffmpeg). Peggy hat noch kein Material.
 - **Buttons:** „Termin buchen" etc. sind Platzhalter (`#` bzw. `#kontakt`).
   Später: Link zum #mitdenkt-Buchungsportal (ufuk.mitdenkt.io).
