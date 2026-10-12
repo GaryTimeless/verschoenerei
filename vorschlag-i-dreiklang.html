@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verschönerei Weinheim — Entwurf I · Dreiklang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.css">
+<style>
+:root{--bg:#F1E8D8;--ink:#2B1F16;--muted:#65533f;--sand:#E6D5B8;--oak:#C9A27A;--walnut:#6F4E37;--cream:#FAF3E6;--line:rgba(43,31,22,.16);
+  --serif:'Fraunces',serif;--sans:'Figtree',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.top{display:flex;align-items:center;gap:28px;padding:22px 0}
+.brand{font-family:var(--serif);font-size:1.5rem;font-weight:600;text-decoration:none}
+.top nav{margin-left:auto;display:flex;gap:26px}
+.top nav a{text-decoration:none;font-size:.95rem}
+.top nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.btn{display:inline-block;background:var(--walnut);color:var(--cream);text-decoration:none;font-weight:600;font-size:.95rem;padding:12px 22px;border-radius:999px;transition:background .2s}
+.btn:hover{background:#563a28}
+.btn:focus-visible,.word:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.intro{padding:34px 0 30px;max-width:30ch}
+.intro h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.1rem,4.6vw,3.6rem);line-height:1.08;letter-spacing:-.01em}
+.intro p{margin-top:14px;color:var(--muted);max-width:46ch}
+
+/* Dreiklang: drei Holzflächen, eine öffnet sich */
+.panels{display:grid;grid-template-columns:1fr 2.6fr 1fr;gap:10px;height:min(76vh,700px);min-height:540px;transition:grid-template-columns .65s cubic-bezier(.2,.7,.2,1)}
+.panels[data-active="0"]{grid-template-columns:2.6fr 1fr 1fr}
+.panels[data-active="2"]{grid-template-columns:1fr 1fr 2.6fr}
+.panel{position:relative;border-radius:26px;overflow:hidden;padding:26px;display:flex;flex-direction:column;justify-content:flex-end;
+  background-image:repeating-linear-gradient(96deg,rgba(255,255,255,0) 0 7px,rgba(255,255,255,.07) 7px 8px,rgba(0,0,0,.025) 8px 17px),linear-gradient(170deg,var(--tone),var(--tone-2))}
+.p0{--tone:#EADBC0;--tone-2:#DCC7A3;color:var(--ink)}
+.p1{--tone:#CFA97F;--tone-2:#B98F63;color:var(--ink)}
+.p2{--tone:#7A563D;--tone-2:#5E4230;color:var(--cream)}
+.word{all:unset;cursor:pointer;font-family:var(--serif);font-weight:600;font-size:clamp(2rem,4.2vw,3.8rem);line-height:1;letter-spacing:-.01em;display:block;margin-bottom:6px}
+.tag{font-size:.95rem;opacity:.85;max-width:26ch}
+.body{max-width:420px;max-height:0;opacity:0;visibility:hidden;overflow:hidden;transition:max-height .6s ease,opacity .4s ease .15s,visibility 0s .6s}
+.panel.on .body{max-height:420px;opacity:1;visibility:visible;transition:max-height .6s ease,opacity .5s ease .25s,visibility 0s}
+.body ul{list-style:none;margin:18px 0 20px;border-top:1px solid currentColor}
+.body li{padding:11px 0;border-bottom:1px solid currentColor;display:flex;justify-content:space-between;gap:16px;font-size:.95rem}
+.body li span{opacity:.8;text-align:right}
+.p0 .btn,.p1 .btn{background:var(--ink)}
+.p2 .btn{background:var(--cream);color:var(--ink)}
+
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;padding:64px 0 56px}
+.info h3{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin-bottom:8px}
+.info p{color:var(--muted)}
+.map{margin-bottom:56px;border-radius:26px;height:200px;display:grid;place-items:center;text-align:center;color:var(--cream);
+  background-image:repeating-linear-gradient(96deg,rgba(255,255,255,0) 0 7px,rgba(255,255,255,.06) 7px 8px),linear-gradient(170deg,#7A563D,#5E4230)}
+footer{border-top:1px solid var(--line);padding:24px 0 90px;font-size:.85rem;color:var(--muted);display:flex;gap:24px;flex-wrap:wrap}
+footer a{text-decoration:none}
+
+@media(max-width:860px){
+  .top nav{display:none}.top .btn{margin-left:auto}
+  .panels{display:flex;flex-direction:column;height:auto;min-height:0}
+  .panel{min-height:132px}
+  .panel.on .body{max-height:380px}
+  .info{grid-template-columns:1fr;gap:24px;padding:44px 0 36px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#">Verschönerei</a>
+    <nav><a href="#leistungen">Leistungen</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="btn" href="#kontakt">Termin buchen</a>
+  </header>
+
+  <section class="intro">
+    <h1>Haut, Haare und Nägel an einem Ort.</h1>
+    <p>Dein Beauty-Studio in Weinheim. Such dir einen Bereich aus und sieh, was wir für dich tun.</p>
+  </section>
+
+  <main>
+    <div class="panels" id="leistungen" data-active="1">
+      <article class="panel p0">
+        <h2><button class="word" aria-expanded="false" aria-controls="b0">Haut</button></h2>
+        <p class="tag">Pflege, die zu deiner Haut passt.</p>
+        <div class="body" id="b0">
+          <ul>
+            <li>Gesichtsbehandlungen &amp; Pflege<span>nach Wunsch</span></li>
+            <li>Microblading / Nanoblading<span>Auffrischung ab 199 €</span></li>
+            <li>Individuelle Pflegeberatung<span>kostenlos</span></li>
+          </ul>
+          <a class="btn" href="#">Termin buchen</a>
+        </div>
+      </article>
+      <article class="panel p1 on">
+        <h2><button class="word" aria-expanded="true" aria-controls="b1">Haare</button></h2>
+        <p class="tag">Schnitt und Farbe mit La Biosthetique und Olaplex.</p>
+        <div class="body" id="b1">
+          <ul>
+            <li>Damen- &amp; Herrenschnitt<span>Beratung inklusive</span></li>
+            <li>Balayage, Ombré &amp; Farbe<span>natürlich bis mutig</span></li>
+            <li>Haarverlängerung &amp; Verdichtung<span>ab 380 €</span></li>
+          </ul>
+          <a class="btn" href="#">Termin buchen</a>
+        </div>
+      </article>
+      <article class="panel p2">
+        <h2><button class="word" aria-expanded="false" aria-controls="b2">Nägel</button></h2>
+        <p class="tag">Gepflegte Hände für Frauen und Männer.</p>
+        <div class="body" id="b2">
+          <ul>
+            <li>Maniküre<span>Hände &amp; Nägel</span></li>
+            <li>Nagel-Design<span>French, Glitter, Strass</span></li>
+            <li>Alle Preise<span>im Buchungsportal</span></li>
+          </ul>
+          <a class="btn" href="#">Termin buchen</a>
+        </div>
+      </article>
+    </div>
+
+    <section class="info" id="kontakt">
+      <div><h3>Adresse</h3><p>Bergstraße 22<br>69469 Weinheim</p></div>
+      <div><h3>Öffnungszeiten</h3><p>Di–Fr 9:00–18:00 Uhr<br>Sa 9:00–13:00 Uhr</p></div>
+      <div><h3>Melde dich</h3><p>+49 (0) 6201 704 84 80<br>willkommen@verschoenerei.de</p></div>
+    </section>
+    <div class="map"><div><p>Karte folgt</p><small>OpenStreetMap, ohne Google-API-Key</small></div></div>
+  </main>
+
+  <footer><span>© Verschönerei, Peggy Fändrich</span><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#">AGB</a></footer>
+</div>
+
+<script>
+(function(){
+  var wrap=document.querySelector('.panels'),ps=[].slice.call(wrap.querySelectorAll('.panel'));
+  function set(i){wrap.dataset.active=i;ps.forEach(function(p,k){p.classList.toggle('on',k===i);p.querySelector('.word').setAttribute('aria-expanded',k===i)})}
+  ps.forEach(function(p,i){
+    p.querySelector('.word').addEventListener('click',function(){set(i)});
+    if(matchMedia('(hover:hover) and (min-width:861px)').matches)p.addEventListener('mouseenter',function(){set(i)});
+  });
+})();
+</script>
+<!-- Design-Switcher: Wechsel zwischen den Entwürfen (nur Demo) -->
+<style>
+.design-switch{position:fixed;left:20px;bottom:20px;z-index:100;font-family:var(--sans,'DM Sans',sans-serif);
+  --ds-surface:var(--card,var(--panel,#FDFBF7));
+  --ds-ink:var(--ink,var(--cream,#221D18));
+  --ds-accent:var(--accent,var(--gold,var(--rose,#6F4E37)));
+  --ds-line:var(--line,rgba(34,29,24,.14))}
+.design-switch__btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;
+  background:var(--ds-btn-bg,var(--ds-accent));color:var(--ds-on-accent,#F6F0E6);font-size:1.45rem;
+  display:grid;place-items:center;box-shadow:0 12px 28px -10px rgba(0,0,0,.5);transition:transform .2s}
+.design-switch__btn:hover{transform:translateY(-2px) scale(1.06)}
+.design-switch__menu{position:absolute;left:0;bottom:66px;width:236px;max-height:calc(100dvh - 110px);overflow-y:auto;padding:8px;
+  background:var(--ds-surface);color:var(--ds-ink);border:1px solid var(--ds-line);border-radius:12px;
+  box-shadow:0 20px 44px -14px rgba(0,0,0,.45);
+  opacity:0;visibility:hidden;transform:translateY(10px) scale(.96);transform-origin:bottom left;transition:.22s ease}
+.design-switch.open .design-switch__menu{opacity:1;visibility:visible;transform:none}
+.design-switch__title{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;opacity:.55;padding:6px 10px 8px}
+.design-switch__item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;
+  color:var(--ds-ink);text-decoration:none;font-size:.88rem;font-weight:500;transition:background .15s}
+.design-switch__item:hover{background:var(--ds-line)}
+.design-switch__item.is-current{background:var(--ds-line);font-weight:700;box-shadow:inset 3px 0 0 var(--ds-accent)}
+.design-switch__dot{width:14px;height:14px;border-radius:50%;flex:none;box-shadow:0 0 0 1px var(--ds-line)}
+.design-switch__check{margin-left:auto;color:var(--ds-accent);font-size:1rem}
+@media(max-width:600px){.design-switch{left:14px;bottom:14px}.design-switch__menu{bottom:62px}}
+</style>
+<div class="design-switch" id="designSwitch" style="--ds-btn-bg:#6F4E37;--ds-on-accent:#FAF3E6">
+  <nav class="design-switch__menu" id="designSwitchMenu" aria-label="Design-Entwurf wechseln">
+    <p class="design-switch__title">Entwurf wählen</p>
+    <a class="design-switch__item" href="vorschlag-a-editorial.html">
+      <span class="design-switch__dot" style="background:#B4643C"></span><span>A · Editorial</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-c-organic.html">
+      <span class="design-switch__dot" style="background:#B07575"></span><span>C · Organic</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-d-modern.html">
+      <span class="design-switch__dot" style="background:#8F7A5B"></span><span>D · Modern</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-e-timate.html">
+      <span class="design-switch__dot" style="background:#6F4E37"></span><span>E · Timate-Stil</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-f-triptychon.html">
+      <span class="design-switch__dot" style="background:#C49A61"></span><span>F · Triptychon</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-g-werkstatt.html">
+      <span class="design-switch__dot" style="background:#B5794A"></span><span>G · Werkstatt</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-h-mokka.html">
+      <span class="design-switch__dot" style="background:#CBA97E"></span><span>H · Mokka</span>
+    </a>
+    <a class="design-switch__item is-current" href="vorschlag-i-dreiklang.html" aria-current="page">
+      <span class="design-switch__dot" style="background:#C9A27A"></span><span>I · Dreiklang</span>
+      <span class="design-switch__check" aria-hidden="true">✓</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-j-karte.html">
+      <span class="design-switch__dot" style="background:#D9AE75"></span><span>J · Die Karte</span>
+    </a>
+  </nav>
+  <button class="design-switch__btn" id="designSwitchBtn" aria-controls="designSwitchMenu" aria-expanded="false" aria-label="Design-Entwurf wechseln" title="Design wechseln">
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 1 0 0 18h1.3a2.2 2.2 0 0 0 1.5-3.8 1.4 1.4 0 0 1 1-2.4H18a3 3 0 0 0 3-3C21 6.9 17 3 12 3Z"/><circle cx="7.5" cy="10" r="1"/><circle cx="10.5" cy="6.8" r="1"/><circle cx="15" cy="7" r="1"/><circle cx="17.5" cy="10.5" r="1"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  var sw=document.getElementById('designSwitch'),btn=document.getElementById('designSwitchBtn');
+  btn.addEventListener('click',function(){var open=sw.classList.toggle('open');btn.setAttribute('aria-expanded',open);});
+  document.addEventListener('click',function(e){if(!sw.contains(e.target)){sw.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){sw.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+})();
+</script>
+</body>
+</html>

@@ -78,12 +78,12 @@ h2{font-family:var(--disp);font-weight:700;line-height:1.15;letter-spacing:-.01e
 /* ---------- Silhouette ---------- */
 .figur-wrap{position:relative;max-width:320px;margin:0 auto;width:100%}
 .figur{width:100%;height:auto;
-  --o-hair:.2;--o-face:.2;--o-body:.5;--o-hands:.2;--o-nails:.15;
-  --c-hair:#7A5A3A;--c-skin:#E4C39E;--c-line:#3E3527;--c-nails:#8F7A5B}
-.focus-haut{--o-face:1;--o-hands:1;--o-nails:.2;--o-hair:.18}
-.focus-haare{--o-hair:1;--o-face:.3;--o-hands:.22;--o-nails:.15}
-.focus-naegel{--o-nails:1;--o-hands:1;--o-face:.22;--o-hair:.18}
-.focus-all{--o-hair:.95;--o-face:.95;--o-body:.55;--o-hands:.95;--o-nails:.95}
+  --o-hair:.85;--o-face:1;--o-body:.4;--o-hands:.8;--o-nails:.8;
+  --c-hair:#7A5A3A;--c-skin:#E4C39E;--c-line:#3E3527;--c-nails:#8F7A5B;--c-face-base:#FFF9F1;--c-features:#2A211D;--c-lips:#B84F70;--c-blush:#E4B1B5}
+.focus-haut .figur,.figur.focus-haut{--o-hair:.38;--o-face:1;--o-body:.35;--o-hands:.9;--o-nails:.35}
+.focus-haare .figur,.figur.focus-haare{--o-hair:1;--o-face:.65;--o-body:.28;--o-hands:.3;--o-nails:.2}
+.focus-naegel .figur,.figur.focus-naegel{--o-hair:.32;--o-face:.5;--o-body:.28;--o-hands:1;--o-nails:1}
+.focus-all .figur,.figur.focus-all{--o-hair:.95;--o-face:1;--o-body:.4;--o-hands:1;--o-nails:.85}
 .hotspot{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--accent);transform:translate(-50%,-50%);box-shadow:0 0 0 3px var(--card)}
 .hotspot::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px solid var(--accent);animation:pulse 2.2s ease-out infinite}
 @keyframes pulse{0%{transform:scale(.5);opacity:1}100%{transform:scale(1.5);opacity:0}}
@@ -190,61 +190,68 @@ a.chip:hover{background:var(--accent-deep);color:#FBF7EE}
 <!-- Line-Art-Symbol (wiederverwendet via <use>) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="figur" viewBox="0 0 220 310">
-    <!-- Hals & Schultern -->
-    <g style="opacity:var(--o-body,.45)" fill="none" stroke="var(--c-line,#2A241E)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M93,106 C93,116 92,124 90,132"/>
-      <path d="M105,102 C106,112 107,122 108,130"/>
-      <path d="M90,132 C79,140 63,152 51,170 C44,182 39,196 36,212"/>
-      <path d="M108,130 C118,139 129,150 138,162 C148,174 160,184 176,192"/>
-      <path d="M94,138 C85,146 74,152 63,156"/>
+  <!-- Neck and a single shoulder gesture: the portrait is led by the face. -->
+  <g style="opacity:var(--o-body,.45)" fill="none" stroke="var(--c-line,#6F4E37)" stroke-width="1.7" stroke-linecap="round">
+    <path d="M101 189 C110 205 108 220 98 231"/>
+    <path d="M140 173 C142 192 155 212 175 230 C188 240 203 251 211 268"/>
+    <path d="M99 231 C83 235 65 235 48 230"/>
+  </g>
+
+  <!-- Broad hair ribbons, with open space between the waves. -->
+  <g style="opacity:var(--o-hair,.85)" fill="none" stroke="var(--c-line,#6F4E37)" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="var(--c-hair,#8C6547)" fill-opacity=".3" stroke="none" d="M103 12 C145 9 188 33 204 73 C218 108 216 149 199 188 C184 224 158 266 119 300 C153 254 178 208 187 169 C196 129 192 99 172 69 C153 42 129 26 103 12 Z"/>
+    <path fill="var(--c-hair,#8C6547)" fill-opacity=".56" stroke="none" d="M111 31 C133 57 160 71 175 99 C195 136 180 177 149 204 C115 233 60 238 10 243 L8 252 C75 253 129 237 165 206 C199 177 205 136 183 99 C164 69 133 55 111 31 Z"/>
+    <path fill="var(--c-hair,#8C6547)" fill-opacity=".26" stroke="none" d="M155 76 C184 113 183 151 165 187 C144 224 109 252 80 299 C102 286 120 268 141 245 C174 210 193 177 193 145 C193 116 178 93 155 76 Z"/>
+    <path d="M94 15 C121 2 159 14 186 39 C211 62 219 96 215 132 C211 178 186 226 155 269 C145 283 135 295 124 304"/>
+    <path d="M96 16 C112 11 110 33 124 50 C143 74 175 78 189 111 C210 159 180 204 152 234 C127 260 112 281 99 304"/>
+    <path d="M99 16 C105 34 104 51 120 65 C144 86 166 96 175 124 C188 166 163 199 124 217 C92 232 50 235 9 235"/>
+    <path d="M110 28 C112 49 118 63 140 78 C157 90 169 105 172 122"/>
+    <path d="M161 100 C173 131 167 165 149 187 C119 223 66 230 9 226"/>
+    <path d="M9 252 C68 254 119 239 153 218"/>
+    <path d="M90 18 C70 27 51 52 49 85 C48 104 51 116 42 134 C28 158 25 173 30 197 C38 234 38 268 22 302"/>
+    <path d="M93 17 C76 35 67 56 67 83 C69 108 65 126 57 142 C47 164 52 189 55 214"/>
+  </g>
+
+  <!-- Large three-quarter face, strong closed lids, rose lips. -->
+  <g style="opacity:var(--o-face,1)">
+    <path fill="var(--c-face-base,#FFF9F1)" d="M91 20 C78 35 70 55 71 78 C73 96 74 105 66 118 L58 129 C57 133 61 137 65 139 C64 150 65 161 66 175 C67 186 74 191 86 191 C113 191 139 177 151 156 C164 132 162 99 147 78 C130 62 107 52 104 33 C101 23 98 18 91 20 Z"/>
+    <path fill="var(--c-blush,#E4B1B5)" fill-opacity=".24" d="M154 99 C160 127 147 163 117 179 C105 185 91 188 75 186 C107 201 135 182 151 157 C161 140 164 117 154 99 Z"/>
+    <g fill="none" stroke="var(--c-line,#6F4E37)" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke-width="1.85" d="M72 66 C72 87 79 96 72 113 C69 120 61 126 59 130 C58 133 60 136 64 139"/>
+      <path stroke-width="1.65" d="M66 145 C66 156 65 169 67 180 C69 188 76 191 88 191 C107 191 127 184 141 176"/>
+      <path stroke-width="1.3" opacity=".65" d="M150 107 C152 137 144 155 129 169"/>
     </g>
-    <!-- Haare: Deckhaar & fließende Strähnen -->
-    <g style="opacity:var(--o-hair,.2)" stroke="var(--c-line,#2A241E)" stroke-width="1.5" stroke-linejoin="round">
-      <path fill="var(--c-hair,#4A3423)" fill-opacity=".55" stroke-width="1.2" d="M82,38 C88,24 102,17 116,20 C130,23 140,33 143,46 C137,35 125,30 112,32 C99,34 88,36 82,38 Z"/>
-      <path fill="var(--c-hair,#4A3423)" fill-opacity=".2" d="M92,30 C124,14 164,28 186,62 C194,78 198,98 200,118 C188,96 174,72 152,52 C130,34 108,28 92,30 Z"/>
-      <path fill="var(--c-hair,#4A3423)" fill-opacity=".3" d="M102,24 C140,16 178,42 198,84 C206,108 210,144 212,182 C202,142 190,106 168,76 C144,46 120,30 102,24 Z"/>
-      <path fill="var(--c-hair,#4A3423)" fill-opacity=".4" d="M114,22 C150,18 184,48 202,94 C210,124 213,172 214,242 C206,180 196,128 176,92 C154,56 134,32 114,22 Z"/>
-      <path fill="var(--c-hair,#4A3423)" fill-opacity=".5" d="M126,26 C158,28 188,60 202,108 C209,142 206,204 200,286 C196,222 190,162 174,118 C158,74 142,40 126,26 Z"/>
-      <path fill="var(--c-hair,#4A3423)" fill-opacity=".6" d="M136,34 C162,42 186,74 196,122 C202,158 198,222 172,304 C180,238 178,178 166,130 C154,84 146,52 136,34 Z"/>
-      <path fill="var(--c-hair,#4A3423)" fill-opacity=".45" d="M74,44 C66,70 60,100 56,130 C53,152 51,172 52,190 C57,170 61,146 65,120 C69,94 73,66 78,48 Z"/>
-      <g fill="none" stroke-width="1.2" opacity=".5" stroke-linecap="round">
-        <path d="M118,36 C148,56 168,92 178,138"/>
-        <path d="M132,42 C158,66 176,106 184,154"/>
-      </g>
+    <g fill="var(--c-features,var(--c-line,#2A241E))">
+      <path d="M68 64 C76 65 82 70 85 78 C81 76 76 70 68 68 Z"/>
+      <path d="M103 82 C116 90 132 85 145 94 C150 98 151 101 152 107 C146 96 138 93 126 93 C114 93 107 90 103 82 Z"/>
+      <path d="M65 89 C70 98 76 100 83 97 C79 104 69 101 65 95 C63 93 62 90 62 87 C64 89 64 89 65 89 Z"/>
+      <path d="M103 104 C111 111 116 116 128 114 C136 112 143 112 147 119 C140 116 136 118 129 119 C116 122 107 115 103 104 Z"/>
+      <path d="M73 141 C76 138 80 139 81 142 C78 144 75 144 73 141 Z"/>
     </g>
-    <!-- Gesicht -->
-    <g style="opacity:var(--o-face,.2)">
-      <path fill="var(--c-skin,#E4C39E)" stroke="var(--c-line,#2A241E)" stroke-width="2" stroke-linejoin="round" d="M82,36 C74,43 70,53 71,62 C70,68 69,73 68,78 C67,82 68,85 71,87 C72,89 72,92 73,94 C74,97 77,102 82,105 C88,108 96,108 102,104 C107,100 111,94 113,86 C115,74 113,58 108,46 C103,37 92,31 82,36 Z"/>
-      <g fill="none" stroke="var(--c-line,#2A241E)" stroke-linecap="round">
-        <path stroke-width="2" d="M76,58 C80,55 86,55 89,57"/>
-        <path stroke-width="2" d="M93,57 C97,54 103,54 107,57"/>
-        <path stroke-width="2" d="M77,68 C80,71 85,71 88,68"/>
-        <path stroke-width="2" d="M94,68 C97,71 102,71 105,68"/>
-        <path stroke-width="1.5" d="M79,70 L76,74 M84,71 L82,75"/>
-        <path stroke-width="1.5" d="M96,70 L94,74 M100,71 L99,75 M103,70 L102,74"/>
-        <path stroke-width="1.8" d="M83,71 C80,77 78,83 80,87 C82,89 85,88 86,86"/>
-        <path stroke-width="1.8" d="M109,72 C113,73 115,78 113,83 C112,87 109,88 107,86"/>
-      </g>
-      <path fill="var(--c-nails,#8F7A5B)" opacity=".85" d="M73,93 C76,91 83,91 87,93 C88,95 87,98 84,99 C80,100 75,98 73,95 Z"/>
-      <path fill="none" stroke="var(--c-line,#2A241E)" stroke-width="1.2" stroke-linecap="round" d="M73,95 C77,96 83,96 87,94"/>
+    <g fill="none" stroke="var(--c-lips,#B84F70)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M65 158 C69 153 72 152 77 156 C81 153 84 156 89 160 C95 165 101 168 108 168 C93 171 79 170 65 162"/>
+      <path d="M65 169 C76 180 91 178 102 171"/>
+      <path stroke-width="1.15" opacity=".7" d="M72 162 C82 165 91 166 103 168"/>
     </g>
-    <!-- Hand -->
-    <g style="opacity:var(--o-hands,.2)" fill="var(--c-skin,#E4C39E)" stroke="var(--c-line,#2A241E)" stroke-width="2" stroke-linejoin="round">
-      <path d="M66,310 C65,292 66,274 70,258 C73,248 78,242 84,242 C90,242 94,248 96,258 C99,274 100,292 100,310 Z"/>
-      <path d="M69,248 C68,240 68,231 70,225 C71,221 75,221 76,225 C77,231 77,240 77,248 Z"/>
-      <path d="M77,248 C76,238 76,227 78,220 C79,216 83,216 84,220 C85,227 85,238 85,248 Z"/>
-      <path d="M85,248 C84,239 84,229 86,223 C87,219 91,219 92,223 C93,229 93,239 93,248 Z"/>
-      <path d="M93,248 C92,241 92,233 94,228 C95,224 98,225 99,229 C100,234 100,241 100,248 Z"/>
-      <path d="M70,266 C63,262 58,255 57,248 C56,242 61,239 65,243 C68,246 71,253 72,260 C72,263 71,265 70,266 Z"/>
+  </g>
+
+  <!-- A hand rising naturally from the lower edge, with long, tapered fingers. -->
+  <g style="opacity:var(--o-hands,.65)" stroke="var(--c-line,#6F4E37)" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="var(--c-face-base,#FFF9F1)" d="M83 306 C80 289 70 278 66 263 C63 252 60 245 57 239 C54 231 57 225 61 228 C67 233 70 244 74 247 C71 232 68 217 70 209 C71 204 76 203 78 210 L86 237 C83 222 80 204 83 199 C86 194 90 198 92 206 L98 235 C97 222 94 207 98 204 C103 201 105 209 106 217 L110 240 C112 227 113 218 117 218 C123 218 122 228 120 240 L117 258 C117 276 121 292 127 306 Z"/>
+    <g fill="none" opacity=".7" stroke-width="1.1">
+      <path d="M74 247 C78 252 80 260 80 266"/>
+      <path d="M86 237 L88 250 M98 235 L100 249 M110 240 L110 250"/>
+      <path d="M89 270 C96 266 104 266 110 269"/>
     </g>
-    <!-- Nägel -->
-    <g style="opacity:var(--o-nails,.15)" fill="var(--c-nails,#8F7A5B)">
-      <ellipse cx="73" cy="227" rx="2.3" ry="3.2"/>
-      <ellipse cx="81" cy="222" rx="2.3" ry="3.2"/>
-      <ellipse cx="89" cy="225" rx="2.3" ry="3.2"/>
-      <ellipse cx="96" cy="231" rx="2.1" ry="2.9"/>
-    </g>
-  </symbol>
+  </g>
+  <g style="opacity:var(--o-nails,.8)" fill="var(--c-nails,#B4643C)" stroke="var(--c-line,#6F4E37)" stroke-width=".8" stroke-linejoin="round">
+    <path d="M70 210 C69 205 70 202 73 203 C76 205 77 208 77 212 C75 215 72 214 70 210 Z"/>
+    <path d="M83 200 C82 195 84 192 87 194 C90 196 91 200 91 204 C87 207 84 204 83 200 Z"/>
+    <path d="M98 209 C97 204 98 201 101 203 C104 205 105 208 105 212 C102 214 99 213 98 209 Z"/>
+    <path d="M114 224 C114 219 116 216 119 219 C121 222 120 225 119 228 C116 230 114 228 114 224 Z"/>
+    <path d="M57 233 C55 228 57 225 60 227 C63 230 64 233 64 236 C61 238 59 236 57 233 Z"/>
+  </g>
+</symbol>
 </svg>
 
 <header class="site-header">
@@ -296,11 +303,11 @@ a.chip:hover{background:var(--accent-deep);color:#FBF7EE}
       <div class="float-card intro-card">
         <div class="figur-wrap focus-all reveal">
           <svg class="figur" viewBox="0 0 220 310" role="img" aria-label="Line-Art-Illustration einer Frau mit den Bereichen Haare, Haut und Nägel"><use href="#figur"/></svg>
-          <span class="hotspot" style="left:66%;top:16%"></span>
-          <span class="hotspot" style="left:33%;top:26%"></span>
-          <span class="hotspot" style="left:36%;top:71%"></span>
-          <a class="chip" style="left:62%;top:3%;transform:translateX(-50%)" href="#haare">Haare</a>
-          <a class="chip" style="left:24%;top:25%" href="#haut">Haut</a>
+          <span class="hotspot" style="left:80%;top:24%"></span>
+          <span class="hotspot" style="left:54%;top:47%"></span>
+          <span class="hotspot" style="left:39%;top:65%"></span>
+          <a class="chip" style="left:68%;top:3%;transform:translateX(-50%)" href="#haare">Haare</a>
+          <a class="chip" style="left:24%;top:44%" href="#haut">Haut</a>
           <a class="chip" style="left:50%;top:100%;transform:translate(-50%,-50%)" href="#naegel">Nägel</a>
         </div>
         <div class="intro-copy reveal">
@@ -465,7 +472,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   background:var(--ds-btn-bg,var(--ds-accent));color:var(--ds-on-accent,#F6F0E6);font-size:1.45rem;
   display:grid;place-items:center;box-shadow:0 12px 28px -10px rgba(0,0,0,.5);transition:transform .2s}
 .design-switch__btn:hover{transform:translateY(-2px) scale(1.06)}
-.design-switch__menu{position:absolute;left:0;bottom:66px;width:236px;padding:8px;
+.design-switch__menu{position:absolute;left:0;bottom:66px;width:236px;max-height:calc(100dvh - 110px);overflow-y:auto;padding:8px;
   background:var(--ds-surface);color:var(--ds-ink);border:1px solid var(--ds-line);border-radius:12px;
   box-shadow:0 20px 44px -14px rgba(0,0,0,.45);
   opacity:0;visibility:hidden;transform:translateY(10px) scale(.96);transform-origin:bottom left;transition:.22s ease}
@@ -480,7 +487,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 @media(max-width:600px){.design-switch{left:14px;bottom:14px}.design-switch__menu{bottom:62px}}
 </style>
 <div class="design-switch" id="designSwitch" style="--ds-btn-bg:#605844;--ds-on-accent:#FBF7EE">
-  <nav class="design-switch__menu" aria-label="Design-Entwurf wechseln">
+  <nav class="design-switch__menu" id="designSwitchMenu" aria-label="Design-Entwurf wechseln">
     <p class="design-switch__title">Entwurf wählen</p>
     <a class="design-switch__item" href="vorschlag-a-editorial.html">
       <span class="design-switch__dot" style="background:#B4643C"></span><span>A · Editorial</span>
@@ -490,14 +497,29 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
     </a>
     <a class="design-switch__item is-current" href="vorschlag-d-modern.html" aria-current="page">
       <span class="design-switch__dot" style="background:#8F7A5B"></span><span>D · Modern</span>
-      <i class="ph ph-check design-switch__check"></i>
+      <span class="design-switch__check" aria-hidden="true">✓</span>
     </a>
     <a class="design-switch__item" href="vorschlag-e-timate.html">
       <span class="design-switch__dot" style="background:#6F4E37"></span><span>E · Timate-Stil</span>
     </a>
+    <a class="design-switch__item" href="vorschlag-f-triptychon.html">
+      <span class="design-switch__dot" style="background:#C49A61"></span><span>F · Triptychon</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-g-werkstatt.html">
+      <span class="design-switch__dot" style="background:#B5794A"></span><span>G · Werkstatt</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-h-mokka.html">
+      <span class="design-switch__dot" style="background:#CBA97E"></span><span>H · Mokka</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-i-dreiklang.html">
+      <span class="design-switch__dot" style="background:#C9A27A"></span><span>I · Dreiklang</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-j-karte.html">
+      <span class="design-switch__dot" style="background:#D9AE75"></span><span>J · Die Karte</span>
+    </a>
   </nav>
-  <button class="design-switch__btn" id="designSwitchBtn" aria-expanded="false" aria-label="Design-Entwurf wechseln" title="Design wechseln">
-    <i class="ph ph-palette"></i>
+  <button class="design-switch__btn" id="designSwitchBtn" aria-controls="designSwitchMenu" aria-expanded="false" aria-label="Design-Entwurf wechseln" title="Design wechseln">
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 1 0 0 18h1.3a2.2 2.2 0 0 0 1.5-3.8 1.4 1.4 0 0 1 1-2.4H18a3 3 0 0 0 3-3C21 6.9 17 3 12 3Z"/><circle cx="7.5" cy="10" r="1"/><circle cx="10.5" cy="6.8" r="1"/><circle cx="15" cy="7" r="1"/><circle cx="17.5" cy="10.5" r="1"/></svg>
   </button>
 </div>
 <script>

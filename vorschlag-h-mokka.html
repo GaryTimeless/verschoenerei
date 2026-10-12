@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verschönerei Weinheim — Entwurf H · Mokka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.css">
+<style>
+:root{
+  --bg:#221912;
+  --card:#2C2014; --card-2:#372918;
+  --cream:#F1E7D5; --muted:#B7A68C;
+  --accent:#CBA97E; --accent-soft:rgba(203,169,126,.16);
+  --line:rgba(241,231,213,.14);
+  --sans:'DM Sans',sans-serif; --disp:'Syne',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--cream);line-height:1.65;font-weight:300;overflow-x:hidden}
+/* warmer Lichtschein oben */
+body::before{content:"";position:fixed;top:-220px;left:50%;transform:translateX(-50%);width:1100px;height:620px;z-index:0;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(203,169,126,.16),transparent 72%)}
+header,main,footer{position:relative;z-index:1}
+img,svg{display:block}
+[id]{scroll-margin-top:96px}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(34,25,18,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;gap:28px;padding:14px 24px;max-width:1160px;margin:0 auto}
+.brand{text-decoration:none;color:var(--cream);display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-family:var(--disp);font-size:1.3rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.brand-sub{font-size:.6rem;letter-spacing:.42em;text-transform:uppercase;color:var(--accent)}
+.main-nav{margin-left:auto;display:flex;align-items:center;gap:24px}
+.main-nav a{color:var(--cream);text-decoration:none;font-size:.9rem}
+.main-nav a:hover{color:var(--accent)}
+.nav-cta{padding:9px 18px;font-size:.85rem}
+.draft-badge{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(203,169,126,.45);padding:5px 10px;border-radius:999px;white-space:nowrap}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;width:42px;height:42px;font-size:1.3rem;color:var(--cream);cursor:pointer;place-items:center}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:500;font-size:.95rem;text-decoration:none;transition:.25s;border:1.5px solid transparent;cursor:pointer;font-family:var(--sans)}
+.btn-primary{background:var(--accent);color:#221912}
+.btn-primary:hover{background:#D9BC93}
+.btn-ghost{border-color:var(--line);color:var(--cream)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.text-link{color:var(--accent);font-weight:500;text-decoration:none;border-bottom:1.5px solid rgba(203,169,126,.4);padding-bottom:2px}
+.text-link:hover{border-color:var(--accent)}
+
+/* ---------- Typo ---------- */
+.eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:16px}
+h1{font-family:var(--disp);font-size:clamp(2.5rem,5.2vw,4.2rem);line-height:1.05;font-weight:800;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--accent)}
+h2{font-family:var(--disp);font-weight:700;line-height:1.15}
+.lead{font-size:1.05rem;color:var(--muted);margin:20px 0 0;max-width:54ch}
+
+/* ---------- Hero ---------- */
+.hero{padding:88px 0 70px}
+.hero-head{text-align:center;max-width:820px;margin:0 auto 34px}
+.hero-head .lead{margin:20px auto 0}
+.hero-actions{display:flex;gap:14px;justify-content:center;margin-top:30px;flex-wrap:wrap}
+
+/* ---------- Drei Aspekt-Karten ---------- */
+.aspects{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px;align-items:start}
+.aspect{background:var(--card-2);border:1px solid var(--line);border-radius:26px;padding:34px 30px;position:relative;overflow:hidden;
+  transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.aspect::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(420px 200px at 80% -10%,rgba(203,169,126,.12),transparent 70%)}
+.aspect:hover{transform:translateY(-8px);border-color:rgba(203,169,126,.55);
+  box-shadow:0 34px 70px -34px rgba(0,0,0,.85),0 0 0 1px rgba(203,169,126,.18)}
+.aspect-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px}
+.aspect-num{font-family:var(--disp);font-weight:800;font-size:2.3rem;line-height:1;color:var(--accent);opacity:.9}
+.aspect .figur-wrap{width:130px;flex:none}
+.aspect h3{font-family:var(--disp);font-size:1.55rem;font-weight:700;margin-bottom:4px}
+.aspect-tag{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+.aspect-list{list-style:none;display:grid;gap:11px;margin-bottom:24px}
+.aspect-list li{display:flex;gap:12px;align-items:flex-start;background:rgba(203,169,126,.07);border:1px solid rgba(241,231,213,.08);
+  border-radius:13px;padding:11px 13px}
+.aspect-list i{color:var(--accent);font-size:1.2rem;margin-top:1px;flex:none}
+.aspect-list strong{display:block;font-weight:500;font-size:.88rem;line-height:1.35}
+.aspect-list span{font-size:.76rem;color:var(--muted)}
+.aspect-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.price-chip{font-size:.74rem;border:1px solid rgba(203,169,126,.45);color:var(--cream);padding:6px 13px;border-radius:999px;white-space:nowrap}
+
+/* ---------- Figur ---------- */
+.figur{width:100%;height:auto;
+  --o-hair:.85;--o-face:1;--o-body:.4;--o-hands:.8;--o-nails:.8;
+  --c-hair:#B08B5C;--c-skin:#EBD1A8;--c-line:#F1E7D5;--c-nails:#CBA97E;--c-face-base:#30251A;--c-features:#F1E7D5;--c-lips:#D997A3;--c-blush:#D6A995}
+.focus-haut .figur,.figur.focus-haut{--o-hair:.38;--o-face:1;--o-body:.35;--o-hands:.9;--o-nails:.35}
+.focus-haare .figur,.figur.focus-haare{--o-hair:1;--o-face:.65;--o-body:.28;--o-hands:.3;--o-nails:.2}
+.focus-naegel .figur,.figur.focus-naegel{--o-hair:.32;--o-face:.5;--o-body:.28;--o-hands:1;--o-nails:1}
+.focus-all .figur,.figur.focus-all{--o-hair:.95;--o-face:1;--o-body:.4;--o-hands:1;--o-nails:.85}
+
+/* ---------- Marquee ---------- */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;overflow:hidden;margin:40px 0 0}
+.marquee-track{display:flex;width:max-content;animation:marquee 30s linear infinite}
+.marquee-group{display:flex;align-items:center;gap:56px;padding-right:56px}
+.m-item{font-family:var(--disp);font-weight:800;font-size:clamp(1.3rem,2.6vw,1.9rem);letter-spacing:.22em;text-transform:uppercase;
+  color:transparent;-webkit-text-stroke:1px rgba(203,169,126,.8);white-space:nowrap}
+.m-star{color:var(--accent);font-size:.95rem;opacity:.85}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* ---------- Mehr ---------- */
+.mehr{padding:96px 0 0}
+.mehr h2{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:24px}
+.mehr-grid{display:flex;flex-wrap:wrap;gap:14px}
+.mehr-item{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid var(--line);border-radius:999px;
+  text-decoration:none;color:var(--cream);font-weight:500;font-size:.9rem;transition:.22s}
+.mehr-item:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-3px)}
+.mehr-item i{color:var(--accent)}
+.mehr-item span{font-size:.74rem;color:var(--muted)}
+
+/* ---------- Team ---------- */
+.team{padding:96px 0 0}
+.team-head{max-width:560px;margin-bottom:40px}
+.team-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:12px}
+.team-head p{color:var(--muted)}
+.team-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:18px}
+.team-item{text-align:center}
+.avatar{width:76px;height:76px;border-radius:50%;margin:0 auto 10px;display:grid;place-items:center;
+  border:1px solid rgba(203,169,126,.5);background:radial-gradient(circle at 30% 25%,#3E2E1C,#2A1F13);
+  font-family:var(--disp);font-weight:700;font-size:1.25rem;color:var(--accent)}
+.team-item strong{display:block;font-size:.9rem;font-weight:500}
+.team-item span{font-size:.74rem;color:var(--muted)}
+
+/* ---------- Kontakt ---------- */
+.kontakt{padding:96px 0 100px}
+.kontakt-card{background:linear-gradient(150deg,#2C2014,#251C12);border:1px solid var(--line);border-radius:28px;
+  padding:clamp(32px,5vw,60px);display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.kontakt-card h2{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:8px}
+.contact-list{list-style:none;display:grid;gap:14px;margin:26px 0 30px}
+.contact-list li{display:flex;gap:12px;align-items:center;font-size:.95rem}
+.contact-list i{color:var(--accent);font-size:1.2rem;flex:none}
+.kontakt-actions{display:flex;gap:14px;flex-wrap:wrap}
+.map-ph{border:1.5px dashed rgba(203,169,126,.45);border-radius:20px;min-height:320px;display:grid;place-content:center;
+  justify-items:center;gap:8px;text-align:center;background:rgba(203,169,126,.05);padding:24px}
+.map-ph i{font-size:2.4rem;color:var(--accent)}
+.map-ph p{font-weight:500}
+.map-ph span{font-size:.74rem;color:var(--muted);max-width:32ch}
+
+/* ---------- Footer ---------- */
+.site-footer{border-top:1px solid var(--line);padding:48px 0 28px}
+.footer-inner{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start}
+.footer-inner p{font-size:.85rem;color:var(--muted);margin-top:6px}
+.footer-nav{display:flex;gap:22px}
+.footer-nav a{color:var(--cream);text-decoration:none;font-size:.85rem}
+.footer-nav a:hover{color:var(--accent)}
+.socials{display:flex;gap:12px}
+.socials a{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--accent);font-size:1.2rem;text-decoration:none;transition:.2s}
+.socials a:hover{background:var(--accent);color:#221912;border-color:var(--accent)}
+.footer-note{text-align:center;font-size:.72rem;color:var(--muted);margin-top:36px}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:1000px){
+  .aspects{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto}
+  .team-grid{grid-template-columns:repeat(4,1fr);row-gap:28px}
+}
+@media(max-width:900px){
+  .kontakt-card{grid-template-columns:1fr;gap:44px}
+  .main-nav{position:fixed;top:71px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:flex-start;padding:24px;
+    border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.3s;z-index:40}
+  .main-nav.open{transform:none}
+  .menu-btn{display:grid}
+  .draft-badge{display:none}
+}
+@media(max-width:600px){
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- Line-Art-Symbol (wiederverwendet via <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="figur" viewBox="0 0 220 310">
+  <!-- Neck and a single shoulder gesture: the portrait is led by the face. -->
+  <g style="opacity:var(--o-body,.45)" fill="none" stroke="var(--c-line,#6F4E37)" stroke-width="1.7" stroke-linecap="round">
+    <path d="M101 189 C110 205 108 220 98 231"/>
+    <path d="M140 173 C142 192 155 212 175 230 C188 240 203 251 211 268"/>
+    <path d="M99 231 C83 235 65 235 48 230"/>
+  </g>
+
+  <!-- Broad hair ribbons, with open space between the waves. -->
+  <g style="opacity:var(--o-hair,.85)" fill="none" stroke="var(--c-line,#6F4E37)" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="var(--c-hair,#8C6547)" fill-opacity=".3" stroke="none" d="M103 12 C145 9 188 33 204 73 C218 108 216 149 199 188 C184 224 158 266 119 300 C153 254 178 208 187 169 C196 129 192 99 172 69 C153 42 129 26 103 12 Z"/>
+    <path fill="var(--c-hair,#8C6547)" fill-opacity=".56" stroke="none" d="M111 31 C133 57 160 71 175 99 C195 136 180 177 149 204 C115 233 60 238 10 243 L8 252 C75 253 129 237 165 206 C199 177 205 136 183 99 C164 69 133 55 111 31 Z"/>
+    <path fill="var(--c-hair,#8C6547)" fill-opacity=".26" stroke="none" d="M155 76 C184 113 183 151 165 187 C144 224 109 252 80 299 C102 286 120 268 141 245 C174 210 193 177 193 145 C193 116 178 93 155 76 Z"/>
+    <path d="M94 15 C121 2 159 14 186 39 C211 62 219 96 215 132 C211 178 186 226 155 269 C145 283 135 295 124 304"/>
+    <path d="M96 16 C112 11 110 33 124 50 C143 74 175 78 189 111 C210 159 180 204 152 234 C127 260 112 281 99 304"/>
+    <path d="M99 16 C105 34 104 51 120 65 C144 86 166 96 175 124 C188 166 163 199 124 217 C92 232 50 235 9 235"/>
+    <path d="M110 28 C112 49 118 63 140 78 C157 90 169 105 172 122"/>
+    <path d="M161 100 C173 131 167 165 149 187 C119 223 66 230 9 226"/>
+    <path d="M9 252 C68 254 119 239 153 218"/>
+    <path d="M90 18 C70 27 51 52 49 85 C48 104 51 116 42 134 C28 158 25 173 30 197 C38 234 38 268 22 302"/>
+    <path d="M93 17 C76 35 67 56 67 83 C69 108 65 126 57 142 C47 164 52 189 55 214"/>
+  </g>
+
+  <!-- Large three-quarter face, strong closed lids, rose lips. -->
+  <g style="opacity:var(--o-face,1)">
+    <path fill="var(--c-face-base,#FFF9F1)" d="M91 20 C78 35 70 55 71 78 C73 96 74 105 66 118 L58 129 C57 133 61 137 65 139 C64 150 65 161 66 175 C67 186 74 191 86 191 C113 191 139 177 151 156 C164 132 162 99 147 78 C130 62 107 52 104 33 C101 23 98 18 91 20 Z"/>
+    <path fill="var(--c-blush,#E4B1B5)" fill-opacity=".24" d="M154 99 C160 127 147 163 117 179 C105 185 91 188 75 186 C107 201 135 182 151 157 C161 140 164 117 154 99 Z"/>
+    <g fill="none" stroke="var(--c-line,#6F4E37)" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke-width="1.85" d="M72 66 C72 87 79 96 72 113 C69 120 61 126 59 130 C58 133 60 136 64 139"/>
+      <path stroke-width="1.65" d="M66 145 C66 156 65 169 67 180 C69 188 76 191 88 191 C107 191 127 184 141 176"/>
+      <path stroke-width="1.3" opacity=".65" d="M150 107 C152 137 144 155 129 169"/>
+    </g>
+    <g fill="var(--c-features,var(--c-line,#2A241E))">
+      <path d="M68 64 C76 65 82 70 85 78 C81 76 76 70 68 68 Z"/>
+      <path d="M103 82 C116 90 132 85 145 94 C150 98 151 101 152 107 C146 96 138 93 126 93 C114 93 107 90 103 82 Z"/>
+      <path d="M65 89 C70 98 76 100 83 97 C79 104 69 101 65 95 C63 93 62 90 62 87 C64 89 64 89 65 89 Z"/>
+      <path d="M103 104 C111 111 116 116 128 114 C136 112 143 112 147 119 C140 116 136 118 129 119 C116 122 107 115 103 104 Z"/>
+      <path d="M73 141 C76 138 80 139 81 142 C78 144 75 144 73 141 Z"/>
+    </g>
+    <g fill="none" stroke="var(--c-lips,#B84F70)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M65 158 C69 153 72 152 77 156 C81 153 84 156 89 160 C95 165 101 168 108 168 C93 171 79 170 65 162"/>
+      <path d="M65 169 C76 180 91 178 102 171"/>
+      <path stroke-width="1.15" opacity=".7" d="M72 162 C82 165 91 166 103 168"/>
+    </g>
+  </g>
+
+  <!-- A hand rising naturally from the lower edge, with long, tapered fingers. -->
+  <g style="opacity:var(--o-hands,.65)" stroke="var(--c-line,#6F4E37)" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="var(--c-face-base,#FFF9F1)" d="M83 306 C80 289 70 278 66 263 C63 252 60 245 57 239 C54 231 57 225 61 228 C67 233 70 244 74 247 C71 232 68 217 70 209 C71 204 76 203 78 210 L86 237 C83 222 80 204 83 199 C86 194 90 198 92 206 L98 235 C97 222 94 207 98 204 C103 201 105 209 106 217 L110 240 C112 227 113 218 117 218 C123 218 122 228 120 240 L117 258 C117 276 121 292 127 306 Z"/>
+    <g fill="none" opacity=".7" stroke-width="1.1">
+      <path d="M74 247 C78 252 80 260 80 266"/>
+      <path d="M86 237 L88 250 M98 235 L100 249 M110 240 L110 250"/>
+      <path d="M89 270 C96 266 104 266 110 269"/>
+    </g>
+  </g>
+  <g style="opacity:var(--o-nails,.8)" fill="var(--c-nails,#B4643C)" stroke="var(--c-line,#6F4E37)" stroke-width=".8" stroke-linejoin="round">
+    <path d="M70 210 C69 205 70 202 73 203 C76 205 77 208 77 212 C75 215 72 214 70 210 Z"/>
+    <path d="M83 200 C82 195 84 192 87 194 C90 196 91 200 91 204 C87 207 84 204 83 200 Z"/>
+    <path d="M98 209 C97 204 98 201 101 203 C104 205 105 208 105 212 C102 214 99 213 98 209 Z"/>
+    <path d="M114 224 C114 219 116 216 119 219 C121 222 120 225 119 228 C116 230 114 228 114 224 Z"/>
+    <path d="M57 233 C55 228 57 225 60 227 C63 230 64 233 64 236 C61 238 59 236 57 233 Z"/>
+  </g>
+</symbol>
+</svg>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-name">Verschönerei</span>
+      <span class="brand-sub">Weinheim</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#haut">Haut</a>
+      <a href="#haare">Haare</a>
+      <a href="#naegel">Nägel</a>
+      <a href="#team">Team</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="btn btn-primary nav-cta">Termin buchen</a>
+    </nav>
+    <span class="draft-badge">Entwurf H · Mokka</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero: Haut. Haare. Nägel. -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-head reveal">
+        <p class="eyebrow">Beauty-Studio · Bergstraße 22 · Weinheim</p>
+        <h1>Haut. <em>Haare.</em> Nägel.</h1>
+        <p class="lead">Ein Studio, drei Wege zu deiner schönsten Ausstrahlung — in warmem Mokka, mit Zeit, Können und Produkten, die wir selbst lieben.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">Termin buchen <i class="ph ph-arrow-right"></i></a>
+          <a href="#haut" class="btn btn-ghost">Leistungen entdecken</a>
+        </div>
+      </div>
+
+      <div class="aspects">
+        <article class="aspect reveal" id="haut">
+          <div class="aspect-top">
+            <span class="aspect-num">01</span>
+            <div class="figur-wrap focus-haut">
+              <svg class="figur" viewBox="0 0 220 310" role="img" aria-label="Bereich Haut — Gesicht und Hände"><use href="#figur"/></svg>
+            </div>
+          </div>
+          <h3>Haut</h3>
+          <p class="aspect-tag">Strahlend &amp; gepflegt</p>
+          <ul class="aspect-list">
+            <li><i class="ph ph-sparkle"></i><div><strong>Gesichtsbehandlungen &amp; Pflege</strong><span>Reinigung · Wirkstoffpflege · Entspannung</span></div></li>
+            <li><i class="ph ph-hand-soap"></i><div><strong>Microblading / Nanoblading</strong><span>Präzise, haltbare Brauen</span></div></li>
+            <li><i class="ph ph-flower-lotus"></i><div><strong>Pflegeberatung</strong><span>Kostenlos &amp; typgerecht</span></div></li>
+          </ul>
+          <div class="aspect-foot">
+            <a class="text-link" href="#kontakt">Beratung anfragen <i class="ph ph-arrow-right"></i></a>
+            <span class="price-chip">Nanoblading ab 199 €</span>
+          </div>
+        </article>
+        <article class="aspect reveal" id="haare">
+          <div class="aspect-top">
+            <span class="aspect-num">02</span>
+            <div class="figur-wrap focus-haare">
+              <svg class="figur" viewBox="0 0 220 310" role="img" aria-label="Bereich Haare — fließendes Haar"><use href="#figur"/></svg>
+            </div>
+          </div>
+          <h3>Haare</h3>
+          <p class="aspect-tag">Schnitt, Farbe &amp; Charakter</p>
+          <ul class="aspect-list">
+            <li><i class="ph ph-scissors"></i><div><strong>Damen- &amp; Herrenschnitt</strong><span>Beratung · Schnitt · Styling</span></div></li>
+            <li><i class="ph ph-drop"></i><div><strong>Balayage, Ombré &amp; Farbe</strong><span>Natürlich oder ausdrucksstark</span></div></li>
+            <li><i class="ph ph-hand-heart"></i><div><strong>Verlängerung &amp; Verdichtung</strong><span>La Biosthetique · Olaplex</span></div></li>
+          </ul>
+          <div class="aspect-foot">
+            <a class="text-link" href="#kontakt">Termin buchen <i class="ph ph-arrow-right"></i></a>
+            <span class="price-chip">Extensions ab 380 €</span>
+          </div>
+        </article>
+        <article class="aspect reveal" id="naegel">
+          <div class="aspect-top">
+            <span class="aspect-num">03</span>
+            <div class="figur-wrap focus-naegel">
+              <svg class="figur" viewBox="0 0 220 310" role="img" aria-label="Bereich Nägel — gepflegte Hände"><use href="#figur"/></svg>
+            </div>
+          </div>
+          <h3>Nägel</h3>
+          <p class="aspect-tag">Gepflegt bis in die Spitzen</p>
+          <ul class="aspect-list">
+            <li><i class="ph ph-hand"></i><div><strong>Maniküre</strong><span>Pflege für Hände &amp; Nägel</span></div></li>
+            <li><i class="ph ph-gem"></i><div><strong>Nagel-Design</strong><span>French · Babyboomer · Glitter · Strass</span></div></li>
+            <li><i class="ph ph-footprints"></i><div><strong>Preise</strong><span>Alle Preise im Buchungsportal</span></div></li>
+          </ul>
+          <div class="aspect-foot">
+            <a class="text-link" href="#kontakt">Termin buchen <i class="ph ph-arrow-right"></i></a>
+            <span class="price-chip">Auch für Herren</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span class="m-item">Haut</span><i class="ph ph-asterisk m-star"></i>
+        <span class="m-item">Haare</span><i class="ph ph-asterisk m-star"></i>
+        <span class="m-item">Nägel</span><i class="ph ph-asterisk m-star"></i>
+        <span class="m-item">Verschönerei</span><i class="ph ph-asterisk m-star"></i>
+      </div>
+      <div class="marquee-group">
+        <span class="m-item">Haut</span><i class="ph ph-asterisk m-star"></i>
+        <span class="m-item">Haare</span><i class="ph ph-asterisk m-star"></i>
+        <span class="m-item">Nägel</span><i class="ph ph-asterisk m-star"></i>
+        <span class="m-item">Verschönerei</span><i class="ph ph-asterisk m-star"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mehr -->
+  <section class="mehr">
+    <div class="container">
+      <h2 class="reveal">Und außerdem</h2>
+      <div class="mehr-grid reveal">
+        <a href="#" class="mehr-item"><i class="ph ph-eye"></i>Wimpern-Design <span>ab 54 €</span></a>
+        <a href="#" class="mehr-item"><i class="ph ph-footprints"></i>Fußpflege</a>
+        <a href="#" class="mehr-item"><i class="ph ph-sparkle"></i>Permanent Make-Up</a>
+        <a href="#" class="mehr-item"><i class="ph ph-tote"></i>Mode-Boutique</a>
+        <a href="#" class="mehr-item"><i class="ph ph-shopping-bag"></i>Beauty-Shop</a>
+        <a href="#" class="mehr-item"><i class="ph ph-gift"></i>Gutscheine</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="team-head reveal">
+        <p class="eyebrow">Unser Team</p>
+        <h2>Die Menschen hinter der Verschönerei</h2>
+        <p>Alle arbeiten auf höchstem Level für deine Schönheit — komm vorbei und lerne uns kennen.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-item reveal"><div class="avatar">P</div><strong>Peggy</strong><span>Inhaberin</span></div>
+        <div class="team-item reveal"><div class="avatar">A</div><strong>Angelika</strong><span>Friseur-Meisterin</span></div>
+        <div class="team-item reveal"><div class="avatar">V</div><strong>Violetta</strong><span>Friseurin</span></div>
+        <div class="team-item reveal"><div class="avatar">AK</div><strong>Ann-Kathrin</strong><span>Wimpern-Designerin</span></div>
+        <div class="team-item reveal"><div class="avatar">S</div><strong>Sibel</strong><span>Kosmetik · Microblading · Fußpflege</span></div>
+        <div class="team-item reveal"><div class="avatar">M</div><strong>Mela</strong><span>Friseurin</span></div>
+        <div class="team-item reveal"><div class="avatar">J</div><strong>Jessica</strong><span>Auszubildende Friseurin</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="kontakt" id="kontakt">
+    <div class="container">
+      <div class="kontakt-card">
+        <div class="reveal">
+          <p class="eyebrow">Kontakt &amp; Anfahrt</p>
+          <h2>Wir freuen uns auf dich</h2>
+          <ul class="contact-list">
+            <li><i class="ph ph-map-pin"></i>Bergstraße 22 · 69469 Weinheim</li>
+            <li><i class="ph ph-clock"></i>Di–Fr 9:00–18:00 Uhr · Sa 9:00–13:00 Uhr</li>
+            <li><i class="ph ph-phone"></i>+49 (0) 6201 704 84 80</li>
+            <li><i class="ph ph-envelope"></i>willkommen@verschoenerei.de</li>
+          </ul>
+          <div class="kontakt-actions">
+            <a href="#" class="btn btn-primary">Termin buchen</a>
+            <a href="#" class="btn btn-ghost"><i class="ph ph-whatsapp-logo"></i> WhatsApp</a>
+          </div>
+        </div>
+        <div class="map-ph reveal">
+          <i class="ph ph-map-pin"></i>
+          <p>Karte folgt</p>
+          <span>OpenStreetMap — DSGVO-freundlich, ohne Google-API-Key</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="brand-name">Verschönerei</span>
+      <p>Dein Beauty-Studio in Weinheim — Haut. Haare. Nägel.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+    </nav>
+    <div class="socials">
+      <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+      <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+    </div>
+  </div>
+  <p class="footer-note">Design-Entwurf H · Mokka · Platzhalter-Buttons &amp; -Karte · noch nicht final</p>
+</footer>
+
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+<!-- Design-Switcher: Wechsel zwischen den Entwürfen (nur Demo) -->
+<style>
+.design-switch{position:fixed;left:20px;bottom:20px;z-index:100;font-family:var(--sans,'DM Sans',sans-serif);
+  --ds-surface:var(--card,var(--panel,#FDFBF7));
+  --ds-ink:var(--ink,var(--cream,#221D18));
+  --ds-accent:var(--accent,var(--gold,var(--rose,#6F4E37)));
+  --ds-line:var(--line,rgba(34,29,24,.14))}
+.design-switch__btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;
+  background:var(--ds-btn-bg,var(--ds-accent));color:var(--ds-on-accent,#F6F0E6);font-size:1.45rem;
+  display:grid;place-items:center;box-shadow:0 12px 28px -10px rgba(0,0,0,.5);transition:transform .2s}
+.design-switch__btn:hover{transform:translateY(-2px) scale(1.06)}
+.design-switch__menu{position:absolute;left:0;bottom:66px;width:236px;max-height:calc(100dvh - 110px);overflow-y:auto;padding:8px;
+  background:var(--ds-surface);color:var(--ds-ink);border:1px solid var(--ds-line);border-radius:12px;
+  box-shadow:0 20px 44px -14px rgba(0,0,0,.45);
+  opacity:0;visibility:hidden;transform:translateY(10px) scale(.96);transform-origin:bottom left;transition:.22s ease}
+.design-switch.open .design-switch__menu{opacity:1;visibility:visible;transform:none}
+.design-switch__title{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;opacity:.55;padding:6px 10px 8px}
+.design-switch__item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;
+  color:var(--ds-ink);text-decoration:none;font-size:.88rem;font-weight:500;transition:background .15s}
+.design-switch__item:hover{background:var(--ds-line)}
+.design-switch__item.is-current{background:var(--ds-line);font-weight:700;box-shadow:inset 3px 0 0 var(--ds-accent)}
+.design-switch__dot{width:14px;height:14px;border-radius:50%;flex:none;box-shadow:0 0 0 1px var(--ds-line)}
+.design-switch__check{margin-left:auto;color:var(--ds-accent);font-size:1rem}
+@media(max-width:600px){.design-switch{left:14px;bottom:14px}.design-switch__menu{bottom:62px}}
+</style>
+<div class="design-switch" id="designSwitch" style="--ds-btn-bg:#CBA97E;--ds-on-accent:#221912">
+  <nav class="design-switch__menu" id="designSwitchMenu" aria-label="Design-Entwurf wechseln">
+    <p class="design-switch__title">Entwurf wählen</p>
+    <a class="design-switch__item" href="vorschlag-a-editorial.html">
+      <span class="design-switch__dot" style="background:#B4643C"></span><span>A · Editorial</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-c-organic.html">
+      <span class="design-switch__dot" style="background:#B07575"></span><span>C · Organic</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-d-modern.html">
+      <span class="design-switch__dot" style="background:#8F7A5B"></span><span>D · Modern</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-e-timate.html">
+      <span class="design-switch__dot" style="background:#6F4E37"></span><span>E · Timate-Stil</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-f-triptychon.html">
+      <span class="design-switch__dot" style="background:#C49A61"></span><span>F · Triptychon</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-g-werkstatt.html">
+      <span class="design-switch__dot" style="background:#B5794A"></span><span>G · Werkstatt</span>
+    </a>
+    <a class="design-switch__item is-current" href="vorschlag-h-mokka.html" aria-current="page">
+      <span class="design-switch__dot" style="background:#CBA97E"></span><span>H · Mokka</span>
+      <span class="design-switch__check" aria-hidden="true">✓</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-i-dreiklang.html">
+      <span class="design-switch__dot" style="background:#C9A27A"></span><span>I · Dreiklang</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-j-karte.html">
+      <span class="design-switch__dot" style="background:#D9AE75"></span><span>J · Die Karte</span>
+    </a>
+  </nav>
+  <button class="design-switch__btn" id="designSwitchBtn" aria-controls="designSwitchMenu" aria-expanded="false" aria-label="Design-Entwurf wechseln" title="Design wechseln">
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 1 0 0 18h1.3a2.2 2.2 0 0 0 1.5-3.8 1.4 1.4 0 0 1 1-2.4H18a3 3 0 0 0 3-3C21 6.9 17 3 12 3Z"/><circle cx="7.5" cy="10" r="1"/><circle cx="10.5" cy="6.8" r="1"/><circle cx="15" cy="7" r="1"/><circle cx="17.5" cy="10.5" r="1"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  var sw=document.getElementById('designSwitch'),btn=document.getElementById('designSwitchBtn');
+  btn.addEventListener('click',function(){var open=sw.classList.toggle('open');btn.setAttribute('aria-expanded',open);});
+  document.addEventListener('click',function(e){if(!sw.contains(e.target)){sw.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){sw.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+})();
+</script>
+</body>
+</html>
