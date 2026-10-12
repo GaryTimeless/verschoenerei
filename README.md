@@ -93,7 +93,7 @@ sitzen auf Haaren, Wange und Nägeln der neuen Illustration.
 - **Buttons:** „Termin buchen" etc. sind Platzhalter (`#` bzw. `#kontakt`).
   Später: Link zum #mitdenkt-Buchungsportal (ufuk.mitdenkt.io).
 - **Karte:** statt Google Maps (auf der alten Seite defekt) → OpenStreetMap-Embed, DSGVO-freundlich.
-- **Teamfotos:** Platzhalter-Kreise mit Initialen (C). Echte Fotos + Freigaben nötig.
+- **Teamfotos:** Platzhalter mit Initialen in den Entwürfen mit Team-Sektion. Echte Fotos + Freigaben nötig.
 - **Impressum/Datenschutz/AGB:** Platzhalter-Links. Datenschutz muss neu geschrieben werden
   (WhatsApp, #mitdenkt, neues Hosting — siehe Analyse).
 

@@ -125,18 +125,6 @@ a.chip:hover{background:var(--accent-deep);color:#FBF7EE}
 .mehr-item i{color:var(--accent)}
 .mehr-item span{font-size:.74rem;color:var(--accent-deep)}
 
-/* ---------- Team (schwebende Karte) ---------- */
-.team{padding:0 0 96px}
-.team-card{padding:56px}
-.team-head{max-width:560px;margin-bottom:36px}
-.team-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:12px}
-.team-head p{color:var(--muted)}
-.team-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:18px}
-.team-card-item{text-align:center}
-.avatar{width:72px;height:72px;border-radius:50%;background:var(--card-2);border:1px solid rgba(143,122,91,.5);color:var(--accent-deep);display:grid;place-items:center;font-family:var(--disp);font-weight:700;font-size:1.3rem;margin:0 auto 10px}
-.team-card-item strong{display:block;font-size:.9rem;font-weight:500}
-.team-card-item span{font-size:.74rem;color:var(--muted)}
-
 /* ---------- Kontakt (schwebende Karte) ---------- */
 .standort{padding:0 0 96px}
 .standort-card{padding:56px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
@@ -169,19 +157,15 @@ a.chip:hover{background:var(--accent-deep);color:#FBF7EE}
 @media(max-width:1000px){
   .bereich-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}
   .bereich-card:nth-child(2){margin-top:0}
-  .team-grid{grid-template-columns:repeat(4,1fr);row-gap:28px}
 }
 @media(max-width:900px){
   .hero-grid,.intro-card,.standort-card{grid-template-columns:1fr;gap:44px}
-  .intro-card,.team-card,.standort-card{padding:36px 28px}
+  .intro-card,.standort-card{padding:36px 28px}
   .video-ph{transform:none}
   .main-nav{position:fixed;top:71px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:flex-start;padding:24px;border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.3s;z-index:40}
   .main-nav.open{transform:none}
   .menu-btn{display:grid}
   .draft-badge{display:none}
-}
-@media(max-width:600px){
-  .team-grid{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
@@ -264,7 +248,6 @@ a.chip:hover{background:var(--accent-deep);color:#FBF7EE}
       <a href="#haut">Haut</a>
       <a href="#haare">Haare</a>
       <a href="#naegel">Nägel</a>
-      <a href="#team">Team</a>
       <a href="#kontakt">Kontakt</a>
       <a href="#kontakt" class="btn btn-primary nav-cta">Termin buchen</a>
     </nav>
@@ -379,28 +362,6 @@ a.chip:hover{background:var(--accent-deep);color:#FBF7EE}
         <a href="#" class="mehr-item"><i class="ph ph-tote"></i>Mode-Boutique</a>
         <a href="#" class="mehr-item"><i class="ph ph-shopping-bag"></i>Beauty-Shop</a>
         <a href="#" class="mehr-item"><i class="ph ph-gift"></i>Gutscheine</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team -->
-  <section class="team" id="team">
-    <div class="container">
-      <div class="float-card team-card">
-        <div class="team-head reveal">
-          <p class="eyebrow">Unser Team</p>
-          <h2>Die Menschen hinter der Verschönerei</h2>
-          <p>Alle arbeiten auf höchstem Level für deine Schönheit — komm vorbei und lerne uns kennen.</p>
-        </div>
-        <div class="team-grid">
-          <div class="team-card-item reveal"><div class="avatar">P</div><strong>Peggy</strong><span>Inhaberin</span></div>
-          <div class="team-card-item reveal"><div class="avatar">A</div><strong>Angelika</strong><span>Friseur-Meisterin</span></div>
-          <div class="team-card-item reveal"><div class="avatar">V</div><strong>Violetta</strong><span>Friseurin</span></div>
-          <div class="team-card-item reveal"><div class="avatar">AK</div><strong>Ann-Kathrin</strong><span>Wimpern-Designerin</span></div>
-          <div class="team-card-item reveal"><div class="avatar">S</div><strong>Sibel</strong><span>Kosmetik · Microblading · Fußpflege</span></div>
-          <div class="team-card-item reveal"><div class="avatar">M</div><strong>Mela</strong><span>Friseurin</span></div>
-          <div class="team-card-item reveal"><div class="avatar">J</div><strong>Jessica</strong><span>Auszubildende Friseurin</span></div>
-        </div>
       </div>
     </div>
   </section>
