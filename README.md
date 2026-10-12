@@ -24,7 +24,7 @@ python3 -m http.server 8000
 Dann öffnen: **http://localhost:8000** (Übersicht) oder direkt eine Datei doppelklicken.
 
 Alle Seiten haben **unten links einen Design-Switcher** (runder Palette-Button):
-Darüber lässt sich jederzeit zwischen den Entwürfen A 1, A 2, B, C 1, C 2, C 3, I und J wechseln —
+Darüber lässt sich jederzeit zwischen den Entwürfen A 1, A 2, B, C 1, C 2, C 3, D und E wechseln —
 praktisch zum Vergleichen und für das Gespräch mit Peggy. Die sichtbaren
 Bezeichnungen sind einheitlich „Entwurf A 1“, „Entwurf A 2“ usw.
 
@@ -36,12 +36,12 @@ Bezeichnungen sind einheitlich „Entwurf A 1“, „Entwurf A 2“ usw.
 | C 1 | `vorschlag-f-triptychon.html` | Drei große Holz-Panels als Aufmacher (Beige/Holz/Walnuss), Archivo, vertikale Titel, Hover vergrößert Panel | Architektonisch, modern, Haut·Haare·Nägel = der Hero |
 | C 2 | `vorschlag-g-werkstatt.html` | Fraunces, gedrehte „Holzbretter" mit Preislisten (Punktlinien), Holzmaserung, dunkles Walnuss-Band | Rustikal-modern, Handwerk, warm |
 | C 3 | `vorschlag-h-mokka.html` | Dunkles Mokka-Braun, Champagner-Akzente, Syne, Laufband, drei Aspekt-Karten | Luxuriös, mutig, der dunkle Gegenentwurf |
-| I | `vorschlag-i-dreiklang.html` | Drei Holzflächen, Fraunces + Figtree, aufklappbare Bereiche | Warm, klar, interaktiv |
-| J | `vorschlag-j-karte.html` | Dunkles Nussbraun, Instrument Serif, Leistungskarte mit Preiszeilen | Hochwertig, café-artig |
+| D | `vorschlag-i-dreiklang.html` | Drei Holzflächen, Fraunces + Figtree, aufklappbare Bereiche | Warm, klar, interaktiv |
+| E | `vorschlag-j-karte.html` | Dunkles Nussbraun, Instrument Serif, Leistungskarte mit Preiszeilen | Hochwertig, café-artig |
 
 ## Import aus Downloads/claude
 
-Dreiklang und Die Karte wurden als I und J ergänzt, da F und G bereits vergeben waren.
+Die zusätzlich importierten Entwürfe Dreiklang und Die Karte heißen heute D und E.
 Die mitgelieferte ältere Übersicht und README liegen unverändert unter
 `imports/claude/index.html.original` und `imports/claude/README.md.original`.
 Die gemeinsame Übersicht ist `index.html`; alle acht Entwürfe sind auf jeder
@@ -61,8 +61,8 @@ Die neuen Entwürfe arbeiten durchgehend mit hellem Beige- und Holzfarben
 | C 1 | Creme `#F4EDE0` | `#33271A` | **Panels in 3 Holztönen** `#E6D4B0` / `#C49A61` / `#4C331C`, Akzent `#8A5A2E` | Die drei Bereiche selbst sind die Farbe |
 | C 2 | Kraftpapier-Beige `#F2E9D8` | `#46351F` | **Walnuss `#5C4327`** + Rost `#B5794A`, Bretter `#DCC6A0` | Bänder, Preislisten, Bretter |
 | C 3 | Mokka `#221912` | Creme `#F1E7D5` | **Champagner `#CBA97E`** | Überschriften-Akzente, Buttons, Laufband |
-| I | Sand `#F1E8D8` | `#2B1F16` | **Honig-Eiche `#C9A27A`**, **Walnuss `#6F4E37`** | Drei Bereichs-Panels |
-| J | Nussbraun `#2B1F17` | `#F0E4D0` | **Honig `#D9AE75`** | Preise, Buttons, Hover |
+| D | Sand `#F1E8D8` | `#2B1F16` | **Honig-Eiche `#C9A27A`**, **Walnuss `#6F4E37`** | Drei Bereichs-Panels |
+| E | Nussbraun `#2B1F17` | `#F0E4D0` | **Honig `#D9AE75`** | Preise, Buttons, Hover |
 
 Kontrast (WCAG): Text/Hintergrund überall AA oder AAA (z. B. A 1: 11,8:1, A 2: 9,4:1, B: 17,3:1).
 Akzentfarben sind nur für große Schrift/Deko gedacht (A 1 Altrosa 2,9:1,
