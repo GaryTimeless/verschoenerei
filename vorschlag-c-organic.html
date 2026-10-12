@@ -157,6 +157,30 @@ a.chip:hover{background:var(--rose);color:#F8F2E9;border-color:var(--rose)}
   .menu-btn{display:grid}
   .draft-badge{display:none}
 }
+
+/* ---------- Kundenstimmen · fiktive Inhalte für die Vorschau ---------- */
+.kundenstimmen{scroll-margin-top:100px}
+.kundenstimmen .reviews-head{max-width:680px;margin-bottom:36px}
+.kundenstimmen .reviews-kicker{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.kundenstimmen h2{font-size:clamp(1.9rem,3.5vw,2.8rem);line-height:1.15;margin-bottom:16px;text-wrap:balance}
+.kundenstimmen .reviews-intro{max-width:52ch}
+.kundenstimmen .reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.kundenstimmen .review-card{min-width:0;display:flex;flex-direction:column}
+.kundenstimmen .review-stars{font-size:1rem;letter-spacing:.15em;margin-bottom:18px}
+.kundenstimmen blockquote{flex:1;font-size:1.05rem;line-height:1.65}
+.kundenstimmen figcaption{font-size:.78rem;font-weight:500;margin-top:24px}
+.kundenstimmen .reviews-note{font-size:.78rem;margin-top:28px}
+@media(max-width:760px){
+  .kundenstimmen .reviews-grid{grid-template-columns:1fr}
+  .kundenstimmen .review-card{margin:0;transform:none}
+}
+.kundenstimmen{padding:0 0 88px}
+.kundenstimmen .reviews-head{text-align:center;margin:0 auto 36px}
+.kundenstimmen .reviews-intro{margin:auto;color:rgba(42,36,30,.75)}
+.kundenstimmen .reviews-kicker,.kundenstimmen .review-stars{color:var(--rose-deep)}
+.kundenstimmen .review-card{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:30px}
+.kundenstimmen figcaption,.kundenstimmen .reviews-note{color:var(--coffee)}
+.kundenstimmen .reviews-note{text-align:center}
 </style>
 </head>
 <body>
@@ -370,6 +394,34 @@ a.chip:hover{background:var(--rose);color:#F8F2E9;border-color:var(--rose)}
   </section>
 
   <!-- Standort & Kontakt -->
+  <section class="kundenstimmen" id="kundenstimmen" aria-labelledby="kundenstimmen-titel">
+    <div class="container">
+      <div class="reviews-head">
+        <p class="reviews-kicker">Kundenstimmen · Vorschau</p>
+        <h2 id="kundenstimmen-titel">Das sagen Menschen über uns.</h2>
+        <p class="reviews-intro">Wir können dir viel erzählen. Am schönsten ist es, wenn du mit einem guten Gefühl nach Hause gehst.</p>
+      </div>
+      <div class="reviews-grid">
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„Endlich ein Schnitt, der auch zu Hause sitzt. Die Beratung war ehrlich, entspannt und genau auf mich abgestimmt.“</p></blockquote>
+          <figcaption>Beispielstimme · Haare</figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„Eine kleine Auszeit nur für mich. Meine Haut fühlt sich wunderbar an – und ich mich gleich ein bisschen mehr wie ich selbst.“</p></blockquote>
+          <figcaption>Beispielstimme · Haut</figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„So sorgfältig gearbeitet und so eine schöne Atmosphäre. Ich freue mich jedes Mal auf meinen Termin.“</p></blockquote>
+          <figcaption>Beispielstimme · Nägel</figcaption>
+        </figure>
+      </div>
+      <p class="reviews-note">Fiktive Rezensionen als Beispiele für diesen Entwurf.</p>
+    </div>
+  </section>
+
   <section class="standort" id="kontakt">
     <div class="container">
       <div class="standort-card reveal">

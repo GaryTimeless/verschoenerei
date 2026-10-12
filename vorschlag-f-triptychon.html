@@ -193,6 +193,32 @@ a.chip:hover{background:#5F442B;color:var(--cream);border-color:#5F442B}
 @media(max-width:600px){
   .team-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+/* ---------- Kundenstimmen · fiktive Inhalte für die Vorschau ---------- */
+.kundenstimmen{scroll-margin-top:100px}
+.kundenstimmen .reviews-head{max-width:680px;margin-bottom:36px}
+.kundenstimmen .reviews-kicker{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.kundenstimmen h2{font-size:clamp(1.9rem,3.5vw,2.8rem);line-height:1.15;margin-bottom:16px;text-wrap:balance}
+.kundenstimmen .reviews-intro{max-width:52ch}
+.kundenstimmen .reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.kundenstimmen .review-card{min-width:0;display:flex;flex-direction:column}
+.kundenstimmen .review-stars{font-size:1rem;letter-spacing:.15em;margin-bottom:18px}
+.kundenstimmen blockquote{flex:1;font-size:1.05rem;line-height:1.65}
+.kundenstimmen figcaption{font-size:.78rem;font-weight:500;margin-top:24px}
+.kundenstimmen .reviews-note{font-size:.78rem;margin-top:28px}
+@media(max-width:760px){
+  .kundenstimmen .reviews-grid{grid-template-columns:1fr}
+  .kundenstimmen .review-card{margin:0;transform:none}
+}
+.kundenstimmen{padding:0 0 100px}
+.kundenstimmen .reviews-kicker,.kundenstimmen .review-stars{color:#5F442B}
+.kundenstimmen .reviews-intro,.kundenstimmen .reviews-note{color:var(--muted)}
+.kundenstimmen .reviews-grid{gap:0;border-radius:24px;overflow:hidden}
+.kundenstimmen .review-card{padding:36px;background:#E6D4B0}
+.kundenstimmen .review-card:nth-child(2){background:#C49A61}
+.kundenstimmen .review-card:nth-child(3){background:#4C331C;color:var(--cream)}
+.kundenstimmen .review-card:nth-child(3) .review-stars{color:var(--cream)}
+.kundenstimmen figcaption{text-transform:uppercase;font-size:.7rem;letter-spacing:.1em}
 </style>
 </head>
 <body>
@@ -425,6 +451,34 @@ a.chip:hover{background:#5F442B;color:var(--cream);border-color:#5F442B}
   </section>
 
   <!-- Kontakt -->
+  <section class="kundenstimmen" id="kundenstimmen" aria-labelledby="kundenstimmen-titel">
+    <div class="container">
+      <div class="reviews-head">
+        <p class="reviews-kicker">Kundenstimmen · Vorschau</p>
+        <h2 id="kundenstimmen-titel">Drei Bereiche. Ein gutes Gefühl.</h2>
+        <p class="reviews-intro">Haut, Haare, Nägel – und die kleinen Momente, die einen Besuch besonders machen.</p>
+      </div>
+      <div class="reviews-grid">
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„Endlich ein Schnitt, der auch zu Hause sitzt. Die Beratung war ehrlich, entspannt und genau auf mich abgestimmt.“</p></blockquote>
+          <figcaption>Beispielstimme · Haare</figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„Eine kleine Auszeit nur für mich. Meine Haut fühlt sich wunderbar an – und ich mich gleich ein bisschen mehr wie ich selbst.“</p></blockquote>
+          <figcaption>Beispielstimme · Haut</figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„So sorgfältig gearbeitet und so eine schöne Atmosphäre. Ich freue mich jedes Mal auf meinen Termin.“</p></blockquote>
+          <figcaption>Beispielstimme · Nägel</figcaption>
+        </figure>
+      </div>
+      <p class="reviews-note">Fiktive Rezensionen als Beispiele für diesen Entwurf.</p>
+    </div>
+  </section>
+
   <section class="kontakt" id="kontakt">
     <div class="container">
       <div class="kontakt-card">

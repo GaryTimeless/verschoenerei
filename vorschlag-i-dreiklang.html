@@ -63,6 +63,30 @@ footer a{text-decoration:none}
   .info{grid-template-columns:1fr;gap:24px;padding:44px 0 36px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---------- Kundenstimmen · fiktive Inhalte für die Vorschau ---------- */
+.kundenstimmen{scroll-margin-top:100px}
+.kundenstimmen .reviews-head{max-width:680px;margin-bottom:36px}
+.kundenstimmen .reviews-kicker{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.kundenstimmen h2{font-size:clamp(1.9rem,3.5vw,2.8rem);line-height:1.15;margin-bottom:16px;text-wrap:balance}
+.kundenstimmen .reviews-intro{max-width:52ch}
+.kundenstimmen .reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.kundenstimmen .review-card{min-width:0;display:flex;flex-direction:column}
+.kundenstimmen .review-stars{font-size:1rem;letter-spacing:.15em;margin-bottom:18px}
+.kundenstimmen blockquote{flex:1;font-size:1.05rem;line-height:1.65}
+.kundenstimmen figcaption{font-size:.78rem;font-weight:500;margin-top:24px}
+.kundenstimmen .reviews-note{font-size:.78rem;margin-top:28px}
+@media(max-width:760px){
+  .kundenstimmen .reviews-grid{grid-template-columns:1fr}
+  .kundenstimmen .review-card{margin:0;transform:none}
+}
+.kundenstimmen{margin-top:64px;padding:clamp(28px,4vw,48px);background:var(--cream);border-radius:26px}
+.kundenstimmen h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,4vw,3.3rem)}
+.kundenstimmen .reviews-kicker,.kundenstimmen .review-stars{color:var(--walnut)}
+.kundenstimmen .reviews-intro,.kundenstimmen figcaption,.kundenstimmen .reviews-note{color:var(--muted)}
+.kundenstimmen .reviews-grid{gap:32px}
+.kundenstimmen .review-card{border-top:1px solid var(--line);padding-top:24px}
+.kundenstimmen blockquote{font-family:var(--serif);font-size:1.2rem;line-height:1.5}
 </style>
 </head>
 <body>
@@ -118,7 +142,35 @@ footer a{text-decoration:none}
       </article>
     </div>
 
-    <section class="info" id="kontakt">
+    <section class="kundenstimmen" id="kundenstimmen" aria-labelledby="kundenstimmen-titel">
+    <div class="reviews-inner">
+      <div class="reviews-head">
+        <p class="reviews-kicker">Kundenstimmen · Vorschau</p>
+        <h2 id="kundenstimmen-titel">Weitererzählt.</h2>
+        <p class="reviews-intro">Was nach dem Besuch bleibt: ein frischer Schnitt, ein Moment Ruhe und das Gefühl, gut aufgehoben zu sein.</p>
+      </div>
+      <div class="reviews-grid">
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„Endlich ein Schnitt, der auch zu Hause sitzt. Die Beratung war ehrlich, entspannt und genau auf mich abgestimmt.“</p></blockquote>
+          <figcaption>Beispielstimme · Haare</figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„Eine kleine Auszeit nur für mich. Meine Haut fühlt sich wunderbar an – und ich mich gleich ein bisschen mehr wie ich selbst.“</p></blockquote>
+          <figcaption>Beispielstimme · Haut</figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„So sorgfältig gearbeitet und so eine schöne Atmosphäre. Ich freue mich jedes Mal auf meinen Termin.“</p></blockquote>
+          <figcaption>Beispielstimme · Nägel</figcaption>
+        </figure>
+      </div>
+      <p class="reviews-note">Fiktive Rezensionen als Beispiele für diesen Entwurf.</p>
+    </div>
+  </section>
+
+  <section class="info" id="kontakt">
       <div><h3>Adresse</h3><p>Bergstraße 22<br>69469 Weinheim</p></div>
       <div><h3>Öffnungszeiten</h3><p>Di–Fr 9:00–18:00 Uhr<br>Sa 9:00–13:00 Uhr</p></div>
       <div><h3>Melde dich</h3><p>+49 (0) 6201 704 84 80<br>willkommen@verschoenerei.de</p></div>

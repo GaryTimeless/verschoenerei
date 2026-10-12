@@ -198,6 +198,33 @@ h2{font-family:var(--disp);font-weight:600;line-height:1.15}
 @media(max-width:600px){
   .team-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+/* ---------- Kundenstimmen · fiktive Inhalte für die Vorschau ---------- */
+.kundenstimmen{scroll-margin-top:100px}
+.kundenstimmen .reviews-head{max-width:680px;margin-bottom:36px}
+.kundenstimmen .reviews-kicker{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.kundenstimmen h2{font-size:clamp(1.9rem,3.5vw,2.8rem);line-height:1.15;margin-bottom:16px;text-wrap:balance}
+.kundenstimmen .reviews-intro{max-width:52ch}
+.kundenstimmen .reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.kundenstimmen .review-card{min-width:0;display:flex;flex-direction:column}
+.kundenstimmen .review-stars{font-size:1rem;letter-spacing:.15em;margin-bottom:18px}
+.kundenstimmen blockquote{flex:1;font-size:1.05rem;line-height:1.65}
+.kundenstimmen figcaption{font-size:.78rem;font-weight:500;margin-top:24px}
+.kundenstimmen .reviews-note{font-size:.78rem;margin-top:28px}
+@media(max-width:760px){
+  .kundenstimmen .reviews-grid{grid-template-columns:1fr}
+  .kundenstimmen .review-card{margin:0;transform:none}
+}
+.kundenstimmen{padding:110px 0 0}
+.kundenstimmen .reviews-kicker,.kundenstimmen .review-stars{color:var(--wood)}
+.kundenstimmen .reviews-intro,.kundenstimmen figcaption,.kundenstimmen .reviews-note{color:var(--muted)}
+.kundenstimmen .reviews-grid{gap:30px;padding:8px 0}
+.kundenstimmen .review-card{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:32px;box-shadow:0 16px 28px -22px rgba(92,67,39,.45)}
+.kundenstimmen .review-card:first-child{transform:rotate(-1deg)}
+.kundenstimmen .review-card:last-child{transform:rotate(1deg)}
+.kundenstimmen blockquote{font-family:var(--disp);font-size:1.3rem;font-weight:400;line-height:1.5}
+.kundenstimmen figcaption{border-top:1px dashed var(--line);padding-top:18px}
+@media(max-width:760px){.kundenstimmen .review-card:first-child,.kundenstimmen .review-card:last-child{transform:none}}
 </style>
 </head>
 <body>
@@ -374,7 +401,7 @@ h2{font-family:var(--disp);font-weight:600;line-height:1.15}
         <ul class="trust-list reveal">
           <li><i class="ph ph-seal-check"></i><div><strong>La Biosthetique</strong><span>offizieller Premium-Partner</span></div></li>
           <li><i class="ph ph-drop"></i><div><strong>Olaplex</strong><span>gesunde Haare, ehrliche Farbe</span></div></li>
-          <li><i class="ph ph-star"></i><div><strong>4,6 von 5 bei Google</strong><span>98 % zufriedene Kund:innen</span></div></li>
+          <li><i class="ph ph-star"></i><div><strong>Ein gutes Gefühl bleibt</strong><span>Persönliche Beratung. Sorgfältiges Handwerk.</span></div></li>
         </ul>
       </div>
       <div class="mehr-dark reveal">
@@ -412,6 +439,34 @@ h2{font-family:var(--disp);font-weight:600;line-height:1.15}
   </section>
 
   <!-- Kontakt -->
+  <section class="kundenstimmen" id="kundenstimmen" aria-labelledby="kundenstimmen-titel">
+    <div class="container">
+      <div class="reviews-head">
+        <p class="reviews-kicker">Kundenstimmen · Vorschau</p>
+        <h2 id="kundenstimmen-titel">Gutes Handwerk spricht sich herum.</h2>
+        <p class="reviews-intro">Wir können dir viel erzählen. Am liebsten lassen wir das gute Gefühl nach deinem Besuch für sich sprechen.</p>
+      </div>
+      <div class="reviews-grid">
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„Endlich ein Schnitt, der auch zu Hause sitzt. Die Beratung war ehrlich, entspannt und genau auf mich abgestimmt.“</p></blockquote>
+          <figcaption>Beispielstimme · Haare</figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„Eine kleine Auszeit nur für mich. Meine Haut fühlt sich wunderbar an – und ich mich gleich ein bisschen mehr wie ich selbst.“</p></blockquote>
+          <figcaption>Beispielstimme · Haut</figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <blockquote><p>„So sorgfältig gearbeitet und so eine schöne Atmosphäre. Ich freue mich jedes Mal auf meinen Termin.“</p></blockquote>
+          <figcaption>Beispielstimme · Nägel</figcaption>
+        </figure>
+      </div>
+      <p class="reviews-note">Fiktive Rezensionen als Beispiele für diesen Entwurf.</p>
+    </div>
+  </section>
+
   <section class="kontakt" id="kontakt">
     <div class="container">
       <div class="kontakt-card">

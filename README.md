@@ -2,7 +2,7 @@
 
 Acht Entwürfe für die neue Website der Verschönerei
 (Peggy Fändrich, Bergstraße 22, 69469 Weinheim). Reine Design-Studie:
-**Platzhalter** für Videos, Buttons, Karte und Teamfotos. Keine echte Funktionalität.
+**Platzhalter** für Videos, Buttons, Karte, Teamfotos und Rezensionen. Keine echte Funktionalität.
 
 Überall stehen die drei Bereiche **Haut · Haare · Nägel** im Mittelpunkt — in den
 neuen Entwürfen C 1, C 2 und C 3 sind sie das dominante Gestaltungselement der Seite.
@@ -91,6 +91,7 @@ sitzen auf Haaren, Wange und Nägeln der neuen Illustration.
 - **Buttons:** „Termin buchen" etc. sind Platzhalter (`#` bzw. `#kontakt`).
   Später: Link zum #mitdenkt-Buchungsportal (ufuk.mitdenkt.io).
 - **Karte:** statt Google Maps (auf der alten Seite defekt) → OpenStreetMap-Embed, DSGVO-freundlich.
+- **Kundenstimmen:** Jeder Entwurf hat einen Bereich mit drei fiktiven, sichtbar als Beispielstimmen gekennzeichneten Rezensionen. Farben, Typografie und Aufbau passen zum jeweiligen Stil. Keine echten Google-Bewertungen oder Bewertungsdurchschnitte.
 - **Teamfotos:** Platzhalter mit Initialen in den Entwürfen mit Team-Sektion. Echte Fotos + Freigaben nötig.
 - **Impressum/Datenschutz/AGB:** Platzhalter-Links. Datenschutz muss neu geschrieben werden
   (WhatsApp, #mitdenkt, neues Hosting — siehe Analyse).
