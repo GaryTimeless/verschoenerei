@@ -1,0 +1,13 @@
+(()=>{
+ const current=document.body.dataset.design;
+ if(current){
+  const options=[['galerie','01','Galerie'],['salon','02','Salon'],['klar','03','Klar']];
+  const bar=document.createElement('aside');bar.className='proposal-bar';bar.setAttribute('aria-label','Designentwürfe vergleichen');
+  bar.innerHTML=`<a href="index.html" aria-label="Zur Entwurfsübersicht"><svg class="inline-arrow arrow-back" aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M19 12H5m7-7-7 7 7 7" stroke="currentColor" stroke-width="1.5"/></svg> <span>Übersicht</span></a><span class="proposal-label">Designstudie</span><nav class="proposal-options" aria-label="Entwurf wählen">${options.map(([id,n,title])=>`<a href="${id}.html" ${id===current?'aria-current="page"':''}><span>${n} · ${title}</span></a>`).join('')}</nav><button class="proposal-info" aria-label="Hinweise zur Designstudie">i</button>`;
+  document.body.append(bar);
+  const dialog=document.createElement('dialog');dialog.className='proposal-dialog';dialog.innerHTML='<button aria-label="Hinweise schließen">×</button><h2>Ein Entwurf für die Verschönerei.</h2><p>Diese drei Designstudien zeigen unterschiedliche helle Gestaltungen mit echten Salonfotos und dem bestehenden Logo. Die Texte sind redaktionelle Entwurfsvorschläge.</p><p>Alle Varianten kommen ohne Mitarbeiterporträts, Teamlisten, News und laufende Social-Media-Inhalte aus.</p><p><small>Leistungen, Öffnungszeiten und Kontaktdaten stammen aus der bestehenden Website und sollten vor einer endgültigen Veröffentlichung bestätigt werden. „Termin buchen“ öffnet den dort verlinkten externen Buchungsdienst. Die Rechtstexte sind auf der bestehenden Website verlinkt.</small></p>';document.body.append(dialog);
+  bar.querySelector('button').addEventListener('click',()=>dialog.showModal());dialog.querySelector('button').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+ }
+ const toggle=document.querySelector('[data-menu-toggle]'),nav=document.querySelector('[data-menu]');
+ if(toggle&&nav){toggle.setAttribute('aria-expanded','false');toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open);nav.classList.toggle('open',open)});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{toggle.setAttribute('aria-expanded','false');nav.classList.remove('is-open','open')}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){toggle.setAttribute('aria-expanded','false');nav.classList.remove('is-open','open')}});}
+})();

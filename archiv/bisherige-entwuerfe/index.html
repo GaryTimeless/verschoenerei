@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verschönerei Weinheim — Design-Entwürfe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F0E6;--card:#FDFBF7;--ink:#221D18;--coffee:#6F4E37;--line:rgba(34,29,24,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-weight:300}
+.container{max-width:1240px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 40px;text-align:center}
+.brand{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700}
+.sub{color:var(--coffee);letter-spacing:.3em;text-transform:uppercase;font-size:.7rem;margin-top:6px}
+header p.lead{margin:22px auto 0;max-width:56ch;color:rgba(34,29,24,.75)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:24px;padding-bottom:80px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;text-decoration:none;color:var(--ink);transition:.25s;display:block}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(34,29,24,.35)}
+.card h2{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:8px}
+.card p{font-size:.88rem;color:rgba(34,29,24,.7);margin-bottom:18px}
+.swatches{display:flex;gap:6px;margin-bottom:16px}
+.sw{width:26px;height:26px;border-radius:8px;border:1px solid rgba(34,29,24,.12)}
+.open{display:inline-block;font-weight:500;color:var(--coffee);font-size:.85rem}
+footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;font-size:.75rem;color:rgba(34,29,24,.5)}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="container">
+  <div class="brand">Verschönerei Weinheim</div>
+  <div class="sub">Design-Entwürfe für den Relaunch</div>
+  <p class="lead">Acht Entwürfe für die neue Website. Haut, Haare und Nägel stehen überall im Mittelpunkt. Öffne einen Entwurf und wechsle über den Switch unten links zwischen den Varianten.</p>
+</header>
+<main class="container grid">
+  <a class="card" href="vorschlag-c-organic.html">
+    <div class="swatches">
+      <span class="sw" style="background:#EAE0D2"></span>
+      <span class="sw" style="background:#6F4E37"></span>
+      <span class="sw" style="background:#2A241E"></span>
+      <span class="sw" style="background:#B07575"></span>
+    </div>
+    <h2>Entwurf A 1</h2>
+    <p>Warmes Beige, abgerundete Karten und Altrosa-Akzente. Viel Information, freundlich und einladend.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+  <a class="card" href="vorschlag-d-modern.html">
+    <div class="swatches">
+      <span class="sw" style="background:#EAE2D2"></span>
+      <span class="sw" style="background:#FBF7EE"></span>
+      <span class="sw" style="background:#3E3527"></span>
+      <span class="sw" style="background:#8F7A5B"></span>
+    </div>
+    <h2>Entwurf A 2</h2>
+    <p>Helles Greige, durchgehender Hintergrund, schwebende Karten mit Schatten und Versatz, Holz-Taupe-Akzent (#8F7A5B), Space Grotesk. Zeitgemäß, luftig, warm.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+  <a class="card" href="vorschlag-e-timate.html">
+    <div class="swatches">
+      <span class="sw" style="background:#FFFFFF"></span>
+      <span class="sw" style="background:#1A1A1A"></span>
+      <span class="sw" style="background:#6F4E37"></span>
+      <span class="sw" style="background:#F6F6F6"></span>
+    </div>
+    <h2>Entwurf B</h2>
+    <p>Angelehnt an timatehair.com: helle Flächen, große Uppercase-Typografie (Open Sans), vollflächige Bild-Bänder, Bewertungs-Streifen, klarer Kontaktblock.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+  <a class="card" href="vorschlag-f-triptychon.html">
+    <div class="swatches">
+      <span class="sw" style="background:#E6D4B0"></span>
+      <span class="sw" style="background:#C49A61"></span>
+      <span class="sw" style="background:#4C331C"></span>
+      <span class="sw" style="background:#F4EDE0"></span>
+    </div>
+    <h2>Entwurf C 1</h2>
+    <p>Der Aufmacher IST die Dreiteilung: drei große Holz-Panels — Haut, Haare, Nägel — in Beige, Holzton und Walnuss. Hover vergrößert das aktive Panel. Architektonisch, modern, klar.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+  <a class="card" href="vorschlag-g-werkstatt.html">
+    <div class="swatches">
+      <span class="sw" style="background:#F2E9D8"></span>
+      <span class="sw" style="background:#DCC6A0"></span>
+      <span class="sw" style="background:#5C4327"></span>
+      <span class="sw" style="background:#B5794A"></span>
+    </div>
+    <h2>Entwurf C 2</h2>
+    <p>Beauty als Handwerk: drei leicht gedrehte Holzbretter mit Preislisten (Punktlinien), warme Fraunces-Typo, Holzmaserung und ein dunkles Walnuss-Band. Gemütlich, ehrlich, rustikal-modern.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+  <a class="card" href="vorschlag-h-mokka.html">
+    <div class="swatches">
+      <span class="sw" style="background:#221912"></span>
+      <span class="sw" style="background:#372918"></span>
+      <span class="sw" style="background:#CBA97E"></span>
+      <span class="sw" style="background:#F1E7D5"></span>
+    </div>
+    <h2>Entwurf C 3</h2>
+    <p>Dunkel &amp; luxuriös: tiefes Mokka-Braun, Champagner-Akzente, Syne-Typografie, Laufband und drei große Aspekt-Karten. Der mutige Gegenentwurf zu allen hellen Seiten.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+  <a class="card" href="vorschlag-i-dreiklang.html">
+    <div class="swatches"><span class="sw" style="background:#EADBC0"></span><span class="sw" style="background:#CFA97F"></span><span class="sw" style="background:#7A563D"></span><span class="sw" style="background:#2B1F16"></span></div>
+    <h2>Entwurf D</h2>
+    <p>Drei Holzflächen für Haut, Haare, Nägel direkt im ersten Bild. Ein Klick öffnet den Bereich mit Leistungen und Preisen. Sand, Honig-Eiche, Walnuss.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+  <a class="card" href="vorschlag-j-karte.html">
+    <div class="swatches"><span class="sw" style="background:#2B1F17"></span><span class="sw" style="background:#35271D"></span><span class="sw" style="background:#F0E4D0"></span><span class="sw" style="background:#D9AE75"></span></div>
+    <h2>Entwurf E</h2>
+    <p>Dunkles Nussbraun wie ein Café-Tresen: Leistungen als Karte mit Preiszeilen, feste Seitenleiste mit Adresse und Termin-Button. Der mutigste Entwurf.</p>
+    <span class="open">Entwurf öffnen →</span>
+  </a>
+</main>
+<footer>Design-Entwürfe · Platzhalter für Videos, Buttons & Karte · noch nicht final</footer>
+<!-- Design-Switcher: Wechsel zwischen den Entwürfen (nur Demo) -->
+<style>
+.design-switch{position:fixed;left:20px;bottom:20px;z-index:100;font-family:var(--sans,'DM Sans',sans-serif);
+  --ds-surface:var(--card,var(--panel,#FDFBF7));
+  --ds-ink:var(--ink,var(--cream,#221D18));
+  --ds-accent:var(--accent,var(--gold,var(--rose,#6F4E37)));
+  --ds-line:var(--line,rgba(34,29,24,.14))}
+.design-switch__btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;
+  background:var(--ds-btn-bg,var(--ds-accent));color:var(--ds-on-accent,#F6F0E6);font-size:1.45rem;
+  display:grid;place-items:center;box-shadow:0 12px 28px -10px rgba(0,0,0,.5);transition:transform .2s}
+.design-switch__btn:hover{transform:translateY(-2px) scale(1.06)}
+.design-switch__menu{position:absolute;left:0;bottom:66px;width:236px;max-height:calc(100dvh - 110px);overflow-y:auto;padding:8px;
+  background:var(--ds-surface);color:var(--ds-ink);border:1px solid var(--ds-line);border-radius:12px;
+  box-shadow:0 20px 44px -14px rgba(0,0,0,.45);
+  opacity:0;visibility:hidden;transform:translateY(10px) scale(.96);transform-origin:bottom left;transition:.22s ease}
+.design-switch.open .design-switch__menu{opacity:1;visibility:visible;transform:none}
+.design-switch__title{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;opacity:.55;padding:6px 10px 8px}
+.design-switch__item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;
+  color:var(--ds-ink);text-decoration:none;font-size:.88rem;font-weight:500;transition:background .15s}
+.design-switch__item:hover{background:var(--ds-line)}
+.design-switch__item.is-current{background:var(--ds-line);font-weight:700;box-shadow:inset 3px 0 0 var(--ds-accent)}
+.design-switch__dot{width:14px;height:14px;border-radius:50%;flex:none;box-shadow:0 0 0 1px var(--ds-line)}
+.design-switch__check{margin-left:auto;color:var(--ds-accent);font-size:1rem}
+@media(max-width:600px){.design-switch{left:14px;bottom:14px}.design-switch__menu{bottom:62px}}
+</style>
+<div class="design-switch" id="designSwitch" style="--ds-on-accent:#F6F0E6">
+  <nav class="design-switch__menu" id="designSwitchMenu" aria-label="Design-Entwurf wechseln">
+    <p class="design-switch__title">Entwurf wählen</p>
+    <a class="design-switch__item" href="vorschlag-c-organic.html">
+      <span class="design-switch__dot" style="background:#B07575"></span><span>Entwurf A 1</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-d-modern.html">
+      <span class="design-switch__dot" style="background:#8F7A5B"></span><span>Entwurf A 2</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-e-timate.html">
+      <span class="design-switch__dot" style="background:#6F4E37"></span><span>Entwurf B</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-f-triptychon.html">
+      <span class="design-switch__dot" style="background:#C49A61"></span><span>Entwurf C 1</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-g-werkstatt.html">
+      <span class="design-switch__dot" style="background:#B5794A"></span><span>Entwurf C 2</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-h-mokka.html">
+      <span class="design-switch__dot" style="background:#CBA97E"></span><span>Entwurf C 3</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-i-dreiklang.html">
+      <span class="design-switch__dot" style="background:#C9A27A"></span><span>Entwurf D</span>
+    </a>
+    <a class="design-switch__item" href="vorschlag-j-karte.html">
+      <span class="design-switch__dot" style="background:#D9AE75"></span><span>Entwurf E</span>
+    </a>
+  </nav>
+  <button class="design-switch__btn" id="designSwitchBtn" aria-controls="designSwitchMenu" aria-expanded="false" aria-label="Design-Entwurf wechseln" title="Design wechseln">
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 1 0 0 18h1.3a2.2 2.2 0 0 0 1.5-3.8 1.4 1.4 0 0 1 1-2.4H18a3 3 0 0 0 3-3C21 6.9 17 3 12 3Z"/><circle cx="7.5" cy="10" r="1"/><circle cx="10.5" cy="6.8" r="1"/><circle cx="15" cy="7" r="1"/><circle cx="17.5" cy="10.5" r="1"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  var sw=document.getElementById('designSwitch'),btn=document.getElementById('designSwitchBtn');
+  btn.addEventListener('click',function(){var open=sw.classList.toggle('open');btn.setAttribute('aria-expanded',open);});
+  document.addEventListener('click',function(e){if(!sw.contains(e.target)){sw.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){sw.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+})();
+</script>
+</body>
+</html>
