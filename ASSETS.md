@@ -4,7 +4,8 @@
 
 | Datei | Verwendung | Herkunft |
 |---|---|---|
-| `assets/salon-wide.jpg` | Identisches großes Headerfoto in A, B und C | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/02/DSC_2573-scaled.jpg) |
+| `assets/salon-wide.jpg` | Bisheriges Headerfoto in A, B und C; bewusst als Gestaltungsbeispiel beibehalten | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/02/DSC_2573-scaled.jpg) |
+| `assets/salon-aktuell-hochkant.jpg` | Aktueller Salon im Header von D, 1200 × 1600 px | Vom Nutzer ausgewählte Datei aus Downloads: `WhatsApp Image 2026-10-12 at 09.05.45 (1).jpeg`, unverändert übernommen. |
 | `assets/salon-theke.jpg` | „Ein Blick in unsere Verschönerei.“ — beleuchtete Holztheke, Pendelleuchten und Schriftzug, 426 × 640 px | Vom Nutzer ausgewählte Datei aus Downloads: `WhatsApp Image 2026-10-12 at 08.54.36 (8).jpeg`, unverändert übernommen. |
 | `assets/Salon-lounge2.jpeg` | Sitzecke im Salonbereich | Bereits im lokalen Projekt vorhandene zusätzliche Aufnahme. Quelle/aktuelle Freigabe mit Peggy bestätigen. |
 | `assets/hair.jpg` | Friseurwerkzeug im Leistungsbereich Haare | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_0149-scaled.jpg) |
@@ -17,6 +18,10 @@ Headerfoto per CSS in Schwarz-Weiß; Variante A verändert die Darstellung mit
 CSS-Filtern und Ebenen. Es wurden keine Bildinhalte ergänzt oder entfernt.
 Die übrigen bereits vorhandenen Bilder bleiben erhalten. Die archivierten
 hellen Entwürfe enthalten unabhängige Kopien ihrer bisherigen Bilder.
+
+Nur D verwendet die neue aktuelle Hochkantaufnahme. Sie wird weder gestreckt
+noch künstlich erweitert. Der Header nutzt einen responsiven Bildausschnitt;
+auf breiten Bildschirmen entfallen Teile von Decke und Boden.
 
 Das veraltete Rezeptionsfoto liegt seit dem 19. Oktober 2026 unter
 `assets/archiv/salon-reception.jpg`. Es ist unverändert erhalten und wird in

@@ -1,4 +1,4 @@
-# Verschönerei Weinheim — Sandtöne, drei Einstiege
+# Verschönerei Weinheim — Sandtöne, vier Einstiege
 
 Die neue Entwurfsrunde vom 19. Oktober 2026 setzt Peggys Rückmeldung um:
 ein großes Salonfoto, den Schriftzug „Dein Stil. Dein Moment.“ und neutrale
@@ -11,17 +11,26 @@ Beige- und Sandfarben aus der gelieferten Palette.
 | A · Milchig | Weichgezeichnetes Foto, heller Schleier und feine Körnung | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-a.html) |
 | B · Sandfläche | Klares Foto und eine quadratische, abgerundete Textfläche | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-b.html) |
 | C · Pur | Weiße Schrift direkt auf dem Salonfoto in Schwarz-Weiß | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-c.html) |
+| D · Hochkant | Sandfläche wie B, mit einer aktuellen Hochkantaufnahme des Salons | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-d.html) |
 
 Aufbau, Texte, Typografie und weitere Seitenbereiche sind gleich. So lässt sich
 im Gespräch gezielt die Bild- und Schriftwirkung vergleichen. Die separate
 Übersichtsseite entfällt. Der Hauptlink startet direkt mit A. Der Wechsler unten
-zeigt die Reihenfolge A · Milchig → B · Sandfläche → C · Pur.
+zeigt die Reihenfolge A · Milchig → B · Sandfläche → C · Pur → D · Hochkant.
 Die früher geteilten Direktlinks `galerie.html`, `salon.html` und `klar.html`
 führen weiterhin zu Pur, Milchig und Sandfläche (jetzt C, A und B).
 
 In A lässt sich die **Milchigkeit unten live von 0 bis 100 % einstellen**.
 Der Startwert ist 40 %; 100 % entspricht dem ursprünglichen starken Effekt.
 Die letzte Einstellung bleibt lokal im jeweiligen Browser gespeichert.
+
+D ist ein zusätzlicher Test mit dem aktuellen Foto
+`WhatsApp Image 2026-10-12 at 09.05.45 (1).jpeg` und der Gestaltung von B.
+Das Hochkantfoto füllt den Header; auf breiten Bildschirmen wird oben und
+unten beschnitten. A, B und C behalten ausdrücklich das bisherige Headerfoto,
+damit sich die geplante Wirkung mit einem späteren aktuellen Querformatbild
+vergleichen lässt. Auf dem Handy stehen die vier Varianten im Wechsler in
+zwei Reihen.
 
 ## Archiv
 
@@ -36,8 +45,8 @@ Stylesheets und Bildern, weil alle benötigten Dateien im Archiv liegen.
 ## Bearbeitung und Vorschau
 
 Statische HTML-Seiten ohne Build-Schritt: `variante-a.html`, `variante-b.html`,
-`variante-c.html`. `index.html` leitet auf A weiter. Gemeinsame Gestaltung und Interaktionen: `sand.css` und
-`sand.js`. Bei Inhaltsänderungen alle drei Seiten aktualisieren.
+`variante-c.html`, `variante-d.html`. `index.html` leitet auf A weiter. Gemeinsame Gestaltung und Interaktionen: `sand.css` und
+`sand.js`. Bei Inhaltsänderungen alle vier Seiten aktualisieren.
 
 Lokal `python3 -m http.server 8000` starten und <http://localhost:8000> öffnen.
 GitHub Pages veröffentlicht den Hauptordner von `main`; `.nojekyll` bleibt erhalten.
