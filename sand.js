@@ -3,7 +3,7 @@
   document.documentElement.classList.add('js');
 
   const milkControl = document.querySelector('[data-milk-control]');
-  if (document.body.dataset.variant === 'b' && milkControl) {
+  if (document.body.dataset.variant === 'a' && milkControl) {
     const slider = milkControl.querySelector('input');
     const output = milkControl.querySelector('output');
     const hero = document.querySelector('.hero');

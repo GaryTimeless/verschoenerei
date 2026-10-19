@@ -12,8 +12,8 @@
 | `assets/nails.jpg` | Nahaufnahme einer Maniküre | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC4484-scaled.jpg) |
 | `assets/logo.png` | Bestehendes Logo, per CSS schwarz dargestellt | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/08/verschoenerei-mittel.png) |
 
-Die Fotodateien bleiben unverändert. Variante A zeigt ausschließlich das
-Headerfoto per CSS in Schwarz-Weiß; Variante B verändert die Darstellung mit
+Die Fotodateien bleiben unverändert. Variante C zeigt ausschließlich das
+Headerfoto per CSS in Schwarz-Weiß; Variante A verändert die Darstellung mit
 CSS-Filtern und Ebenen. Es wurden keine Bildinhalte ergänzt oder entfernt.
 Die übrigen bereits vorhandenen Bilder bleiben erhalten. Die archivierten
 hellen Entwürfe enthalten unabhängige Kopien ihrer bisherigen Bilder.
@@ -35,7 +35,7 @@ Schrift- oder Trackinganfragen. Die weiteren vorhandenen Fontdateien bleiben
 für frühere Entwürfe erhalten.
 
 `assets/grain.svg` ist ein neu erstelltes, prozedurales SVG-Filterbild für die
-feine Körnung von Variante B. Es enthält keine fremden Bildinhalte.
+feine Körnung von Variante A. Es enthält keine fremden Bildinhalte.
 
 ## Referenzen
 
