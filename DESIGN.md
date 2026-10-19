@@ -36,7 +36,7 @@ Bildschirmen auf etwa 535–650 px begrenzt.
 
 ## Die drei Einstiege
 
-- **A:** Unverändertes `salon-wide.jpg`, ohne Blur oder aufhellende Ebene. Schwarze Schrift direkt auf dem Motiv. Das ist die gewünschte Vergleichsbasis; der Kontrast hängt vom Bildausschnitt ab und ist stellenweise zu schwach.
+- **A:** `salon-wide.jpg` wird im Header per CSS in Schwarz-Weiß dargestellt, ohne Blur oder aufhellende Ebene. Die Originaldatei bleibt farbig und unverändert. Schwarze Schrift direkt auf dem Motiv; der Kontrast hängt weiterhin vom Bildausschnitt ab und ist stellenweise zu schwach.
 - **B:** Ein Live-Regler „Milchigkeit“ steuert Blur, hellen Schleier, Entsättigung und Körnung gemeinsam von 0 bis 100 %. 0 % zeigt ein klares Bild; 100 % entspricht dem ursprünglichen Look mit 12 px Blur und 62 % deckendem Leinen. Der neue Startwert ist 40 % (4,8 px Blur, 24,8 % Leinen). Die zuletzt gewählte Stärke wird lokal im Browser gespeichert; ohne Speicherzugriff funktioniert die Vorschau weiterhin. Nur die Bildebenen werden gefiltert, die Schrift bleibt scharf.
 - **C:** Unverändertes Foto, darüber eine deckende quadratische Fläche in hellem Beige mit 28 px Radius (mobil 23 px). Die feste Fläche stabilisiert den Textkontrast unabhängig vom Foto.
 

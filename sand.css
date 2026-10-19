@@ -58,6 +58,7 @@ h1, h2, h3 { font-weight: 400; }
 .hero-photo, .hero-photo img, .hero-milk, .hero-grain { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero-photo { z-index: -3; }
 .hero-photo img { object-fit: cover; object-position: 50% 46%; }
+[data-variant='a'] .hero-photo img { filter: grayscale(1); }
 .hero-milk, .hero-grain { display: none; pointer-events: none; }
 .hero-milk { z-index: -2; background: rgb(244 242 236 / var(--milk-opacity, .248)); }
 .hero-grain { z-index: -1; opacity: var(--milk-grain, .03); background: url('assets/grain.svg') repeat; }

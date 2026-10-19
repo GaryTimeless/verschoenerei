@@ -12,7 +12,8 @@
 | `assets/nails.jpg` | Nahaufnahme einer Maniküre | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC4484-scaled.jpg) |
 | `assets/logo.png` | Bestehendes Logo, per CSS schwarz dargestellt | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/08/verschoenerei-mittel.png) |
 
-Die Fotos bleiben unverändert. Variante B verändert nur die Darstellung mit
+Die Fotodateien bleiben unverändert. Variante A zeigt ausschließlich das
+Headerfoto per CSS in Schwarz-Weiß; Variante B verändert die Darstellung mit
 CSS-Filtern und Ebenen. Es wurden keine Bildinhalte ergänzt oder entfernt.
 Die übrigen bereits vorhandenen Bilder bleiben erhalten. Die archivierten
 hellen Entwürfe enthalten unabhängige Kopien ihrer bisherigen Bilder.
