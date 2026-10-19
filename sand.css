@@ -135,7 +135,7 @@ h1, h2, h3 { font-weight: 400; }
 .variant-options a:not([aria-current]):hover { background: var(--beige); }
 .variant-info { display: grid; place-items: center; flex: none; width: 36px; height: 36px; padding: 0; border: 1px solid var(--taupe); border-radius: 50%; background: transparent; font: 17px Georgia, serif; cursor: pointer; }
 .variant-info:hover { background: var(--beige); }
-[data-variant='a'] .variant-bar { width: 450px; flex-wrap: wrap; justify-content: center; gap: 4px 12px; padding: 8px 10px; border-radius: 18px; }
+[data-variant='a'] .variant-bar { width: 560px; flex-wrap: wrap; justify-content: center; gap: 4px 12px; padding: 8px 10px; border-radius: 18px; }
 .milk-control { flex-basis: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) 4ch; align-items: center; gap: 12px; padding: 0 8px 7px; border-bottom: 1px solid var(--line); font-size: 11px; }
 .milk-control label { cursor: pointer; }
 .milk-control input { width: 100%; min-width: 0; height: 36px; margin: 0; accent-color: var(--ink); cursor: ew-resize; }
@@ -182,7 +182,7 @@ h1, h2, h3 { font-weight: 400; }
   .hero-description { max-width: 270px; margin-bottom: 20px; font-size: 12px; line-height: 1.75; }
   [data-variant='b'] .hero-content { width: min(460px, 100%); padding: 26px 22px; border-radius: 23px; }
   [data-variant='b'] .hero-content .button { min-height: 47px; font-size: 11px; }
-  .hero-scroll { bottom: 96px; width: 38px; height: 38px; }
+  .hero-scroll { bottom: 132px; width: 38px; height: 38px; }
   .welcome { grid-template-columns: 1fr; gap: 26px; }
   .welcome > .eyebrow { padding: 0; }
   .welcome-copy > p { font-size: 14px; }
@@ -201,15 +201,16 @@ h1, h2, h3 { font-weight: 400; }
   .salon-detail figcaption { align-self: end; margin-top: 0; }
   .salon-detail > p { margin: 0; font-size: 18px; align-self: start; }
   .contact-details { gap: 26px 22px; }
-  .site-footer { display: grid; grid-template-columns: 1fr; gap: 21px; padding-bottom: 110px; }
+  .site-footer { display: grid; grid-template-columns: 1fr; gap: 21px; padding-bottom: 150px; }
+  [data-variant='a'] .site-footer { padding-bottom: 195px; }
   .variant-bar { width: 360px; gap: 6px; bottom: 12px; padding: 6px; border-radius: 18px; }
   .variant-bar > span { display: none; }
-  .variant-options { flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px; }
-  .variant-options a { min-height: 39px; padding: 8px 6px; font-size: 10px; }
+  .variant-options { flex: 1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px; }
+  .variant-options a { min-height: 44px; padding: 8px 6px; font-size: 10px; }
   .variant-info { width: 32px; height: 32px; }
-  [data-variant='a'] .variant-bar { gap: 4px 5px; padding: 6px; }
+  [data-variant='a'] .variant-bar { width: 360px; gap: 4px 5px; padding: 6px; }
   .milk-control { gap: 9px; padding-inline: 7px; }
-  [data-variant='a'] .hero-scroll { bottom: 146px; }
+  [data-variant='a'] .hero-scroll { bottom: 188px; }
   .proposal-dialog { padding: 30px 24px; }
 }
 

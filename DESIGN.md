@@ -7,10 +7,10 @@ Schrift „Dein Stil. Dein Moment.“ und sandige, neutrale Farben entsprechend
 dem gelieferten Screenshot. Timatehair dient als Referenz für die Kombination
 aus klarer Navigation, großem Bildeinstieg und mittiger Typografie.
 
-Nachträglicher Nutzerwunsch: Der frühere Dreiklang-Entwurf ist wieder die
-dritte Auswahl. A und B bleiben die Fotoausführungen in Sandtönen. Foto pur
-bleibt unter `variante-pur.html` erhalten; der Archiv-Entwurf selbst wird nicht
-verändert. Alle aktuellen Ausführungen erhalten echte Kundenstimmen.
+Der frühere Dreiklang-Entwurf ergänzt die drei Fotoausführungen als zusätzliche
+vierte Option D. A · Milchig, B · Sandfläche und C · Pur bleiben erhalten.
+`variante-pur.html` leitet auf C weiter; der Archiv-Entwurf selbst bleibt
+unverändert. Alle vier Ausführungen enthalten echte Kundenstimmen.
 
 ## Farben und Schrift
 
@@ -39,8 +39,8 @@ Bildschirmen auf etwa 535–650 px begrenzt.
 
 - **A:** Ein Live-Regler „Milchigkeit“ steuert Blur, hellen Schleier, Entsättigung und Körnung gemeinsam von 0 bis 100 %. 0 % zeigt ein klares Bild; 100 % entspricht dem ursprünglichen Look mit 12 px Blur und 62 % deckendem Leinen. Der neue Startwert ist 40 % (4,8 px Blur, 24,8 % Leinen). Die zuletzt gewählte Stärke wird lokal im Browser gespeichert; ohne Speicherzugriff funktioniert die Vorschau weiterhin. Nur die Bildebenen werden gefiltert, die Schrift bleibt scharf.
 - **B:** Unverändertes Foto, darüber eine deckende quadratische Fläche in hellem Beige mit 28 px Radius (mobil 23 px). Die feste Fläche stabilisiert den Textkontrast unabhängig vom Foto.
-- **C · Dreiklang:** Wiederherstellung von `archiv/bisherige-entwuerfe/vorschlag-i-dreiklang.html` als aktuelle `variante-c.html`. Drei aufklappbare Holzflächen, die ursprünglichen Farben sowie Fraunces/Figtree bleiben erhalten. Der Variantenwechsler führt zurück zu A und B; die neuen Kundenstimmen ersetzen die fiktiven Vorschauzitate.
-- **Foto pur (separat):** `salon-aktuell-hochkant.jpg` wird im Header per CSS in Schwarz-Weiß dargestellt, ohne Blur oder aufhellende Ebene. Die Originaldatei bleibt farbig und unverändert. Überschrift und Begleittexte stehen weiß direkt auf dem Motiv; der Kontrast hängt weiterhin vom Bildausschnitt ab.
+- **C · Pur:** `salon-aktuell-hochkant.jpg` wird im Header per CSS in Schwarz-Weiß dargestellt, ohne Blur oder aufhellende Ebene. Die Originaldatei bleibt farbig und unverändert. Überschrift und Begleittexte stehen weiß direkt auf dem Motiv; der Kontrast hängt weiterhin vom Bildausschnitt ab.
+- **D · Dreiklang:** Zusätzliche Option aus `archiv/bisherige-entwuerfe/vorschlag-i-dreiklang.html` unter `variante-d.html`. Drei aufklappbare Holzflächen, die ursprünglichen Farben sowie Fraunces/Figtree bleiben erhalten. Der Variantenwechsler verbindet alle vier Entwürfe; echte Kundenstimmen ersetzen die fiktiven Vorschauzitate.
 
 Die drei Fotoausführungen verwenden dieselbe aktuelle Hochkantaufnahme (1200 × 1600 px).
 Das Foto füllt den Hero ohne Verzerrung; `object-position: 50% 44%` hält den
@@ -60,14 +60,16 @@ Navigation → Foto-Hero → Willkommen → Haare/Haut/Nägel → Salon → Kund
 → Kontakt → Rechtstextlinks. Keine erfundenen Bewertungen, Teamlisten, News oder Feeds.
 Der kleine Variantenwechsler dient nur der Entwurfspräsentation. Die Hinweise
 enthalten einen Link zu den archivierten hellen Entwürfen.
-Die Präsentationsreihenfolge ist A · Milchig → B · Sandfläche → C · Dreiklang.
-Der Hauptlink öffnet A; C ist unter `variante-c.html` weiterhin direkt erreichbar.
+Die Präsentationsreihenfolge ist A · Milchig → B · Sandfläche → C · Pur → D · Dreiklang.
+Der Hauptlink öffnet A. C · Pur ist unter `variante-c.html` und D · Dreiklang
+unter `variante-d.html` direkt erreichbar.
 
 Mobil: ausklappbare Navigation, Leistungen untereinander, angepasste
 Bildposition, zweispaltiges Salon-Detail, Kontakt bei 320 px einspaltig.
 Sprunglinks, sichtbarer Tastaturfokus, Escape zum Schließen und reduzierte
-Bewegung sind berücksichtigt. Der Variantenwechsler zeigt auf dem Handy drei
-Links in einer Reihe. Ohne JavaScript bleiben Navigation und
+Bewegung sind berücksichtigt. Der Variantenwechsler zeigt auf dem Handy alle vier
+Links in zwei Spalten. Abstände zum Seitenende und zum Hero-Sprunglink sind
+für die höhere Leiste angepasst. Ohne JavaScript bleiben Navigation und
 Variantenlinks benutzbar; der Hinweisdialog benötigt JavaScript.
 
 Die Kundenstimmen stehen auf einer beigen Fläche zwischen Salon und Kontakt.
@@ -83,12 +85,18 @@ Es wird kein unbestätigter Gesamtwert oder Bewertungszähler angegeben.
 
 ## Prüfung der Kundenstimmen und des wiederhergestellten Dreiklangs
 
-A, B und C bei 320, 768 und 1440 px im Browser geprüft: jeweils drei Karten,
+Die Bewertungskarten wurden bei 320, 768 und 1440 px im Browser geprüft:
 mobil eine Spalte, ab Tablet drei Spalten, kein horizontaler Seitenüberlauf.
-Der Wechsler zeigt überall A · Milchig, B · Sandfläche und C · Dreiklang.
+Der Wechsler verbindet A · Milchig, B · Sandfläche, C · Pur und D · Dreiklang.
 Das Öffnen des Nägel-Bereichs aktualisiert Inhalt und `aria-expanded`.
 Desktop-Karten sowie Dreiklang mobil visuell kontrolliert. Lokale Dateiverweise,
 Sprungziele und eindeutige IDs der vier aktuellen HTML-Seiten geprüft.
+
+Alle vier Optionen bei 320, 390 und 1440 px geprüft: passende aktive Auswahl,
+drei Kundenstimmen pro Seite und kein horizontaler Überlauf der Seite oder
+des Wechslers. Mobil stehen die vier Links in zwei Spalten. C zeigt wieder
+das Schwarz-Weiß-Foto mit weißer Schrift; der direkte Wechsel C ↔ D und der
+Hinweisdialog mit allen vier Beschreibungen wurden bedient.
 
 ## Bisherige Prüfungen der Fotoausführungen
 
@@ -121,7 +129,7 @@ Schwarz/Beige 14,26:1, Schwarz/Stein 9,70:1; sekundärer Text auf Leinen
 unter konservativen Annahmen (schwarzes Bildpixel, maximale dunkle Körnung)
 mindestens 5,53:1. Bei niedrigeren Reglerwerten hängt der Kontrast vom Foto ab;
 dieser Mindestwert gilt nicht für den gesamten Reglerbereich.
-Foto pur (früher C) erfüllt die nötigen Kontraste über dem Foto stellenweise nicht.
+C · Pur erfüllt die nötigen Kontraste über dem Foto stellenweise nicht.
 Diese gezielten Prüfungen sind keine vollständige WCAG-Prüfung.
 
 ## Vor dem fertigen Auftritt

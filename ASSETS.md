@@ -40,7 +40,7 @@ vollständig dargestellt, auf großen Bildschirmen maximal 426 px breit.
 Manrope: `assets/fonts/manrope.woff2`, Lizenztext
 `assets/fonts/manrope-OFL.txt` (SIL Open Font License). Keine externen
 Schrift- oder Trackinganfragen. Die weiteren vorhandenen Fontdateien bleiben
-für frühere Entwürfe erhalten. Der wiederhergestellte Dreiklang-Entwurf C
+für frühere Entwürfe erhalten. Der wiederhergestellte Dreiklang-Entwurf D
 verwendet wie sein Original Fraunces und Figtree über Google Fonts sowie
 das bestehende externe Icon-Stylesheet.
 

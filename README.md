@@ -10,29 +10,29 @@ Beige- und Sandfarben aus der gelieferten Palette.
 |---|---|---|
 | A · Milchig | Weichgezeichnetes Foto, heller Schleier und feine Körnung | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-a.html) |
 | B · Sandfläche | Klares Foto und eine quadratische, abgerundete Textfläche | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-b.html) |
-| C · Dreiklang | Der frühere Entwurf mit drei aufklappbaren Holzflächen | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-c.html) |
+| C · Pur | Weiße Schrift direkt auf dem Salonfoto in Schwarz-Weiß | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-c.html) |
+| D · Dreiklang | Zusätzlicher Entwurf mit drei aufklappbaren Holzflächen | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-d.html) |
 
-A und B teilen Aufbau, Texte und Typografie und vergleichen die Bildwirkung.
-C holt den früheren Dreiklang-Entwurf als dritte Auswahl zurück. Die separate
+A, B und C teilen Aufbau, Texte und Typografie und vergleichen die Bildwirkung.
+D ergänzt den früheren Dreiklang-Entwurf als vierte Auswahl. Die separate
 Übersichtsseite entfällt. Der Hauptlink startet direkt mit A. Der Wechsler unten
-zeigt die Reihenfolge A · Milchig → B · Sandfläche → C · Dreiklang.
+zeigt die Reihenfolge A · Milchig → B · Sandfläche → C · Pur → D · Dreiklang.
 Die früher geteilten Direktlinks `galerie.html`, `salon.html` und `klar.html`
 führen weiterhin zu Pur, Milchig und Sandfläche.
-[Foto pur](https://garytimeless.github.io/verschoenerei/variante-pur.html)
-bleibt separat erhalten. Die ursprüngliche Dreiklang-Datei im Archiv bleibt unverändert.
+`variante-pur.html` leitet ebenfalls auf C · Pur weiter. Die ursprüngliche Dreiklang-Datei im Archiv bleibt unverändert.
 
 In A lässt sich die **Milchigkeit unten live von 0 bis 100 % einstellen**.
 Der Startwert ist 40 %; 100 % entspricht dem ursprünglichen starken Effekt.
 Die letzte Einstellung bleibt lokal im jeweiligen Browser gespeichert.
 
-A, B und Foto pur verwenden das Foto
+A, B und C verwenden das Foto
 `WhatsApp Image 2026-10-12 at 09.05.45 (1).jpeg` des heutigen Salons.
 Diese Fotoausführungen verwenden denselben responsiven Bildausschnitt: Auf breiten
 Bildschirmen werden Decke und Boden beschnitten; hochkant wird der Ausschnitt
 nach oben versetzt. Die jeweiligen Effekte bleiben erhalten. Auf dem Handy stehen
-die drei Varianten im Wechsler in einer Reihe.
+die vier Varianten im Wechsler in zwei Spalten.
 
-In allen drei Optionen und Foto pur stehen drei echte Kundenstimmen als Bewertungskarten
+In allen vier Optionen stehen drei echte Kundenstimmen als Bewertungskarten
 mit Sternen, Initialen und einem Link zu den Google-Bewertungen. Die statischen
 Zitate sind mit ihren Quellen verlinkt; es wird kein Live-Feed geladen.
 
@@ -49,8 +49,8 @@ Stylesheets und Bildern, weil alle benötigten Dateien im Archiv liegen.
 ## Bearbeitung und Vorschau
 
 Statische HTML-Seiten ohne Build-Schritt: `variante-a.html`, `variante-b.html`,
-`variante-c.html`; zusätzlich `variante-pur.html`. `index.html` leitet auf A weiter.
-A, B und Foto pur teilen `sand.css` und `sand.js`. C behält den eigenen Stil und
+`variante-c.html` und `variante-d.html`. `index.html` leitet auf A weiter.
+A, B und C teilen `sand.css` und `sand.js`. D behält den eigenen Stil und
 die aufklappbaren Bereiche des Archiv-Entwurfs. Die Karten teilen `kundenstimmen.css`.
 Bei Inhaltsänderungen alle vier Seiten aktualisieren.
 
