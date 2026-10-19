@@ -50,6 +50,8 @@ Navigation → Foto-Hero → Willkommen → Haare/Haut/Nägel → Salon → Kont
 → Rechtstextlinks. Keine erfundenen Bewertungen, Teamlisten, News oder Feeds.
 Der kleine Variantenwechsler dient nur der Entwurfspräsentation. Die Hinweise
 enthalten einen Link zu den archivierten hellen Entwürfen.
+Die Präsentationsreihenfolge ist B · Milchig → C · Sandfläche → A · Pur.
+Der Hauptlink öffnet B; A ist unter `variante-a.html` weiterhin direkt erreichbar.
 
 Mobil: ausklappbare Navigation, Leistungen untereinander, angepasste
 Bildposition, zweispaltiges Salon-Detail, Kontakt bei 320 px einspaltig.
