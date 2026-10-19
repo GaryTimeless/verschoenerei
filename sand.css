@@ -66,6 +66,7 @@ h1, h2, h3 { font-weight: 400; }
 [data-variant='b'] .hero-photo img { filter: blur(var(--milk-blur, 4.8px)) saturate(var(--milk-saturation, .86)); }
 [data-variant='b'] .hero-milk, [data-variant='b'] .hero-grain { display: block; }
 .hero-content { width: min(100%, 720px); text-align: center; }
+[data-variant='a'] .hero-content { color: #fff; }
 .hero-title { margin: 19px 0 22px; font-size: clamp(44px, 5.25vw, 76px); line-height: 1.09; letter-spacing: -.055em; }
 .hero-title span { display: block; }
 .hero-description { margin: 0 auto 27px; max-width: 315px; font-size: 14px; line-height: 1.8; }

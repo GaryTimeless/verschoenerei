@@ -1,7 +1,7 @@
 # Verschönerei Weinheim — Sandtöne, drei Einstiege
 
 Die neue Entwurfsrunde vom 19. Oktober 2026 setzt Peggys Rückmeldung um:
-ein großes Salonfoto, schwarze Schrift „Dein Stil. Dein Moment.“ und neutrale
+ein großes Salonfoto, den Schriftzug „Dein Stil. Dein Moment.“ und neutrale
 Beige- und Sandfarben aus der gelieferten Palette.
 
 **[Aktuelle Entwürfe ansehen](https://garytimeless.github.io/verschoenerei/)**
@@ -10,7 +10,7 @@ Beige- und Sandfarben aus der gelieferten Palette.
 |---|---|---|
 | B · Milchig | Weichgezeichnetes Foto, heller Schleier und feine Körnung | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-b.html) |
 | C · Sandfläche | Klares Foto und eine quadratische, abgerundete Textfläche | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-c.html) |
-| A · Pur | Schwarze Schrift direkt auf dem Salonfoto in Schwarz-Weiß | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-a.html) |
+| A · Pur | Weiße Schrift direkt auf dem Salonfoto in Schwarz-Weiß | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-a.html) |
 
 Aufbau, Texte, Typografie und weitere Seitenbereiche sind gleich. So lässt sich
 im Gespräch gezielt die Bild- und Schriftwirkung vergleichen. Die separate
