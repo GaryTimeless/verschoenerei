@@ -18,6 +18,10 @@ im Gespräch gezielt die Bild- und Schriftwirkung vergleichen. Die separate
 Die früher geteilten Direktlinks `galerie.html`, `salon.html` und `klar.html`
 führen zu den aktuellen Varianten A, B und C.
 
+In B lässt sich die **Milchigkeit unten live von 0 bis 100 % einstellen**.
+Der Startwert ist 40 %; 100 % entspricht dem ursprünglichen starken Effekt.
+Die letzte Einstellung bleibt lokal im jeweiligen Browser gespeichert.
+
 ## Archiv
 
 Die bisherigen Entwürfe bleiben vollständig erhalten:

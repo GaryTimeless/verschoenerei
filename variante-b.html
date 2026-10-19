@@ -8,8 +8,8 @@
   <meta name="description" content="Dein Stil. Dein Moment. Haare, Haut und Nägel in der Verschönerei Weinheim.">
   <title>Verschönerei · Variante B · Milchig &amp; weich</title>
   <link rel="preload" href="assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="sand.css">
-  <script src="sand.js" defer></script>
+  <link rel="stylesheet" href="sand.css?v=20261019-2">
+  <script src="sand.js?v=20261019-2" defer></script>
 </head>
 <body data-variant="b">
   <a class="skip-link" href="#inhalt">Zum Inhalt</a>
@@ -133,6 +133,11 @@
   </footer>
 
   <aside class="variant-bar" aria-label="Designvarianten vergleichen">
+    <div class="milk-control" data-milk-control hidden>
+      <label for="milk-strength">Milchigkeit</label>
+      <input id="milk-strength" type="range" min="0" max="100" step="1" value="40" aria-valuetext="40 Prozent">
+      <output for="milk-strength" aria-hidden="true">40 %</output>
+    </div>
     <span>Entwurf</span>
     <nav class="variant-options" aria-label="Variante wählen">
       <a href="index.html">A · Pur</a>

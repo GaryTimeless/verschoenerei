@@ -37,7 +37,7 @@ Bildschirmen auf etwa 535–650 px begrenzt.
 ## Die drei Einstiege
 
 - **A:** Unverändertes `salon-wide.jpg`, ohne Blur oder aufhellende Ebene. Schwarze Schrift direkt auf dem Motiv. Das ist die gewünschte Vergleichsbasis; der Kontrast hängt vom Bildausschnitt ab und ist stellenweise zu schwach.
-- **B:** Dasselbe Foto, per CSS mit 12 px Blur und reduzierter Sättigung; darüber 62 % deckendes Leinen und feine prozedurale SVG-Körnung. Nur die Bildebenen werden gefiltert, die Schrift bleibt scharf.
+- **B:** Ein Live-Regler „Milchigkeit“ steuert Blur, hellen Schleier, Entsättigung und Körnung gemeinsam von 0 bis 100 %. 0 % zeigt ein klares Bild; 100 % entspricht dem ursprünglichen Look mit 12 px Blur und 62 % deckendem Leinen. Der neue Startwert ist 40 % (4,8 px Blur, 24,8 % Leinen). Die zuletzt gewählte Stärke wird lokal im Browser gespeichert; ohne Speicherzugriff funktioniert die Vorschau weiterhin. Nur die Bildebenen werden gefiltert, die Schrift bleibt scharf.
 - **C:** Unverändertes Foto, darüber eine deckende quadratische Fläche in hellem Beige mit 28 px Radius (mobil 23 px). Die feste Fläche stabilisiert den Textkontrast unabhängig vom Foto.
 
 Der Hero füllt mindestens den ersten Bildschirm unter der Navigation. C hält
@@ -66,14 +66,21 @@ Mobilansichten visuell kontrolliert. Menü, Sprunglink mit automatischem
 Menüschluss, Escape, Variantenwechsel und Hinweisdialog bedient;
 keine dabei beobachteten JavaScriptwarnungen oder -fehler.
 
+Der nachträglich ergänzte B-Regler wurde per Maus und Tastatur bei 0 %, 100 %
+und Zwischenwerten geprüft. Effekt und Prozentanzeige ändern sich sofort;
+nach Neuladen bleibt der Wert erhalten. Die Reglerleiste passt bei 320, 390,
+768 und 1440 px ohne horizontale Überbreite.
+
 Alle lokalen HTML-/CSS-Dateiverweise geprüft. Die 32 Dateien der vorherigen
 hellen Entwurfsrunde wurden per SHA-256 mit dem Archiv verglichen und sind
 unverändert.
 
 Gemessene Kontraste der deckenden Textrollen: Schwarz/Leinen 16,87:1,
 Schwarz/Beige 14,26:1, Schwarz/Stein 9,70:1; sekundärer Text auf Leinen
-7,70:1 und Beige 6,51:1. Variante B erreicht selbst unter konservativen
-Annahmen (schwarzes Bildpixel, maximale dunkle Körnung) mindestens 5,53:1.
+7,70:1 und Beige 6,51:1. Bei 100 % Milchigkeit erreicht Variante B selbst
+unter konservativen Annahmen (schwarzes Bildpixel, maximale dunkle Körnung)
+mindestens 5,53:1. Bei niedrigeren Reglerwerten hängt der Kontrast vom Foto ab;
+dieser Mindestwert gilt nicht für den gesamten Reglerbereich.
 Variante A erfüllt die nötigen Kontraste über dem Foto stellenweise nicht.
 Diese gezielten Prüfungen sind keine vollständige WCAG-Prüfung.
 

@@ -59,10 +59,10 @@ h1, h2, h3 { font-weight: 400; }
 .hero-photo { z-index: -3; }
 .hero-photo img { object-fit: cover; object-position: 50% 46%; }
 .hero-milk, .hero-grain { display: none; pointer-events: none; }
-.hero-milk { z-index: -2; background: rgb(244 242 236 / 62%); }
-.hero-grain { z-index: -1; opacity: .075; background: url('assets/grain.svg') repeat; }
+.hero-milk { z-index: -2; background: rgb(244 242 236 / var(--milk-opacity, .248)); }
+.hero-grain { z-index: -1; opacity: var(--milk-grain, .03); background: url('assets/grain.svg') repeat; }
 [data-variant='b'] .hero-photo { inset: -24px; width: calc(100% + 48px); height: calc(100% + 48px); }
-[data-variant='b'] .hero-photo img { filter: blur(12px) saturate(.65); }
+[data-variant='b'] .hero-photo img { filter: blur(var(--milk-blur, 4.8px)) saturate(var(--milk-saturation, .86)); }
 [data-variant='b'] .hero-milk, [data-variant='b'] .hero-grain { display: block; }
 .hero-content { width: min(100%, 720px); text-align: center; }
 .hero-title { margin: 19px 0 22px; font-size: clamp(44px, 5.25vw, 76px); line-height: 1.09; letter-spacing: -.055em; }
@@ -131,6 +131,11 @@ h1, h2, h3 { font-weight: 400; }
 .variant-options a:not([aria-current]):hover { background: var(--beige); }
 .variant-info { display: grid; place-items: center; flex: none; width: 36px; height: 36px; padding: 0; border: 1px solid var(--taupe); border-radius: 50%; background: transparent; font: 17px Georgia, serif; cursor: pointer; }
 .variant-info:hover { background: var(--beige); }
+[data-variant='b'] .variant-bar { width: 450px; flex-wrap: wrap; justify-content: center; gap: 4px 12px; padding: 8px 10px; border-radius: 18px; }
+.milk-control { flex-basis: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) 4ch; align-items: center; gap: 12px; padding: 0 8px 7px; border-bottom: 1px solid var(--line); font-size: 11px; }
+.milk-control label { cursor: pointer; }
+.milk-control input { width: 100%; min-width: 0; height: 36px; margin: 0; accent-color: var(--ink); cursor: ew-resize; }
+.milk-control output { text-align: right; font-variant-numeric: tabular-nums; }
 .proposal-dialog { width: min(540px, calc(100% - 36px)); max-height: calc(100svh - 48px); padding: 38px; border: 1px solid var(--taupe); border-radius: 16px; background: var(--linen); color: var(--ink); }
 .proposal-dialog::backdrop { background: #11111166; }
 .proposal-dialog h2 { margin-right: 25px; font-size: 25px; line-height: 1.3; letter-spacing: -.035em; }
@@ -198,6 +203,9 @@ h1, h2, h3 { font-weight: 400; }
   .variant-options { gap: 2px; }
   .variant-options a { min-height: 39px; padding: 8px 13px; font-size: 10px; }
   .variant-info { width: 32px; height: 32px; }
+  [data-variant='b'] .variant-bar { gap: 4px 5px; padding: 6px; }
+  .milk-control { gap: 9px; padding-inline: 7px; }
+  [data-variant='b'] .hero-scroll { bottom: 136px; }
   .proposal-dialog { padding: 30px 24px; }
 }
 

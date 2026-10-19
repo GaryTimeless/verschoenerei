@@ -2,6 +2,38 @@
   'use strict';
   document.documentElement.classList.add('js');
 
+  const milkControl = document.querySelector('[data-milk-control]');
+  if (document.body.dataset.variant === 'b' && milkControl) {
+    const slider = milkControl.querySelector('input');
+    const output = milkControl.querySelector('output');
+    const hero = document.querySelector('.hero');
+    const storageKey = 'verschoenerei-milk-strength-v1';
+    let strength = Number(slider.value);
+    try {
+      const stored = localStorage.getItem(storageKey);
+      if (stored !== null && stored.trim() !== '' && Number.isFinite(Number(stored))) {
+        strength = Number(stored);
+      }
+    } catch { /* The slider also works when browser storage is unavailable. */ }
+    const applyMilk = value => {
+      const amount = Math.min(100, Math.max(0, Math.round(Number(value))));
+      const factor = amount / 100;
+      slider.value = String(amount);
+      slider.setAttribute('aria-valuetext', `${amount} Prozent`);
+      output.value = `${amount} %`;
+      hero.style.setProperty('--milk-opacity', String(.62 * factor));
+      hero.style.setProperty('--milk-blur', `${12 * factor}px`);
+      hero.style.setProperty('--milk-saturation', String(1 - .35 * factor));
+      hero.style.setProperty('--milk-grain', String(.075 * factor));
+    };
+    applyMilk(strength);
+    milkControl.hidden = false;
+    slider.addEventListener('input', () => applyMilk(slider.value));
+    slider.addEventListener('change', () => {
+      try { localStorage.setItem(storageKey, slider.value); } catch { /* Keep the current preview usable. */ }
+    });
+  }
+
   const toggle = document.querySelector('[data-menu-toggle]');
   const navigation = document.querySelector('[data-menu]');
   const closeMenu = () => {
