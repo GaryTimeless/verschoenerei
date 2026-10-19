@@ -11,7 +11,7 @@ Beige- und Sandfarben aus der gelieferten Palette.
 | A · Milchig | Weichgezeichnetes Foto, heller Schleier und feine Körnung | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-a.html) |
 | B · Sandfläche | Klares Foto und eine quadratische, abgerundete Textfläche | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-b.html) |
 | C · Pur | Weiße Schrift direkt auf dem Salonfoto in Schwarz-Weiß | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-c.html) |
-| D · Hochkant | Sandfläche wie B, mit einer aktuellen Hochkantaufnahme des Salons | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-d.html) |
+| D · Hochkant | Ursprünglicher Hochkant-Test mit Sandfläche, jetzt gleiche Bildbasis wie A–C | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-d.html) |
 
 Aufbau, Texte, Typografie und weitere Seitenbereiche sind gleich. So lässt sich
 im Gespräch gezielt die Bild- und Schriftwirkung vergleichen. Die separate
@@ -24,13 +24,13 @@ In A lässt sich die **Milchigkeit unten live von 0 bis 100 % einstellen**.
 Der Startwert ist 40 %; 100 % entspricht dem ursprünglichen starken Effekt.
 Die letzte Einstellung bleibt lokal im jeweiligen Browser gespeichert.
 
-D ist ein zusätzlicher Test mit dem aktuellen Foto
-`WhatsApp Image 2026-10-12 at 09.05.45 (1).jpeg` und der Gestaltung von B.
-Das Hochkantfoto füllt den Header; auf breiten Bildschirmen wird oben und
-unten beschnitten. A, B und C behalten ausdrücklich das bisherige Headerfoto,
-damit sich die geplante Wirkung mit einem späteren aktuellen Querformatbild
-vergleichen lässt. Auf dem Handy stehen die vier Varianten im Wechsler in
-zwei Reihen.
+Alle aktuellen Entwürfe verwenden das Foto
+`WhatsApp Image 2026-10-12 at 09.05.45 (1).jpeg` des heutigen Salons.
+Der in D erprobte Bildausschnitt wurde auf A, B und C übertragen: auf breiten
+Bildschirmen werden Decke und Boden beschnitten; hochkant wird der Ausschnitt
+nach oben versetzt. Die jeweiligen Effekte bleiben erhalten. D bleibt als
+ursprünglicher Test mit der Gestaltung von B erreichbar. Auf dem Handy stehen
+die vier Varianten im Wechsler in zwei Reihen.
 
 ## Archiv
 

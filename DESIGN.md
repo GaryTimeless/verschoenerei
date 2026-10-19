@@ -39,8 +39,8 @@ Bildschirmen auf etwa 535–650 px begrenzt.
 
 - **A:** Ein Live-Regler „Milchigkeit“ steuert Blur, hellen Schleier, Entsättigung und Körnung gemeinsam von 0 bis 100 %. 0 % zeigt ein klares Bild; 100 % entspricht dem ursprünglichen Look mit 12 px Blur und 62 % deckendem Leinen. Der neue Startwert ist 40 % (4,8 px Blur, 24,8 % Leinen). Die zuletzt gewählte Stärke wird lokal im Browser gespeichert; ohne Speicherzugriff funktioniert die Vorschau weiterhin. Nur die Bildebenen werden gefiltert, die Schrift bleibt scharf.
 - **B:** Unverändertes Foto, darüber eine deckende quadratische Fläche in hellem Beige mit 28 px Radius (mobil 23 px). Die feste Fläche stabilisiert den Textkontrast unabhängig vom Foto.
-- **C:** `salon-wide.jpg` wird im Header per CSS in Schwarz-Weiß dargestellt, ohne Blur oder aufhellende Ebene. Die Originaldatei bleibt farbig und unverändert. Überschrift und Begleittexte stehen weiß direkt auf dem Motiv; der Kontrast hängt weiterhin vom Bildausschnitt ab.
-- **D:** Zusätzlicher Test mit der Gestaltung von B und der aktuellen Hochkantaufnahme `salon-aktuell-hochkant.jpg` (1200 × 1600 px). Die deckende Sandfläche und alle weiteren Inhalte entsprechen B. Das Foto füllt den Hero ohne Verzerrung; `object-position: 50% 44%` hält den Ausschnitt bei den Spiegeln und Friseurstühlen. Im Querformat werden große Teile von Decke und Boden abgeschnitten. Bei hochkantigem Bildschirm wird die Bildebene auf 125 % Höhe vergrößert und um 25 % nach oben versetzt, damit weniger leere Decke und mehr vom Salon sichtbar bleiben. A, B und C behalten ihr bisheriges Headerbild als Vergleich für ein noch anzufragendes aktuelles Querformatfoto.
+- **C:** `salon-aktuell-hochkant.jpg` wird im Header per CSS in Schwarz-Weiß dargestellt, ohne Blur oder aufhellende Ebene. Die Originaldatei bleibt farbig und unverändert. Überschrift und Begleittexte stehen weiß direkt auf dem Motiv; der Kontrast hängt weiterhin vom Bildausschnitt ab.
+- **D:** Zusätzlicher Test mit der Gestaltung von B und der aktuellen Hochkantaufnahme `salon-aktuell-hochkant.jpg` (1200 × 1600 px). Die deckende Sandfläche und alle weiteren Inhalte entsprechen B. Das Foto füllt den Hero ohne Verzerrung; `object-position: 50% 44%` hält den Ausschnitt bei den Spiegeln und Friseurstühlen. Im Querformat werden große Teile von Decke und Boden abgeschnitten. Bei hochkantigem Bildschirm wird die Bildebene auf 125 % Höhe vergrößert und um 25 % nach oben versetzt, damit weniger leere Decke und mehr vom Salon sichtbar bleiben. Der erfolgreiche Test wurde anschließend auf A, B und C übertragen: Alle aktuellen Header verwenden dasselbe Foto und denselben responsiven Bildausschnitt, mit den jeweiligen Darstellungseffekten.
 
 Der Hero füllt mindestens den ersten Bildschirm unter der Navigation. B hält
 die Textfläche auch bei schmaler Breite quadratisch; D verwendet dieselbe Fläche. Das Foto bleibt überall
@@ -77,7 +77,12 @@ D wurde zusätzlich bei 320, 390, 768 und 1440 px geprüft: Foto geladen,
 quadratische Sandfläche, kein horizontaler Überlauf, angepasster Ausschnitt
 für hochkantige Bildschirme. Der Vierer-Wechsler wurde in A–C bei 320 px und
 mit dem Milchigkeitsregler in A auf Desktop geprüft. Der Wechsel von A nach D
-führt zur richtigen Seite. A–C verwenden weiterhin `salon-wide.jpg`.
+führt zur richtigen Seite. A–C verwenden ebenfalls `salon-aktuell-hochkant.jpg`; das alte Headerfoto ist im Asset-Archiv erhalten.
+
+Nach der Übernahme des aktuellen Fotos wurden A, B und C bei 390 und
+1280 px visuell geprüft: passender Bildausschnitt, Foto geladen, kein
+horizontaler Überlauf. Milchigkeitsfilter, deckende Sandfläche sowie
+Schwarz-Weiß-Darstellung mit weißer Schrift bleiben erhalten.
 
 Der nachträglich ergänzte A-Regler wurde per Maus und Tastatur bei 0 %, 100 %
 und Zwischenwerten geprüft. Effekt und Prozentanzeige ändern sich sofort;
