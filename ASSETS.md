@@ -5,7 +5,7 @@
 | Datei | Verwendung | Herkunft |
 |---|---|---|
 | `assets/salon-wide.jpg` | Identisches großes Headerfoto in A, B und C | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/02/DSC_2573-scaled.jpg) |
-| `assets/salon-schriftzug.jpg` | „Ein Blick in unsere Verschönerei.“ — Schriftzug an sandfarbener Wand, 640 × 426 px | Vom Nutzer ausgewählte Datei aus Downloads: `WhatsApp Image 2026-10-12 at 08.54.36 (7).jpeg`, unverändert übernommen. |
+| `assets/salon-theke.jpg` | „Ein Blick in unsere Verschönerei.“ — beleuchtete Holztheke, Pendelleuchten und Schriftzug, 426 × 640 px | Vom Nutzer ausgewählte Datei aus Downloads: `WhatsApp Image 2026-10-12 at 08.54.36 (8).jpeg`, unverändert übernommen. |
 | `assets/Salon-lounge2.jpeg` | Sitzecke im Salonbereich | Bereits im lokalen Projekt vorhandene zusätzliche Aufnahme. Quelle/aktuelle Freigabe mit Peggy bestätigen. |
 | `assets/hair.jpg` | Friseurwerkzeug im Leistungsbereich Haare | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_0149-scaled.jpg) |
 | `assets/beauty.jpg` | Kosmetik-Stillleben im Leistungsbereich Haut | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_0147-scaled.jpg) |
@@ -21,6 +21,10 @@ Das veraltete Rezeptionsfoto liegt seit dem 19. Oktober 2026 unter
 `assets/archiv/salon-reception.jpg`. Es ist unverändert erhalten und wird in
 keinem aktuellen Entwurf mehr verwendet. Die ältere Entwurfsrunde behält
 ihre unabhängige Archivkopie. Herkunft und Hinweis: [Asset-Archiv](assets/archiv/README.md).
+
+Die zwischenzeitlich verwendete Aufnahme (7) liegt unverändert unter
+`assets/archiv/salon-schriftzug.jpg`. Das aktuelle Foto (8) wird hochkant und
+vollständig dargestellt, auf großen Bildschirmen maximal 426 px breit.
 
 ## Lokale Schrift und Körnung
 

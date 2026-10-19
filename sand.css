@@ -96,6 +96,8 @@ h1, h2, h3 { font-weight: 400; }
 .salon { padding-block: clamp(70px, 8vw, 128px); }
 .salon-grid { display: grid; grid-template-columns: 1.5fr 1fr; align-items: start; gap: clamp(32px, 7vw, 110px); }
 .salon-main > img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.salon-main--portrait { max-width: 426px; margin-inline: auto; }
+.salon-main--portrait > img { aspect-ratio: 426 / 640; object-fit: contain; }
 .salon-main figcaption, .salon-detail figcaption { margin-top: 13px; font-size: 10px; color: var(--muted); }
 .salon-copy { margin-top: 42px; }
 .salon-copy h2 { margin-top: 18px; }
