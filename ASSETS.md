@@ -1,22 +1,36 @@
-# Bildquellen für die Verschönerei-Entwürfe
+# Material der Sand-Entwürfe
 
-Alle Fotografien und Logos stammen von der bestehenden Website der Verschönerei (verschoenerei.com). Keine generierten Bilder, keine Fotos der Referenz Timate Hair und keine zusätzlichen Stockfotos.
+## Verwendete Bilder
 
-Die Bilder wurden lediglich proportional verkleinert und als JPEG optimiert. Es wurden keine Personen entfernt, keine Inhalte ergänzt und keine kosmetischen Veränderungen vorgenommen. Mitarbeiterporträts und Teamfotos wurden bewusst nicht übernommen.
+| Datei | Verwendung | Herkunft |
+|---|---|---|
+| `assets/salon-wide.jpg` | Identisches großes Headerfoto in A, B und C | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/02/DSC_2573-scaled.jpg) |
+| `assets/salon-reception.jpg` | Großer Einblick in den Salon | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_2545-scaled.jpg) |
+| `assets/Salon-lounge2.jpeg` | Sitzecke im Salonbereich | Bereits im lokalen Projekt vorhandene zusätzliche Aufnahme. Quelle/aktuelle Freigabe mit Peggy bestätigen. |
+| `assets/hair.jpg` | Friseurwerkzeug im Leistungsbereich Haare | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_0149-scaled.jpg) |
+| `assets/beauty.jpg` | Kosmetik-Stillleben im Leistungsbereich Haut | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_0147-scaled.jpg) |
+| `assets/nails.jpg` | Nahaufnahme einer Maniküre | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC4484-scaled.jpg) |
+| `assets/logo.png` | Bestehendes Logo, per CSS schwarz dargestellt | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/08/verschoenerei-mittel.png) |
 
-| Datei | Maße | Herkunft / Verwendung | Quelle |
-|---|---|---|---|
-| `salon-wide.jpg` | 1800 × 1197 | Echter Salon: heller Friseurbereich mit Stühlen und Spiegeln. | [Original](https://verschoenerei.com/wp-content/uploads/2022/02/DSC_2573-scaled.jpg) |
-| `salon-lounge.jpg` | 1800 × 1198 | Echter Salon: helle Sitzecke. | [Original](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_2540-2.jpg) |
-| `salon-wash.jpg` | 1800 × 1198 | Echter Salon: Waschplätze mit Holzpodest. | [Original](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_2551-2.jpg) |
-| `salon-reception.jpg` | 1800 × 1197 | Echter Salon: Rezeption mit Holztheke und warmen Pendelleuchten. | [Original](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_2545-scaled.jpg) |
-| `salon-detail.jpg` | 1800 × 1197 | Echter Salon: Blumen-/Trockenblumendetail vor heller Wand. | [Original](https://verschoenerei.com/wp-content/uploads/2022/02/DSC4305-scaled.jpg) |
-| `hair.jpg` | 1800 × 1200 | Authentisches Friseur-Stillleben: Schere, Haarschneider, Bürste. Kein Ergebnisfoto. | [Original](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_0149-scaled.jpg) |
-| `nails.jpg` | 1800 × 1197 | Authentische Maniküre-Nahaufnahme; Hände sichtbar, keine Mitarbeitergesichter. | [Original](https://verschoenerei.com/wp-content/uploads/2022/03/DSC4484-scaled.jpg) |
-| `beauty.jpg` | 1800 × 1200 | Authentisches Kosmetik-Stillleben mit Make-up-Pinseln und Palette. Kein Behandlungsergebnis. | [Original](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_0147-scaled.jpg) |
-| `products.jpg` | 1800 × 1197 | Produktregal im Salon mit La-Biosthétique-Produkten. | [Original](https://verschoenerei.com/wp-content/uploads/2022/02/DSC3436-scaled.jpg) |
-| `logo.png` | 1800 × 407 | Offizielles Logo als transparentes PNG; Originalfarbe Graugrün. Schwarz kann im Entwurf über CSS `filter: brightness(0)` dargestellt werden. | [Original](https://verschoenerei.com/wp-content/uploads/2022/08/verschoenerei-mittel.png) |
+Die Fotos bleiben unverändert. Variante B verändert nur die Darstellung mit
+CSS-Filtern und Ebenen. Es wurden keine Bildinhalte ergänzt oder entfernt.
+Die übrigen bereits vorhandenen Bilder bleiben erhalten. Die archivierten
+hellen Entwürfe enthalten unabhängige Kopien ihrer bisherigen Bilder.
 
-Die Dateinamen `hair.jpg`, `nails.jpg` und `beauty.jpg` dienen der Zuordnung zu Leistungen. `hair.jpg` und `beauty.jpg` zeigen bewusst zeitlose Gegenstände statt Mitarbeiter oder behauptete Arbeitsergebnisse. Für eine echte Ergebnisgalerie werden später separat ausgewählte, freigegebene Arbeiten benötigt.
+## Lokale Schrift und Körnung
 
-Die Originalaufnahmen zeigen einen älteren Stand des Salons. Vor produktivem Einsatz sollte die Betreiberin bestätigen, dass Einrichtung und Ausstattung noch zutreffen und die Bildrechte auch die neue Website abdecken.
+Manrope: `assets/fonts/manrope.woff2`, Lizenztext
+`assets/fonts/manrope-OFL.txt` (SIL Open Font License). Keine externen
+Schrift- oder Trackinganfragen. Die weiteren vorhandenen Fontdateien bleiben
+für frühere Entwürfe erhalten.
+
+`assets/grain.svg` ist ein neu erstelltes, prozedurales SVG-Filterbild für die
+feine Körnung von Variante B. Es enthält keine fremden Bildinhalte.
+
+## Referenzen
+
+- [Timatehair](https://www.timatehair.com/): großflächiger Fotoeinstieg, mittig gesetzte Schrift und klare Navigation. Keine Texte, Bilder, Logos oder Quelldateien übernommen.
+- Gelieferter Screenshot „Neutral Beige“: sechs entnommene Sand-/Beigetöne; der Screenshot selbst wird nicht veröffentlicht.
+
+Vor dem produktiven Relaunch Bildrechte und Aktualität des gezeigten Salons
+bestätigen. Die Materialliste dokumentiert Quellen, keine rechtliche Prüfung.

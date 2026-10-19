@@ -1,27 +1,85 @@
-# Verschönerei: drei helle Designstudien
+# Verschönerei — Entwurfsrunde 19. Oktober 2026
 
-Briefing: überwiegend Weiß, moderne serifenlose Schriften, bestehendes Logo, persönliche Atmosphäre. Dauerhafte Inhalte statt Mitarbeiterporträts, Teamlisten, News, Feed oder erfundener Bewertungen. Hauptziel: Leistungen verstehen und Termin im vorhandenen externen Dienst buchen.
+## Bestätigtes Briefing
 
-01 Galerie: Manrope, Weiß und Graphit, große asymmetrische Typografie und echte Arbeitsdetails; keine Behauptung einer Ergebnisgalerie.
+Peggy wünscht ein großes Salonbild über die volle Seitenbreite, schwarze
+Schrift „Dein Stil. Dein Moment.“ und sandige, neutrale Farben entsprechend
+dem gelieferten Screenshot. Timatehair dient als Referenz für die Kombination
+aus klarer Navigation, großem Bildeinstieg und mittiger Typografie.
 
-02 Salon: DM Sans, Weiß und helles Steingrau, räumlicher Einstieg mit authentischen Innenaufnahmen; Wärme stammt aus dem Salon. Empfohlener Ausgangspunkt aus dem gezeigten Raumkonzept.
+Es werden ausdrücklich drei Ausführungen desselben Entwurfs verglichen:
+Foto pur, milchig weichgezeichnet und Foto mit abgerundeter quadratischer
+Textfläche. Die weiteren Inhalte bleiben gleich. Dies sind gezielte
+Lesbarkeitsvarianten und keine drei unabhängig gestalteten Konzepte.
 
-03 Klar: Source Sans 3, Weiß und Graphit, typografischer Leistungsindex, wenige dauerhafte Salonbilder. Kernangebote sind sichtbar, ergänzende Leistungen über native Details-Elemente zugänglich.
+## Farben und Schrift
 
-Jeder Entwurf zeigt Einstieg, Leistungen, Salon und Kontakt. Vergleich und Wechsel sind über eine separate Entwurfsübersicht und eine kompakte Vorschauleiste erreichbar. Diese Leiste gehört zur Präsentation, nicht zur späteren Kundenwebsite.
+Die sechs Farben wurden aus den Innenflächen des Screenshot-Farbfächers
+abgenommen. Sie sind Näherungen an das gelieferte Bild, keine verbindlichen
+Corporate-Design-Werte.
 
-## Vor Produktiveinsatz
+| Rolle | Farbe |
+|---|---|
+| Leinen / Grund / Navigation | `#F4F2EC` |
+| Helles Beige / Leistungen / Textfläche C | `#E5DFD6` |
+| Sand / Bild-Fallback | `#D2C7B3` |
+| Stein / Kontakt | `#C5B8A7` |
+| Taupe / Bedienelement-Rahmen | `#AFA08E` |
+| Erde / Linien | `#8A7D6C` |
+| Schwarzer Text und Buttons | `#111111` |
+| Sekundärer Fließtext | `#514B43` |
 
-- Leistungen, Buchungsziel, Adresse, Öffnungszeiten, Telefon und E-Mail von der Betreiberin bestätigen lassen.
-- Bilder stammen aus der vorhandenen Website und wurden für diese privaten Entwürfe verkleinert. Aktualität des abgebildeten Salons und Bildrechte für den neuen Einsatz bestätigen.
-- Texte sind redaktionelle Vorschläge, keine neuen Leistungsversprechen oder bestätigten Markenclaims.
-- Impressum/Datenschutz verlinken auf bestehende Rechtstexte; für den fertigen Auftritt passend bereitstellen.
-- Schriften lokal eingebunden, keine externen Schrift-/Tracking-/Social-Media-Requests. Bildquellen siehe ASSETS.md.
+Manrope ist lokal eingebunden; Fallback Arial/sans-serif. Überschriften
+verwenden Gewicht 400, kurze Label Gewicht 600. Fließtext 14–16 px,
+große Überschriften fließend skaliert. Körpertext wird auf breiten
+Bildschirmen auf etwa 535–650 px begrenzt.
 
-## Pflege
+## Die drei Einstiege
 
-Bei Leistungs-, Kontakt- oder Öffnungszeitenänderungen aktualisieren. Keine regelmäßige inhaltliche Redaktion nötig. Eine dauerhaft richtige Website bleibt von tatsächlichen Betriebsänderungen abhängig.
+- **A:** Unverändertes `salon-wide.jpg`, ohne Blur oder aufhellende Ebene. Schwarze Schrift direkt auf dem Motiv. Das ist die gewünschte Vergleichsbasis; der Kontrast hängt vom Bildausschnitt ab und ist stellenweise zu schwach.
+- **B:** Dasselbe Foto, per CSS mit 12 px Blur und reduzierter Sättigung; darüber 62 % deckendes Leinen und feine prozedurale SVG-Körnung. Nur die Bildebenen werden gefiltert, die Schrift bleibt scharf.
+- **C:** Unverändertes Foto, darüber eine deckende quadratische Fläche in hellem Beige mit 28 px Radius (mobil 23 px). Die feste Fläche stabilisiert den Textkontrast unabhängig vom Foto.
 
-## Durchgeführte Prüfung
+Der Hero füllt mindestens den ersten Bildschirm unter der Navigation. C hält
+die Textfläche auch bei schmaler Breite quadratisch. Das Foto bleibt überall
+unverändert gespeichert; Effekte entstehen ausschließlich im Browser.
 
-Übersicht und drei Entwürfe bei 320, 390, 768 und 1440 Pixeln in Chromium geprüft: keine horizontale Überbreite, Bilder und lokale Schriften geladen, Sprunglinks vorhanden, keine JavaScript-Laufzeitfehler. Mobile Menüs, Escape, Leistungsakkordeons, Variantenwechsel und Hinweisdialog geprüft. Buchungs- und Rechtstextziele per GET verifiziert. Textkontraste der wesentlichen Rollenpaare gemessen, mindestens 4,63:1; daraus folgt keine vollständige WCAG-Prüfung.
+## Seitenaufbau und Verhalten
+
+Navigation → Foto-Hero → Willkommen → Haare/Haut/Nägel → Salon → Kontakt
+→ Rechtstextlinks. Keine erfundenen Bewertungen, Teamlisten, News oder Feeds.
+Der kleine Variantenwechsler dient nur der Entwurfspräsentation. Die Hinweise
+enthalten einen Link zu den archivierten hellen Entwürfen.
+
+Mobil: ausklappbare Navigation, Leistungen untereinander, angepasste
+Bildposition, zweispaltiges Salon-Detail, Kontakt bei 320 px einspaltig.
+Sprunglinks, sichtbarer Tastaturfokus, Escape zum Schließen und reduzierte
+Bewegung sind berücksichtigt. Ohne JavaScript bleiben Navigation und
+Variantenlinks benutzbar; der Hinweisdialog benötigt JavaScript.
+
+## Prüfung
+
+Alle drei Varianten in Chromium bei 320, 390, 768 und 1440 px geprüft:
+keine horizontale Überbreite, Überschriften passen, Fläche C bleibt
+quadratisch und Bilder/Schrift werden geladen. Desktop-, Tablet- und
+Mobilansichten visuell kontrolliert. Menü, Sprunglink mit automatischem
+Menüschluss, Escape, Variantenwechsel und Hinweisdialog bedient;
+keine dabei beobachteten JavaScriptwarnungen oder -fehler.
+
+Alle lokalen HTML-/CSS-Dateiverweise geprüft. Die 32 Dateien der vorherigen
+hellen Entwurfsrunde wurden per SHA-256 mit dem Archiv verglichen und sind
+unverändert.
+
+Gemessene Kontraste der deckenden Textrollen: Schwarz/Leinen 16,87:1,
+Schwarz/Beige 14,26:1, Schwarz/Stein 9,70:1; sekundärer Text auf Leinen
+7,70:1 und Beige 6,51:1. Variante B erreicht selbst unter konservativen
+Annahmen (schwarzes Bildpixel, maximale dunkle Körnung) mindestens 5,53:1.
+Variante A erfüllt die nötigen Kontraste über dem Foto stellenweise nicht.
+Diese gezielten Prüfungen sind keine vollständige WCAG-Prüfung.
+
+## Vor dem fertigen Auftritt
+
+Leistungen, Öffnungszeiten, Kontaktdaten, Buchungsziel und Rechte/Aktualität der
+Bilder mit Peggy bestätigen. Texte sind redaktionelle Vorschläge. Rechtstexte
+verlinken auf die bestehende Website und sind für die endgültige Umsetzung
+erneut passend bereitzustellen.
