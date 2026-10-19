@@ -35,33 +35,38 @@ verwenden Gewicht 400, kurze Label Gewicht 600. Fließtext 14–16 px,
 große Überschriften fließend skaliert. Körpertext wird auf breiten
 Bildschirmen auf etwa 535–650 px begrenzt.
 
-## Die vier Einstiege
+## Die drei Einstiege
 
 - **A:** Ein Live-Regler „Milchigkeit“ steuert Blur, hellen Schleier, Entsättigung und Körnung gemeinsam von 0 bis 100 %. 0 % zeigt ein klares Bild; 100 % entspricht dem ursprünglichen Look mit 12 px Blur und 62 % deckendem Leinen. Der neue Startwert ist 40 % (4,8 px Blur, 24,8 % Leinen). Die zuletzt gewählte Stärke wird lokal im Browser gespeichert; ohne Speicherzugriff funktioniert die Vorschau weiterhin. Nur die Bildebenen werden gefiltert, die Schrift bleibt scharf.
 - **B:** Unverändertes Foto, darüber eine deckende quadratische Fläche in hellem Beige mit 28 px Radius (mobil 23 px). Die feste Fläche stabilisiert den Textkontrast unabhängig vom Foto.
 - **C:** `salon-aktuell-hochkant.jpg` wird im Header per CSS in Schwarz-Weiß dargestellt, ohne Blur oder aufhellende Ebene. Die Originaldatei bleibt farbig und unverändert. Überschrift und Begleittexte stehen weiß direkt auf dem Motiv; der Kontrast hängt weiterhin vom Bildausschnitt ab.
-- **D:** Zusätzlicher Test mit der Gestaltung von B und der aktuellen Hochkantaufnahme `salon-aktuell-hochkant.jpg` (1200 × 1600 px). Die deckende Sandfläche und alle weiteren Inhalte entsprechen B. Das Foto füllt den Hero ohne Verzerrung; `object-position: 50% 44%` hält den Ausschnitt bei den Spiegeln und Friseurstühlen. Im Querformat werden große Teile von Decke und Boden abgeschnitten. Bei hochkantigem Bildschirm wird die Bildebene auf 125 % Höhe vergrößert und um 25 % nach oben versetzt, damit weniger leere Decke und mehr vom Salon sichtbar bleiben. Der erfolgreiche Test wurde anschließend auf A, B und C übertragen: Alle aktuellen Header verwenden dasselbe Foto und denselben responsiven Bildausschnitt, mit den jeweiligen Darstellungseffekten.
+
+Alle drei Header verwenden dieselbe aktuelle Hochkantaufnahme (1200 × 1600 px).
+Das Foto füllt den Hero ohne Verzerrung; `object-position: 50% 44%` hält den
+Ausschnitt bei Spiegeln und Friseurstühlen. Im Querformat werden Teile von
+Decke und Boden abgeschnitten. Bei hochkantigem Bildschirm wird die Bildebene
+auf 125 % Höhe vergrößert und um 25 % nach oben versetzt.
 
 Der Hero füllt mindestens den ersten Bildschirm unter der Navigation. B hält
-die Textfläche auch bei schmaler Breite quadratisch; D verwendet dieselbe Fläche. Das Foto bleibt überall
+die Textfläche auch bei schmaler Breite quadratisch. Das Foto bleibt überall
 unverändert gespeichert; Effekte entstehen ausschließlich im Browser.
 
 ## Seitenaufbau und Verhalten
 
-Die kurze Headerzeile lautet in allen vier Entwürfen „Haare · Haut · Nägel“.
+Die kurze Headerzeile lautet in allen drei Entwürfen „Haare · Haut · Nägel“.
 
 Navigation → Foto-Hero → Willkommen → Haare/Haut/Nägel → Salon → Kontakt
 → Rechtstextlinks. Keine erfundenen Bewertungen, Teamlisten, News oder Feeds.
 Der kleine Variantenwechsler dient nur der Entwurfspräsentation. Die Hinweise
 enthalten einen Link zu den archivierten hellen Entwürfen.
-Die Präsentationsreihenfolge ist A · Milchig → B · Sandfläche → C · Pur → D · Hochkant.
+Die Präsentationsreihenfolge ist A · Milchig → B · Sandfläche → C · Pur.
 Der Hauptlink öffnet A; C ist unter `variante-c.html` weiterhin direkt erreichbar.
 
 Mobil: ausklappbare Navigation, Leistungen untereinander, angepasste
 Bildposition, zweispaltiges Salon-Detail, Kontakt bei 320 px einspaltig.
 Sprunglinks, sichtbarer Tastaturfokus, Escape zum Schließen und reduzierte
-Bewegung sind berücksichtigt. Der Variantenwechsler zeigt auf dem Handy vier
-Links in zwei Reihen. Ohne JavaScript bleiben Navigation und
+Bewegung sind berücksichtigt. Der Variantenwechsler zeigt auf dem Handy drei
+Links in einer Reihe. Ohne JavaScript bleiben Navigation und
 Variantenlinks benutzbar; der Hinweisdialog benötigt JavaScript.
 
 ## Prüfung
@@ -73,11 +78,7 @@ Mobilansichten visuell kontrolliert. Menü, Sprunglink mit automatischem
 Menüschluss, Escape, Variantenwechsel und Hinweisdialog bedient;
 keine dabei beobachteten JavaScriptwarnungen oder -fehler.
 
-D wurde zusätzlich bei 320, 390, 768 und 1440 px geprüft: Foto geladen,
-quadratische Sandfläche, kein horizontaler Überlauf, angepasster Ausschnitt
-für hochkantige Bildschirme. Der Vierer-Wechsler wurde in A–C bei 320 px und
-mit dem Milchigkeitsregler in A auf Desktop geprüft. Der Wechsel von A nach D
-führt zur richtigen Seite. A–C verwenden ebenfalls `salon-aktuell-hochkant.jpg`; das alte Headerfoto ist im Asset-Archiv erhalten.
+Das alte Headerfoto ist im Asset-Archiv erhalten.
 
 Nach der Übernahme des aktuellen Fotos wurden A, B und C bei 390 und
 1280 px visuell geprüft: passender Bildausschnitt, Foto geladen, kein
