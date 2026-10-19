@@ -4,7 +4,7 @@
 
 | Datei | Verwendung | Herkunft |
 |---|---|---|
-| `assets/salon-aktuell-hochkant.jpg` | Aktueller Salon im Header aller Entwürfe (A–C), 1200 × 1600 px | Vom Nutzer ausgewählte Datei aus Downloads: `WhatsApp Image 2026-10-12 at 09.05.45 (1).jpeg`, unverändert übernommen. |
+| `assets/salon-aktuell-hochkant.jpg` | Aktueller Salon im Header von A, B und Foto pur, 1200 × 1600 px | Vom Nutzer ausgewählte Datei aus Downloads: `WhatsApp Image 2026-10-12 at 09.05.45 (1).jpeg`, unverändert übernommen. |
 | `assets/salon-theke.jpg` | „Ein Blick in unsere Verschönerei.“ — beleuchtete Holztheke, Pendelleuchten und Schriftzug, 426 × 640 px | Vom Nutzer ausgewählte Datei aus Downloads: `WhatsApp Image 2026-10-12 at 08.54.36 (8).jpeg`, unverändert übernommen. |
 | `assets/Salon-lounge2.jpeg` | Sitzecke im Salonbereich | Bereits im lokalen Projekt vorhandene zusätzliche Aufnahme. Quelle/aktuelle Freigabe mit Peggy bestätigen. |
 | `assets/hair.jpg` | Friseurwerkzeug im Leistungsbereich Haare | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC_0149-scaled.jpg) |
@@ -12,13 +12,13 @@
 | `assets/nails.jpg` | Nahaufnahme einer Maniküre | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/03/DSC4484-scaled.jpg) |
 | `assets/logo.png` | Bestehendes Logo, per CSS schwarz dargestellt | [Bestehende Verschönerei-Website](https://verschoenerei.com/wp-content/uploads/2022/08/verschoenerei-mittel.png) |
 
-Die Fotodateien bleiben unverändert. Variante C zeigt ausschließlich das
+Die Fotodateien bleiben unverändert. Foto pur zeigt ausschließlich das
 Headerfoto per CSS in Schwarz-Weiß; Variante A verändert die Darstellung mit
 CSS-Filtern und Ebenen. Es wurden keine Bildinhalte ergänzt oder entfernt.
 Die übrigen bereits vorhandenen Bilder bleiben erhalten. Die archivierten
 hellen Entwürfe enthalten unabhängige Kopien ihrer bisherigen Bilder.
 
-Alle aktuellen Entwürfe verwenden dieselbe aktuelle Hochkantaufnahme. Sie wird weder gestreckt
+A, B und Foto pur verwenden dieselbe aktuelle Hochkantaufnahme. Sie wird weder gestreckt
 noch künstlich erweitert. Der Header nutzt einen responsiven Bildausschnitt;
 auf breiten Bildschirmen entfallen Teile von Decke und Boden.
 
@@ -40,12 +40,29 @@ vollständig dargestellt, auf großen Bildschirmen maximal 426 px breit.
 Manrope: `assets/fonts/manrope.woff2`, Lizenztext
 `assets/fonts/manrope-OFL.txt` (SIL Open Font License). Keine externen
 Schrift- oder Trackinganfragen. Die weiteren vorhandenen Fontdateien bleiben
-für frühere Entwürfe erhalten.
+für frühere Entwürfe erhalten. Der wiederhergestellte Dreiklang-Entwurf C
+verwendet wie sein Original Fraunces und Figtree über Google Fonts sowie
+das bestehende externe Icon-Stylesheet.
 
 `assets/grain.svg` ist ein neu erstelltes, prozedurales SVG-Filterbild für die
 feine Körnung von Variante A. Es enthält keine fremden Bildinhalte.
 
-## Referenzen
+## Kundenstimmen
+
+Abruf am 19. Oktober 2026. Die Rezensionen werden statisch und teilweise
+gekürzt wiedergegeben; ihre Sterne sind im öffentlichen Bewertungsprofil
+mit jeweils fünf Sternen aufgeführt. Kein automatisch aktualisierter Feed.
+
+- Manu Jäger und Heike Michael: Auszüge der bereits auf der
+  [bestehenden Website](https://verschoenerei.com/) veröffentlichten Stimmen.
+- Martina Leibert sowie die individuellen Sterne: öffentliches
+  [Bewertungsprofil bei Friseurenet](https://www.friseurenet.de/friseur/mlhxyw1i/verschonerei-weinheim).
+- Das Ziel „Alle Google-Bewertungen“ mit Place-ID `ChIJ9QM3Ahfbl0cRaDapM1Fyct4`
+  stammt aus dem Bewertungslink der bestehenden Website.
+- `assets/google-g.svg`: lokales Google-Zeichen zur Quellenkennzeichnung.
+  Initialen ersetzen Profilfotos; es werden keine externen Medien geladen.
+
+## Gestaltungsreferenzen
 
 - [Timatehair](https://www.timatehair.com/): großflächiger Fotoeinstieg, mittig gesetzte Schrift und klare Navigation. Keine Texte, Bilder, Logos oder Quelldateien übernommen.
 - Gelieferter Screenshot „Neutral Beige“: sechs entnommene Sand-/Beigetöne; der Screenshot selbst wird nicht veröffentlicht.
