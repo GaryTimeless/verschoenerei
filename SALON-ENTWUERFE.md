@@ -75,7 +75,7 @@ vorhandenen Salon und die vorhandene Produkt-/Boutiquewelt.
 - JavaScript-Syntax, eindeutige HTML-IDs, lokale Datei-/Fragmentziele geprüft.
   Die Fotokopien stimmen in SHA-256 mit der vorbereiteten Bildauswahl überein.
 - Vorschauen: [Lichtspiel](https://garytimeless.github.io/verschoenerei/salon-kreativ.html#salon)
-  und [Galerie](https://garytimeless.github.io/verschoenerei/salon-schlicht.html#salon).
+  und [Galerie](https://garytimeless.github.io/verschoenerei/#salon).
   Lokale Vergleichsbilder: `material/salon-entwuerfe-2026-10-19/`.
 
 Empfehlung für diese Runde: Lichtspiel. Das Motiv kommt aus den echten
