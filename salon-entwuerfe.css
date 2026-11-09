@@ -47,9 +47,18 @@
 .service-panels:has(> :nth-child(1)[open]) { --hair-width: 2fr; }
 .service-panels:has(> :nth-child(2)[open]) { --skin-width: 2fr; }
 .service-panels:has(> :nth-child(3)[open]) { --nails-width: 2fr; }
-.service > .service-image, .service-panel { border-radius: 18px; }
-.service-panel { min-width: 0; overflow: hidden; border: 1px solid var(--line); }
-.service-panel[open] { background: var(--linen); }
+.service-grid > .service, .service-panel {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--service-tone, var(--linen));
+}
+:is(.service-grid, .service-panels) > :nth-child(2) { --service-tone: color-mix(in srgb, var(--sand) 75%, var(--linen)); }
+:is(.service-grid, .service-panels) > :nth-child(3) { --service-tone: color-mix(in srgb, var(--stone) 88%, var(--linen)); }
+.service-grid > .service { padding-bottom: 14px; }
+.service-grid > .service > :not(.service-image) { margin-inline: clamp(14px, 2vw, 26px); }
+.service-panel[open] { border-color: var(--taupe); }
 .service-panel summary { cursor: pointer; list-style: none; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 .service-panel summary::-webkit-details-marker { display: none; }
 .service-panel summary:focus-visible { outline-offset: -4px; }
