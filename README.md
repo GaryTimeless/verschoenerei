@@ -36,6 +36,20 @@ In allen vier Optionen stehen drei echte Kundenstimmen als Bewertungskarten
 mit Sternen, Initialen und einem Link zu den Google-Bewertungen. Die statischen
 Zitate sind mit ihren Quellen verlinkt; es wird kein Live-Feed geladen.
 
+## Salon-Entwürfe vom 19. Oktober
+
+Zwei zusätzliche Vorschauen auf Grundlage von A vergleichen den erweiterten
+Salonbereich: [Kreativ · Lichtspiel](https://garytimeless.github.io/verschoenerei/salon-kreativ.html)
+mit Spiegelrahmen und sanft bewegten Bildpendeln sowie
+[Schlicht · Galerie](https://garytimeless.github.io/verschoenerei/salon-schlicht.html) mit einem
+ruhigen Fotoraster. Beide starten mit der Lounge am Fenster, danach folgen
+Waschplätze und Eingang. Die Salon-Galerien enthalten jeweils acht Fotos.
+
+Gestaltung und Prüfungen stehen in
+[SALON-ENTWUERFE.md](SALON-ENTWUERFE.md). Sie verwenden `salon-entwuerfe.css`
+und `salon-entwuerfe.js`; Lichtspiel ergänzt `salon-kreativ.css` und
+`salon-kreativ.js`.
+
 ## Archiv
 
 Die bisherigen Entwürfe bleiben vollständig erhalten:
