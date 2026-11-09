@@ -36,6 +36,32 @@
 .salon-preview-bar a:not([aria-current]):hover { background: var(--beige); }
 [data-salon-preview] .site-footer { padding-bottom: 130px; }
 
+.contact { --contact-font-size: 16px; }
+.contact .eyebrow, .contact-details h3 { font-size: calc(var(--contact-font-size) - 2px); }
+.contact h2 { font-size: calc(clamp(34px, 3.6vw, 56px) + var(--contact-font-size) - 13px); }
+.contact .button, .contact-details .text-link,
+.contact-details p, .contact-details address, .contact-details dl { font-size: var(--contact-font-size); }
+.contact .button, .contact-details .text-link { gap: .65em; }
+.contact .button { padding-inline: 1em; }
+.contact .arrow { width: .95em; height: .95em; }
+.contact-details, .contact-details > div { min-width: 0; }
+
+.contact-font-control { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 24px; font-size: 13px; }
+.contact-font-control > span { flex-basis: 100%; font-weight: 600; }
+.contact-font-control button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 4px 8px;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  background: var(--linen);
+  font-weight: 700;
+  cursor: pointer;
+}
+.contact-font-control button:not(:disabled):hover { background: var(--beige); }
+.contact-font-control button:disabled { opacity: .5; cursor: default; }
+.contact-font-control output { min-width: 5ch; text-align: center; font-variant-numeric: tabular-nums; }
+
 .salon-calm { padding-block: clamp(70px, 8vw, 128px); }
 .calm-heading { display: grid; grid-template-columns: 1.15fr 1fr; align-items: end; gap: clamp(32px, 7vw, 100px); margin-bottom: 44px; }
 .calm-heading h2 { max-width: 520px; font-size: clamp(34px, 3.6vw, 56px); line-height: 1.17; letter-spacing: -.045em; }

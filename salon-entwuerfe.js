@@ -1,5 +1,38 @@
 (() => {
   'use strict';
+  const contactControl = document.querySelector('[data-contact-font-control]');
+  if (contactControl) {
+    const contact = contactControl.closest('.contact');
+    const smaller = contactControl.querySelector('[data-contact-font-smaller]');
+    const larger = contactControl.querySelector('[data-contact-font-larger]');
+    const output = contactControl.querySelector('output');
+    const minimum = 14;
+    const maximum = 24;
+    const storageKey = 'verschoenerei-contact-font-size';
+    let size = parseInt(getComputedStyle(contact).getPropertyValue('--contact-font-size'), 10);
+
+    try {
+      const saved = Number(localStorage.getItem(storageKey));
+      if (Number.isInteger(saved) && saved >= minimum && saved <= maximum) size = saved;
+    } catch { /* The controls also work without browser storage. */ }
+
+    const renderSize = () => {
+      contact.style.setProperty('--contact-font-size', `${size}px`);
+      output.value = `${size} px`;
+      smaller.disabled = size === minimum;
+      larger.disabled = size === maximum;
+    };
+    const changeSize = step => {
+      size += step;
+      renderSize();
+      try { localStorage.setItem(storageKey, String(size)); } catch { /* Keep the current size usable. */ }
+    };
+    smaller.addEventListener('click', () => changeSize(-1));
+    larger.addEventListener('click', () => changeSize(1));
+    renderSize();
+    contactControl.hidden = false;
+  }
+
   const hero = document.querySelector('[data-preview-hero]');
   if (hero) {
     const slides = [...hero.querySelectorAll('[data-hero-slide]')];
