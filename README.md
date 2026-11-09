@@ -1,15 +1,16 @@
 # Verschönerei Weinheim · Salon-Entwürfe
 
 Die [Startseite der GitHub-Vorschau](https://garytimeless.github.io/verschoenerei/)
-öffnet **Schlicht · Galerie**. Unten auf beiden Seiten lässt sich zwischen den
-zwei Entwürfen wechseln.
+öffnet **Schlicht · Galerie**. Unten auf der Seite lässt sich zwischen den drei
+Entwürfen wechseln.
 
-| Entwurf | Salonbereich |
+| Entwurf | Schwerpunkt |
 |---|---|
 | [Schlicht · Galerie](https://garytimeless.github.io/verschoenerei/) | Ruhiges Fotoraster mit großem Empfangsbild |
 | [Kreativ · Lichtspiel](https://garytimeless.github.io/verschoenerei/salon-kreativ.html) | Spiegelrahmen und sanft bewegte Bildpendel |
+| [Leistungen · Aufklappen](https://garytimeless.github.io/verschoenerei/salon-leistungen.html#leistungen) | Aufklappbare Leistungskarten für Haare, Haut und Nägel |
 
-Beide Entwürfe starten mit der Lounge am Fenster. Danach folgen Waschplätze
+Alle Entwürfe starten mit der Lounge am Fenster. Danach folgen Waschplätze
 und Eingang. Die Salon-Galerien enthalten jeweils acht Fotos.
 Gestaltung und Prüfungen stehen in [SALON-ENTWUERFE.md](SALON-ENTWUERFE.md).
 
@@ -26,7 +27,7 @@ Stylesheets und Bildern, weil alle benötigten Dateien im Archiv liegen.
 
 Statische HTML-Seiten ohne Build-Schritt. `index.html` enthält Schlicht · Galerie.
 Der ältere Link `salon-schlicht.html` führt ebenfalls zur Startseite.
-Beide aktuellen Entwürfe verwenden
+Die aktuellen Entwürfe verwenden
 `salon-entwuerfe.css` und `salon-entwuerfe.js`; Lichtspiel ergänzt
 `salon-kreativ.css` und `salon-kreativ.js`.
 

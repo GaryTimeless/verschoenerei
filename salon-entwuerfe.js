@@ -1,5 +1,17 @@
 (() => {
   'use strict';
+  const services = document.querySelector('[data-service-panels]');
+  if (services) {
+    const hoverLayout = window.matchMedia('(any-hover: hover) and (min-width: 861px)');
+    services.querySelectorAll('.service-panel').forEach(panel => {
+      panel.addEventListener('pointerenter', event => {
+        if (event.pointerType === 'mouse' && hoverLayout.matches && !services.querySelector('.service-panel-body :focus')) {
+          panel.open = true;
+        }
+      });
+    });
+  }
+
   const contactControl = document.querySelector('[data-contact-font-control]');
   if (contactControl) {
     const contact = contactControl.closest('.contact');

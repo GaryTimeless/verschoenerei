@@ -1,14 +1,19 @@
-# Verschönerei · zwei Salon-Entwürfe
+# Verschönerei · Salon-Entwürfe
 
 Briefing vom 19. Oktober 2026: Die Lounge am Fenster (01) ist ein ausdrücklich
 gewünschtes Headerfoto. Dazu kommen die Waschplätze (12) und der Blick durch
 die Tür (04). Hochformate werden für das Handy bewusst genutzt; Desktop erhält
 eigene Bildpositionen. Weitere Fotos können später ergänzt werden.
 
-Es gibt zwei vollständige, direkt vergleichbare Vorschauen auf Grundlage
+Galerie und Lichtspiel sind zwei direkt vergleichbare Vorschauen auf Grundlage
 von A. Beide zeigen denselben Foto-Einstieg und die gleichen wesentlichen Inhalte.
 Die Salon-Sektion erhält jeweils eine eigene Komposition. Die bisherigen
 Entwürfe A–D bleiben als eigene Dateien bestehen.
+
+**Leistungen · Aufklappen** verwendet die schlichte Galerie als Basis. Im
+Leistungsbereich wird die gewählte Karte am Rechner beim Überfahren breiter
+und zeigt die Details. Per Tastatur und Touch lassen sich die Karten direkt
+öffnen. Fotos, Texte und Farben kommen aus den aktuellen Entwürfen.
 
 ## Gemeinsame Gestaltung
 
