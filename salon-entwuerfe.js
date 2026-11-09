@@ -61,7 +61,7 @@
     };
     const syncTimer = () => {
       window.clearInterval(timer);
-      if (!paused && inView && !document.hidden) timer = window.setInterval(() => show(index + 1, false), 7000);
+      if (!paused && inView && !document.hidden) timer = window.setInterval(() => show(index + 1, false), 3000);
       updatePlayback();
     };
     const show = (next, manual = true) => {
