@@ -37,6 +37,16 @@
 [data-salon-preview] .site-footer { display: flex; justify-content: center; padding-block: 8px 78px; }
 [data-salon-preview] .site-footer a { display: inline-flex; align-items: center; min-height: 24px; }
 
+.welcome {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  grid-template-areas: 'label .' 'title copy';
+  gap: 17px clamp(28px, 7vw, 100px);
+}
+.welcome > .eyebrow { grid-area: label; padding-top: 0; }
+.welcome > h2 { grid-area: title; }
+.welcome-copy { grid-area: copy; }
+.welcome-copy > p:first-child { margin-top: 0; }
+
 .service-panels {
   display: grid;
   grid-template-columns: minmax(0, var(--hair-width, 1fr)) minmax(0, var(--skin-width, 1fr)) minmax(0, var(--nails-width, 1fr));
@@ -169,6 +179,7 @@
   .service-panel-body { padding-top: 12px; }
 }
 @media (max-width: 720px) {
+  .welcome { grid-template-columns: 1fr; grid-template-areas: 'label' 'title' 'copy'; }
   [data-salon-preview] .hero { min-height: max(610px, calc(100svh - var(--header-height))); padding: 44px 22px 180px; }
   .preview-hero-slide img { object-position: var(--focus-mobile, 50% 50%); }
   [data-salon-preview] .hero-title { font-size: clamp(42px, 11.5vw, 64px); }
