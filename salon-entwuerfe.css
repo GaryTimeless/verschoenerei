@@ -81,6 +81,22 @@
 .service-panel[open] .service-panel-body { animation: service-details-reveal .35s ease both; }
 @keyframes service-details-reveal { from { opacity: 0; } to { opacity: 1; } }
 
+.more-services {
+  max-width: 42rem;
+  margin-top: clamp(24px, 4vw, 40px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--linen);
+}
+.more-services summary { min-height: 48px; padding: 12px 20px; font-weight: 600; cursor: pointer; }
+.more-services summary:focus-visible { border-radius: inherit; outline-offset: -4px; }
+.more-services-body { padding: 0 20px 18px; font-size: 14px; }
+.more-services-body p, .more-services-body dd { color: var(--muted); }
+.more-services-body dl { display: grid; margin: 14px 0 0; }
+.more-services-body dt { font-weight: 600; }
+.more-services-body dt:not(:first-child) { margin-top: 12px; }
+.more-services-body dd { margin: 0; }
+
 .contact {
   --contact-font-size: 20px;
   padding-block: clamp(30px, 4vw, 54px) 24px;
