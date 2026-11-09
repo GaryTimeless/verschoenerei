@@ -35,7 +35,7 @@ verwenden Gewicht 400, kurze Label Gewicht 600. Fließtext 14–16 px,
 große Überschriften fließend skaliert. Körpertext wird auf breiten
 Bildschirmen auf etwa 535–650 px begrenzt.
 
-## Die aktuellen Entwürfe
+## Die archivierten Sand-Entwürfe
 
 - **A:** Ein Live-Regler „Milchigkeit“ steuert Blur, hellen Schleier, Entsättigung und Körnung gemeinsam von 0 bis 100 %. 0 % zeigt ein klares Bild; 100 % entspricht dem ursprünglichen Look mit 12 px Blur und 62 % deckendem Leinen. Der neue Startwert ist 40 % (4,8 px Blur, 24,8 % Leinen). Die zuletzt gewählte Stärke wird lokal im Browser gespeichert; ohne Speicherzugriff funktioniert die Vorschau weiterhin. Nur die Bildebenen werden gefiltert, die Schrift bleibt scharf.
 - **B:** Unverändertes Foto, darüber eine deckende quadratische Fläche in hellem Beige mit 28 px Radius (mobil 23 px). Die feste Fläche stabilisiert den Textkontrast unabhängig vom Foto.
@@ -61,8 +61,8 @@ Navigation → Foto-Hero → Willkommen → Haare/Haut/Nägel → Salon → Kund
 Der kleine Variantenwechsler dient nur der Entwurfspräsentation. Die Hinweise
 enthalten einen Link zu den archivierten hellen Entwürfen.
 Die Präsentationsreihenfolge ist A · Milchig → B · Sandfläche → C · Pur → D · Dreiklang.
-Der Hauptlink öffnet A. C · Pur ist unter `variante-c.html` und D · Dreiklang
-unter `variante-d.html` direkt erreichbar.
+Der [Archiveinstieg](archiv/2026-10-19-sand-entwuerfe/) öffnet A. C · Pur und
+D · Dreiklang sind über den Variantenwechsler im Archiv direkt erreichbar.
 
 Mobil: ausklappbare Navigation, Leistungen untereinander, angepasste
 Bildposition, zweispaltiges Salon-Detail, Kontakt bei 320 px einspaltig.

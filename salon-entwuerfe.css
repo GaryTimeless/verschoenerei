@@ -34,7 +34,6 @@
 .salon-preview-bar a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 20px; border-radius: 28px; text-decoration: none; font-size: 12px; white-space: nowrap; }
 .salon-preview-bar a[aria-current='page'] { background: var(--ink); color: var(--linen); }
 .salon-preview-bar a:not([aria-current]):hover { background: var(--beige); }
-.salon-preview-bar .salon-preview-back { padding-inline: 12px; border-left: 1px solid var(--line); border-radius: 0; font-size: 10px; }
 [data-salon-preview] .site-footer { padding-bottom: 130px; }
 
 .salon-calm { padding-block: clamp(70px, 8vw, 128px); }
@@ -83,7 +82,6 @@
   .salon-preview-bar { bottom: 12px; gap: 6px; padding: 5px; }
   .salon-preview-bar > span { display: none; }
   .salon-preview-bar a { padding-inline: 18px; font-size: 11px; }
-  .salon-preview-bar .salon-preview-back { padding-inline: 10px; }
   .calm-heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 32px; }
   .calm-heading p { max-width: 460px; font-size: 14px; }
   .calm-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; gap: 24px 16px; height: auto; }

@@ -1,59 +1,21 @@
-# Verschönerei Weinheim — Sandtöne und Dreiklang
+# Verschönerei Weinheim · Salon-Entwürfe
 
-Die neue Entwurfsrunde vom 19. Oktober 2026 setzt Peggys Rückmeldung um:
-ein großes Salonfoto, den Schriftzug „Dein Stil. Dein Moment.“ und neutrale
-Beige- und Sandfarben aus der gelieferten Palette.
+Die [Startseite der GitHub-Vorschau](https://garytimeless.github.io/verschoenerei/)
+öffnet **Schlicht · Galerie**. Unten auf beiden Seiten lässt sich zwischen den
+zwei Entwürfen wechseln.
 
-**[Aktuelle Entwürfe ansehen](https://garytimeless.github.io/verschoenerei/)**
+| Entwurf | Salonbereich |
+|---|---|
+| [Schlicht · Galerie](https://garytimeless.github.io/verschoenerei/salon-schlicht.html) | Ruhiges Fotoraster mit großem Empfangsbild |
+| [Kreativ · Lichtspiel](https://garytimeless.github.io/verschoenerei/salon-kreativ.html) | Spiegelrahmen und sanft bewegte Bildpendel |
 
-| Variante | Einstieg | Link |
-|---|---|---|
-| A · Milchig | Weichgezeichnetes Foto, heller Schleier und feine Körnung | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-a.html) |
-| B · Sandfläche | Klares Foto und eine quadratische, abgerundete Textfläche | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-b.html) |
-| C · Pur | Weiße Schrift direkt auf dem Salonfoto in Schwarz-Weiß | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-c.html) |
-| D · Dreiklang | Zusätzlicher Entwurf mit drei aufklappbaren Holzflächen | [Ansehen](https://garytimeless.github.io/verschoenerei/variante-d.html) |
-
-A, B und C teilen Aufbau, Texte und Typografie und vergleichen die Bildwirkung.
-D ergänzt den früheren Dreiklang-Entwurf als vierte Auswahl. Die separate
-Übersichtsseite entfällt. Der Hauptlink startet direkt mit A. Der Wechsler unten
-zeigt die Reihenfolge A · Milchig → B · Sandfläche → C · Pur → D · Dreiklang.
-Die früher geteilten Direktlinks `galerie.html`, `salon.html` und `klar.html`
-führen weiterhin zu Pur, Milchig und Sandfläche.
-`variante-pur.html` leitet ebenfalls auf C · Pur weiter. Die ursprüngliche Dreiklang-Datei im Archiv bleibt unverändert.
-
-In A lässt sich die **Milchigkeit unten live von 0 bis 100 % einstellen**.
-Der Startwert ist 40 %; 100 % entspricht dem ursprünglichen starken Effekt.
-Die letzte Einstellung bleibt lokal im jeweiligen Browser gespeichert.
-
-A, B und C verwenden das Foto
-`WhatsApp Image 2026-10-12 at 09.05.45 (1).jpeg` des heutigen Salons.
-Diese Fotoausführungen verwenden denselben responsiven Bildausschnitt: Auf breiten
-Bildschirmen werden Decke und Boden beschnitten; hochkant wird der Ausschnitt
-nach oben versetzt. Die jeweiligen Effekte bleiben erhalten. Auf dem Handy stehen
-die vier Varianten im Wechsler in zwei Spalten.
-
-In allen vier Optionen stehen drei echte Kundenstimmen als Bewertungskarten
-mit Sternen, Initialen und einem Link zu den Google-Bewertungen. Die statischen
-Zitate sind mit ihren Quellen verlinkt; es wird kein Live-Feed geladen.
-
-## Salon-Entwürfe vom 19. Oktober
-
-Zwei zusätzliche Vorschauen auf Grundlage von A vergleichen den erweiterten
-Salonbereich: [Kreativ · Lichtspiel](https://garytimeless.github.io/verschoenerei/salon-kreativ.html)
-mit Spiegelrahmen und sanft bewegten Bildpendeln sowie
-[Schlicht · Galerie](https://garytimeless.github.io/verschoenerei/salon-schlicht.html) mit einem
-ruhigen Fotoraster. Beide starten mit der Lounge am Fenster, danach folgen
-Waschplätze und Eingang. Die Salon-Galerien enthalten jeweils acht Fotos.
-
-Gestaltung und Prüfungen stehen in
-[SALON-ENTWUERFE.md](SALON-ENTWUERFE.md). Sie verwenden `salon-entwuerfe.css`
-und `salon-entwuerfe.js`; Lichtspiel ergänzt `salon-kreativ.css` und
-`salon-kreativ.js`.
+Beide Entwürfe starten mit der Lounge am Fenster. Danach folgen Waschplätze
+und Eingang. Die Salon-Galerien enthalten jeweils acht Fotos.
+Gestaltung und Prüfungen stehen in [SALON-ENTWUERFE.md](SALON-ENTWUERFE.md).
 
 ## Archiv
 
-Die bisherigen Entwürfe bleiben vollständig erhalten:
-
+- [Sand-Entwürfe vom 19. Oktober 2026](https://garytimeless.github.io/verschoenerei/archiv/2026-10-19-sand-entwuerfe/): A · Milchig, B · Sandfläche, C · Pur und D · Dreiklang. Die bisherigen Direktlinks führen zu den entsprechenden Archivseiten.
 - [Helle Entwürfe vom 16. Oktober 2026](https://garytimeless.github.io/verschoenerei/archiv/2026-10-16-helle-entwuerfe/): Galerie, Salon und Klar samt Übersicht, CSS, JavaScript, Bildern, lokalen Schriften und Dokumentation. Die 32 Dateien wurden unverändert archiviert.
 - [Frühere acht Vorschläge](https://garytimeless.github.io/verschoenerei/archiv/bisherige-entwuerfe/).
 
@@ -62,14 +24,13 @@ Stylesheets und Bildern, weil alle benötigten Dateien im Archiv liegen.
 
 ## Bearbeitung und Vorschau
 
-Statische HTML-Seiten ohne Build-Schritt: `variante-a.html`, `variante-b.html`,
-`variante-c.html` und `variante-d.html`. `index.html` leitet auf A weiter.
-A, B und C teilen `sand.css` und `sand.js`. D behält den eigenen Stil und
-die aufklappbaren Bereiche des Archiv-Entwurfs. Die Karten teilen `kundenstimmen.css`.
-Bei Inhaltsänderungen alle vier Seiten aktualisieren.
+Statische HTML-Seiten ohne Build-Schritt. `index.html` leitet zu
+`salon-schlicht.html` weiter. Beide aktuellen Entwürfe verwenden
+`salon-entwuerfe.css` und `salon-entwuerfe.js`; Lichtspiel ergänzt
+`salon-kreativ.css` und `salon-kreativ.js`.
 
 Lokal `python3 -m http.server 8000` starten und <http://localhost:8000> öffnen.
 GitHub Pages veröffentlicht den Hauptordner von `main`; `.nojekyll` bleibt erhalten.
 
-Gestaltungsentscheidungen und offene Inhalte: [DESIGN.md](DESIGN.md).
+Gestaltung der Sand-Entwürfe und offene Inhalte: [DESIGN.md](DESIGN.md).
 Bild- und Schriftquellen: [ASSETS.md](ASSETS.md).
