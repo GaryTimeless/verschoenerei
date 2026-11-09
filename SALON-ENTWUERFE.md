@@ -24,7 +24,7 @@ und zeigt die Details. Per Tastatur und Touch lassen sich die Karten direkt
 - Gleicher Header: 01 Lounge → 12 Waschplätze → 04 Eingang. Sanfter Bildwechsel,
   sichtbare Bildwahl, Vor/Zurück und Pause. Reduzierte Bewegung und nicht
   sichtbare Bereiche halten den automatischen Wechsel an.
-- Geringe Milchigkeit von 8 % als Ausgangspunkt aus dem Gespräch. Ein eigener
+- Milchigkeit von 0 bis 100 % einstellbar, mit 20 % als Startwert. Ein eigener
   dunkler Verlauf sichert den weißen Text; das Foto selbst bleibt unverändert.
 
 ## Kreativ · Lichtspiel

@@ -1,21 +1,33 @@
 /* Gemeinsamer Einstieg und schlichte Salon-Galerie. */
 [data-salon-preview] .hero {
-  --milk-opacity: .0496;
-  --milk-grain: .006;
+  --milk-opacity: .124;
+  --milk-blur: 2.4px;
+  --milk-saturation: .93;
+  --milk-grain: .015;
   min-height: max(620px, calc(100svh - var(--header-height)));
   padding-bottom: 180px;
 }
 .preview-hero-slides { position: absolute; inset: -4px; z-index: -3; }
 .preview-hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 900ms ease; }
 .preview-hero-slide.is-active { opacity: 1; }
-.preview-hero-slide img { width: 100%; height: 100%; object-fit: cover; object-position: var(--focus-desktop, 50% 50%); filter: blur(.96px) saturate(.972); }
+.preview-hero-slide img { width: 100%; height: 100%; object-fit: cover; object-position: var(--focus-desktop, 50% 50%); filter: blur(var(--milk-blur)) saturate(var(--milk-saturation)); }
 .preview-hero-shade { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, #00000026 0%, #00000096 38%, #000000a3 70%, #00000080 100%); }
 [data-salon-preview] .hero-content { position: relative; color: #fff; }
 [data-salon-preview] .hero-title { font-weight: 500; }
 [data-salon-preview] .hero-description { font-size: 15px; }
-.preview-hero-controls { position: absolute; bottom: 96px; left: var(--gutter); right: var(--gutter); display: flex; align-items: center; justify-content: space-between; gap: 20px; color: #fff; }
+.preview-hero-controls { position: absolute; bottom: 96px; left: var(--gutter); right: var(--gutter); display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px 20px; color: #fff; }
 .preview-hero-caption { font-size: 13px; }
 .preview-hero-caption small { display: block; margin-top: 3px; font-size: 10px; }
+.preview-hero-controls .preview-milk-control {
+  grid-column: 1 / -1;
+  justify-self: end;
+  width: min(320px, 100%);
+  padding: 0;
+  border: 0;
+  font-size: 12px;
+}
+.preview-milk-control input { height: 44px; accent-color: var(--linen); }
+.preview-milk-control input:focus-visible { outline-color: #fff; }
 .preview-hero-buttons { display: flex; align-items: center; gap: 7px; }
 .preview-control { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: 44px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 50%; background: var(--linen); color: var(--ink); font-size: 18px; cursor: pointer; }
 .preview-control:hover { background: var(--beige); }

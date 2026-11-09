@@ -7,7 +7,7 @@
     const slider = milkControl.querySelector('input');
     const output = milkControl.querySelector('output');
     const hero = document.querySelector('.hero');
-    const storageKey = 'verschoenerei-milk-strength-v1';
+    const storageKey = milkControl.dataset.milkStorageKey || 'verschoenerei-milk-strength-v1';
     let strength = Number(slider.value);
     try {
       const stored = localStorage.getItem(storageKey);
