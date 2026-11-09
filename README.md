@@ -1,8 +1,8 @@
 # Verschönerei Weinheim · Salon-Entwürfe
 
 Die [Startseite der GitHub-Vorschau](https://garytimeless.github.io/verschoenerei/)
-öffnet **Schlicht · Galerie**. Unten auf der Seite lässt sich zwischen den drei
-Entwürfen wechseln.
+öffnet **Schlicht · Galerie**. Direkt unter der Hauptnavigation lässt sich
+zwischen den drei Entwürfen wechseln. Jede Variante startet oben auf der Seite.
 
 | Entwurf | Schwerpunkt |
 |---|---|

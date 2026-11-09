@@ -75,8 +75,8 @@ vorhandenen Salon und die vorhandene Produkt-/Boutiquewelt.
   dem Schließen geprüft. Hero: Bildwechsel und manuelles Pausieren geprüft.
 - `prefers-reduced-motion: reduce` per Browseremulation geprüft: Hero hält an,
   Pendelanimation entfällt, der Bewegungsschalter erklärt den Zustand.
-- Hero-Steuerung auf Tablet/Desktop oberhalb des festen Entwurfswechslers
-  positioniert; Mobilansicht mit 44-px-Bedienelementen geprüft.
+- Die Variantenwahl bleibt unter der Hauptnavigation sichtbar und führt zum
+  Seitenanfang. Die Bedienelemente sind mindestens 44 px hoch.
 - JavaScript-Syntax, eindeutige HTML-IDs, lokale Datei-/Fragmentziele geprüft.
   Die Fotokopien stimmen in SHA-256 mit der vorbereiteten Bildauswahl überein.
 - Vorschauen: [Lichtspiel](https://garytimeless.github.io/verschoenerei/salon-kreativ.html#salon)
