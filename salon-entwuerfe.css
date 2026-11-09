@@ -82,7 +82,6 @@
 @keyframes service-details-reveal { from { opacity: 0; } to { opacity: 1; } }
 
 .more-services {
-  max-width: 42rem;
   margin-top: clamp(24px, 4vw, 40px);
   border: 1px solid var(--line);
   border-radius: 12px;
